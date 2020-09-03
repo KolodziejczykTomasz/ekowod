@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import BrandLogo from '../assets/images/logo.svg';
-import 'bulma/css/bulma.css'
+
+import 'bulma/css/bulma.css';
 
 export default function NaviTop() {
   const [isActive, setisActive] = useState(false);
@@ -18,18 +19,17 @@ export default function NaviTop() {
             setisActive(!isActive);
           }}
           role="button"
-          className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
+          className={`navbar-burger burger ${isActive ? 'is-active' : ''}`}
           aria-label="menu"
           aria-expanded="false"
-          data-target="navbarBasicExample">
+          data-target="navbarBasicExample"
+        >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div
-        id="navbarBasicExample"
-        className={`navbar-menu ${isActive ? "is-active" : ""}`}>
+      <div id="navbarBasicExample" className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
         <div class="navbar-start">
           <a class="navbar-item">Home</a>
 
