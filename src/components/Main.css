@@ -2,50 +2,30 @@
   display: grid;
   margin-bottom: 10rem;
   grid-template-columns: 20% auto;
-  grid-column-gap: .5rem;
-  box-shadow: 0 0.5em 1em -0.125em rgba (10,  10,  10,  0.5),  0 0px 0 1px rgba(10,  10,  10,  0.02);
- 
+  grid-column-gap: 0.5rem;
+  max-width: 1250px;
+  margin: 0 auto;
+  box-shadow: 0.01rem 0.01rem 0.2rem grey;
 }
 
- @media (max-width: 600px) {
-     .wrapper {
+@media (max-width: 600px) {
+  .wrapper {
     grid-template-columns: 1fr;
-     }
   }
-
+}
 
 .mainSection {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  grid-row-gap: .5rem;  
-}
-
-.mainContainer {
-  display: grid;
-  grid-row-gap: .5rem;
-  height: 100%;
-  margin: 0.5rem 0.5rem;
-  padding: 0.1rem 0.1rem;
+  grid-row-gap: 0.5rem;
 }
 
 .asideSection {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  grid-column-gap: .5rem;
-  grid-row-gap: 2rem;
+  grid-template-columns: repeat(2 1fr);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
   width: 100%;
-  height: 100%;
-  box-shadow: 0.01rem 0.01rem 0.2rem grey;
-}
-
-.asideContainer {
-  width: 100%;
-  margin: 0.5rem 0.5rem;
-  padding: 0.1rem 0.1rem;
-}
-
-.section {
-    box-shadow: 0.01rem 0.01rem 0.2rem grey;
 }

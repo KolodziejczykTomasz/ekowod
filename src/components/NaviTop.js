@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import BrandLogo from '../assets/images/logo.svg';
 
+import 'components/NaviTop.css';
 import 'bulma/css/bulma.css';
 
 export default function NaviTop() {
   const [isActive, setisActive] = useState(false);
 
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a href="/" className="navbar-item">
           <img src={BrandLogo} alt="Logo" width="112" height="28" />
         </a>
-
         <a
           onClick={() => {
             setisActive(!isActive);
@@ -22,38 +21,56 @@ export default function NaviTop() {
           className={`navbar-burger burger ${isActive ? 'is-active' : ''}`}
           aria-label="menu"
           aria-expanded="false"
-          data-target="navbarBasicExample"
+          data-target="navbarTop"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navbarBasicExample" className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
+      <div id="navbarTop" className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
         <div class="navbar-start">
-          <a class="navbar-item">Home</a>
+          <a href="/" class="navbar-item">
+            Home
+          </a>
 
-          <a class="navbar-item">Documentation</a>
+          <a href="/about" class="navbar-item">
+            Onas
+          </a>
 
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">More</a>
-
+            <a class="navbar-link">Obiekty</a>
+            <div class="navbar-dropdown"></div>
             <div class="navbar-dropdown">
-              <a class="navbar-item">About</a>
-              <a class="navbar-item">Jobs</a>
-              <a class="navbar-item">Contact</a>
+              <p class="navbar-item has-dropdown is-hoverable">
+                <strong>Stacje uzdatiania wody</strong>
+              </p>
               <hr class="navbar-divider" />
-              <a class="navbar-item">Report an issue</a>
+              <a class="navbar-item">Górowo Iławeckie</a>
+              <a class="navbar-item">Kolno</a>
+              <a class="navbar-item">Lidzbark Warmiński</a>
+              <a class="navbar-item">Lubomino</a>
+              <hr class="navbar-divider" />
+              <p class="navbar-item has-dropdown is-hoverable">
+                <strong>Oczyszczlanie</strong>
+              </p>
+              <hr class="navbar-divider" />
+              <a class="navbar-item">Górowo Iławeckie</a>
+              <a class="navbar-item">Kolno</a>
+              <a class="navbar-item">Lidzbark Warmiński</a>
+              <a class="navbar-item">Lubomino</a>
             </div>
           </div>
+          <a href="/contact" class="navbar-item">
+            Kontakt
+          </a>
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-primary">
-                <strong>Sign up</strong>
+              <a href="" class="button is-primary">
+                <strong>Zgłoś awarię</strong>
               </a>
-              <a class="button is-light">Log in</a>
             </div>
           </div>
         </div>
