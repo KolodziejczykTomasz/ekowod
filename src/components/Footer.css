@@ -1,5 +1,87 @@
-.footer {
-    max-width: 1250px;
-    margin: 0 auto;
-    box-shadow: 0.01rem 0.01rem 0.2rem grey;
+.wrapperFooter {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1250px;
+  margin: 1rem auto;
+}
+
+.wrapperWidget {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 30% 40% 30%;
+}
+
+.widgetLeft {
+  display: flex;
+  align-items: center;
+}
+
+.footerPhoto {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.widgetCenter {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  margin: 1rem 0;
+}
+
+.widgetRight {
+  display: grid;
+  grid-template-rows: repeat(3 1fr);
+  grid-template-columns: 1fr;
+  margin: 1rem 0;
+  align-self: start;
+}
+
+.copyright {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(218, 213, 213, 0.3);
+}
+
+.copyrightTitle {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.copyrightSubtitle {
+  text-align: center;
+}
+
+.widgetBottom {
+  height: auto;
+  background-color: rgba(218, 213, 213, 0.3);
+}
+
+.widgetBottomText {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: .9rem;
+  padding-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.widgetTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  height: 3rem;
+}
+
+
+.widgetIcon {
+  margin: 0.2rem 0.5rem 0 0;
+  padding-top: 5px;  
+}
+
+.widgetIconSpan {
+  display: inline-block;
+  align-items: flex-start;
+  margin-bottom: .2rem;
+  margin-top: -20px;
 }

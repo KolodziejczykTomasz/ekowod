@@ -1,0 +1,39 @@
+#breakeLine {
+  width: 300px;
+  height: 30px;
+  margin: 10px auto 10px auto;
+}
+
+#wrapperBreakeLine {
+  display: grid;
+  margin: 20px 0 20px 0;
+}
+
+#wrapperItemLeft {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  margin: 5px 0;
+}
+
+#wrapperItemCentral {
+  display: grid;
+  grid-column-start: 6;
+  grid-column-end: 9;
+}
+
+#wrapperItemRight {
+  display: grid;
+  grid-column-start: 9;
+  grid-column-end: 15;
+  margin: 5px 0;
+}
+
+#wrapperText {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: #3f2b55;
+  letter-spacing: 0.2rem;
+  padding: 20px 20px;
+}

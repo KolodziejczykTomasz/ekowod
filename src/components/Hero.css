@@ -1,8 +1,37 @@
 .hero {
-    max-width: 1250px;
-    margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.hero-body {
+  background: url('../assets/images/hero.jpg') fixed;
+  background-position: center;
+  height: 600px;
 }
 
 .title {
-    text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+.heroTextWrapper {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: auto;
+  width: 100%;
+  max-width: 1250px;
+  top: 35%;
+  left: 8.8%;
+  opacity: 1;
+  transition: opacity 0.5s;
+  background: rgba(108, 68, 162, 0.2);
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3 1fr);
 }
