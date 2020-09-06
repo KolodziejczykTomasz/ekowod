@@ -4,9 +4,7 @@ import 'components/BreakeEndSection.css';
 
 const BreakeEndSection = () => (
   <div id="wrapperBreakeEndLine">
-    
-      <hr />
-   
+    <hr style={{ borderTop: '1px solid #1680BC' }} />
   </div>
 );
 export default BreakeEndSection;

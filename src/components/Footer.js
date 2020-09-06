@@ -21,23 +21,35 @@ const Footer = () => (
       <div className="widgetCenter">
         <p className="widgetTitle">Dane kontaktowe</p>
         <ul>
-          <li>
-            <HomeOutlined className="widgetIcon" /> <span className="widgetIconSpan">EKOWOD</span>
+          <li className="widgetListItem">
+            <HomeOutlined className="widgetIcon" 
+            style={{ fontSize: 30, marginTop: '-7px' }} 
+            />
+            <span className="widgetIconSpan">EKOWOD</span>
           </li>
-          <li>
-            <LocalPhoneOutlined className="widgetIcon" />
+          <li className="widgetListItem">
+            <LocalPhoneOutlined
+              className="widgetIcon"
+              style={{ fontSize: 30, marginTop: '-5px' }}
+            />
             <span className="widgetIconSpan">897670000</span>
           </li>
-          <li>
-            <PinDropOutlined className="widgetIcon" />
+          <li className="widgetListItem">
+            <PinDropOutlined
+              className="widgetIcon"
+              style={{ fontSize: 30, marginTop: '-5px' }}
+            />
             <span className="widgetIconSpan">ul. Olsztyńska, 11-100 Lidzbark Warmiński</span>
           </li>
-          <li>
-            <PhoneAndroidOutlined className="widgetIcon" />
+          <li className="widgetListItem">
+            <PhoneAndroidOutlined
+              className="widgetIcon"
+              style={{ fontSize: 30, marginTop: '-5px' }}
+            />
             <span className="widgetIconSpan">+48 123 456 789</span>
           </li>
-          <li>
-            <EmailOutlined className="widgetIcon" />
+          <li className="widgetListItem">
+            <EmailOutlined className="widgetIcon" style={{ fontSize: 30, marginTop: '-5px' }} />
             <span className="widgetIconSpan">mail@gmail.com</span>
           </li>
         </ul>
@@ -48,17 +60,33 @@ const Footer = () => (
         </div>
         <div className="widgetRightList">
           <ul>
-            <li>
-              <ChevronRightSharp className="widgetIcon" />
-              <span className="widgetIcon">Biuletyn Informacji Publicznej</span>
+            <li className="widgetListItem">
+              <ChevronRightSharp
+                className="widgetIcon"
+                style={{ fontSize: 30, marginTop: '-5px' }}
+              />
+              <span className="widgetIconSpan">Biuletyn Informacji Publicznej</span>
             </li>
-            <li>
-              <ChevronRightSharp className="widgetIcon" />
-              <span className="widgetIcon">Cennik</span>
+            <li className="widgetListItem">
+              <ChevronRightSharp
+                className="widgetIcon"
+                style={{ fontSize: 30, marginTop: '-5px' }}
+              />
+              <span className="widgetIconSpan">Cennik</span>
             </li>
-            <li>
-              <ChevronRightSharp className="widgetIcon" />
-              <span className="widgetIcon">Zgłoś awarię</span>
+            <li className="widgetListItem">
+              <ChevronRightSharp
+                className="widgetIcon"
+                style={{ fontSize: 30, marginTop: '-5px' }}
+              />
+              <span className="widgetIconSpan">Ochrona danych osobowych</span>
+            </li>
+            <li className="widgetListItem">
+              <ChevronRightSharp
+                className="widgetIcon"
+                style={{ fontSize: 30, marginTOp: '-5px' }}
+              />
+              <span className="widgetIconSpan">Zgłoś awarię</span>
             </li>
           </ul>
         </div>

@@ -7,8 +7,8 @@ const Hero = () => (
       <div className="heroTextWrapper">
       <div className="wrapperHero">
         <div className="photoBox"></div>
-        <h1 className="title">Primary bold title</h1>
-        <h2 className="subtitle">Primary bold subtitle</h2></div>
+        <h1 className="title">Zakład Budżetowy Związku Gmin</h1>
+        <h2 className="subtitle">Gospodark wodno-ściekowa</h2></div>
       </div>
     </div>
   </section>

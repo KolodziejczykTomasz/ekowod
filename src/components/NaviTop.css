@@ -1,4 +1,35 @@
-.navbar {
-    max-width: 1250px;
-    margin: 0 auto;
+#navbar {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+#brandLogo {
+  padding: 0.7rem 0.7rem;
+  margin-right: 3rem;
+}
+
+#buttonLink {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding: 0 0.7rem;
+}
+
+#buttonLink:hover {
+  border-bottom: 3px solid#1680BC;
+}
+
+#buttonLinkMore {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+#iconDropDown {
+  color: #1680bc;
+  font-size: 30px;
+}
+#buttonToggle {
+  text-transform: uppercase;
+  padding: 5px 15px;
 }

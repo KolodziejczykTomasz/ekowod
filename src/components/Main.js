@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'components/Main.css';
+import 'bulma/css/bulma.css';
 import BreakeStartSection from 'components/BreakeStartSection';
 import BreakeEndSection from 'components/BreakeEndSection';
 import AsideItem from 'components/AsideItem';
@@ -9,11 +10,11 @@ import MainItem from './MainItem';
 class Main extends Component {
   render() {
     return (
-      <div className="wrapper container">
+      <div className="wrapper">
         <div className="asideSection ">
           <div className="asideMenu">
             <div className="menuHeader">
-              <h1 className="menuHeaderTitle">Menu</h1>
+              <div className="wrapperAsideMenuHeader">Strefa klienta</div>
             </div>
             <AsideMenuItem>Klient</AsideMenuItem>
             <AsideMenuItem>Kontakt</AsideMenuItem>
@@ -22,8 +23,13 @@ class Main extends Component {
           </div>
           <BreakeEndSection />
           <div>
-            <AsideItem>AsideItem 2</AsideItem>
-            <AsideItem>AsideItem 3</AsideItem>
+            <AsideItem>
+              <h1 class="title">Section</h1>
+              <h2 class="subtitle">
+                A simple container to divide your page into <strong>sections</strong>, like the one
+                you're currently reading
+              </h2>
+            </AsideItem>
           </div>
         </div>
         <div className="mainSection">
