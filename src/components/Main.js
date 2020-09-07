@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import 'components/Main.css';
 import 'bulma/css/bulma.css';
+import Divider from '@material-ui/core/Divider';
 import BreakeStartSection from 'components/BreakeStartSection';
-import BreakeEndSection from 'components/BreakeEndSection';
+//import BreakeEndSection from 'components/BreakeEndSection';
 //import AsideItem from 'components/AsideItem';
 import AsideMenuItem from 'components/AsideMenuItem';
 //import MainItem from 'components/MainItem';
@@ -23,10 +24,11 @@ class Main extends Component {
             <AsideMenuItem>Obiekty</AsideMenuItem>
             <AsideMenuItem>Cennik</AsideMenuItem>
           </div>
-          <BreakeEndSection />
+          <Divider variant="middle" />
           <div>
             <AsideCard />
           </div>
+          <Divider variant="middle" />
           <div>
             <AsideCard />
           </div>

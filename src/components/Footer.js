@@ -7,13 +7,15 @@ import {
   HomeOutlined,
   ChevronRightSharp,
 } from '@material-ui/icons';
+import Divider from '@material-ui/core/Divider';
 import BrandLogo from 'assets/images/logo.svg';
-import BreakeEndSection from 'components/BreakeEndSection';
+//import BreakeEndSection from 'components/BreakeEndSection';
 import 'components/Footer.css';
+
 
 const Footer = () => (
   <div className="wrapperFooter">
-    <BreakeEndSection />
+    <Divider variant="middle" className="divider" />
     <div className="wrapperWidget">
       <div className="widgetLeft">
         <img className="footerPhoto" src={BrandLogo} alt="Logo" />
