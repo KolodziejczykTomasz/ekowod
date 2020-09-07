@@ -3,10 +3,12 @@ import 'components/Main.css';
 import 'bulma/css/bulma.css';
 import BreakeStartSection from 'components/BreakeStartSection';
 import BreakeEndSection from 'components/BreakeEndSection';
-import AsideItem from 'components/AsideItem';
+//import AsideItem from 'components/AsideItem';
 import AsideMenuItem from 'components/AsideMenuItem';
-import MainItem from './MainItem';
-
+//import MainItem from 'components/MainItem';
+import CardWidget from 'components/CardWidget';
+import AsideCard from 'components/AsideCard';
+import CardShortWidget from 'components/CardShortWidget';
 class Main extends Component {
   render() {
     return (
@@ -23,41 +25,28 @@ class Main extends Component {
           </div>
           <BreakeEndSection />
           <div>
-            <AsideItem>
-              <h1 class="title">Section</h1>
-              <h2 class="subtitle">
-                A simple container to divide your page into <strong>sections</strong>, like the one
-                you're currently reading
-              </h2>
-            </AsideItem>
+            <AsideCard />
+          </div>
+          <div>
+            <AsideCard />
           </div>
         </div>
         <div className="mainSection">
           <BreakeStartSection>Aktualności</BreakeStartSection>
-          <MainItem>
-            <h1 className="title">Section</h1>
-            <h2 className="subtitle">
-              A simple container to divide your page into <strong>sections</strong>, like the one
-              you're currently reading
-            </h2>
-            <p className="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo sit quod
-              perferendis tenetur assumenda. Doloremque dignissimos non aut possimus explicabo est
-              aperiam voluptates rerum sint!
-            </p>
-            <p className="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo sit quod
-              perferendis tenetur assumenda. Doloremque dignissimos non aut possimus explicabo est
-              aperiam voluptates rerum sint!
-            </p>
-          </MainItem>
-          <MainItem>
-            <h1 class="title">Section</h1>
-            <h2 class="subtitle">
-              A simple container to divide your page into <strong>sections</strong>, like the one
-              you're currently reading
-            </h2>
-          </MainItem>
+          <div id="cardShortWidget">
+            <CardShortWidget />
+            <CardShortWidget />
+            <CardShortWidget />
+            <CardShortWidget />
+            <CardShortWidget />
+            <CardShortWidget />
+          </div>
+          <BreakeStartSection>Usługi</BreakeStartSection>
+          <div id="cardWidget">
+            <CardWidget />
+            <CardWidget />
+            <CardWidget />
+          </div>
         </div>
       </div>
     );
