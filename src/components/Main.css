@@ -16,8 +16,8 @@
 
 .mainSection {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
   grid-row-gap: 0.5rem;
 }
 

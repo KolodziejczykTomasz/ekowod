@@ -3,15 +3,29 @@ import 'components/Main.css';
 import 'bulma/css/bulma.css';
 import Divider from '@material-ui/core/Divider';
 import BreakeStartSection from 'components/BreakeStartSection';
-//import BreakeEndSection from 'components/BreakeEndSection';
-//import AsideItem from 'components/AsideItem';
 import AsideMenuItem from 'components/AsideMenuItem';
-//import MainItem from 'components/MainItem';
+
 import CardWidget from 'components/CardWidget';
 import AsideCard from 'components/AsideCard';
 import CardShortWidget from 'components/CardShortWidget';
+import { styled } from '@material-ui/core/styles';
+
+
+
+
+const DividerColor = styled(Divider)({
+  backgroundColor: '#1680BC',
+  width: "60%",
+  margin: "30px auto",
+});
+
+
+
+
 class Main extends Component {
-  render() {
+
+ render() {
+
     return (
       <div className="wrapper">
         <div className="asideSection ">
@@ -24,11 +38,11 @@ class Main extends Component {
             <AsideMenuItem>Obiekty</AsideMenuItem>
             <AsideMenuItem>Cennik</AsideMenuItem>
           </div>
-          <Divider variant="middle" />
+          <DividerColor />
           <div>
             <AsideCard />
           </div>
-          <Divider variant="middle" />
+          <DividerColor />
           <div>
             <AsideCard />
           </div>

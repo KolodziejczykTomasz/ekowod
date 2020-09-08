@@ -6,7 +6,7 @@ const BreakeStartSection = ({ children }) => (
   <div id="wrapperBreakeLine">
     <div id="wrapperItemLeft">
       <div id="breakeLine">
-        <hr style={{ borderTop: '1px solid #1680BC' }} />
+        <hr style={{ borderTop: '1.5px solid #1680BC' }} />
       </div>
     </div>
     <div id="wrapperItemCentral">
@@ -14,7 +14,7 @@ const BreakeStartSection = ({ children }) => (
     </div>
     <div id="wrapperItemRight">
       <div id="breakeLine">
-        <hr style={{ borderTop: '1px solid #1680BC' }} />
+        <hr style={{ borderTop: '1.5px solid #1680BC' }} />
       </div>
     </div>
   </div>

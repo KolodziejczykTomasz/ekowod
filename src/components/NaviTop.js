@@ -27,8 +27,10 @@ const NaviTop = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md" fixed="top" id="navbar">
-        <NavbarBrand href="/">
-          <img src={BrandLogo} alt="Brand Logo" width="100" height="28" id="brandLogo" />
+        <NavbarBrand>
+          <Link to="/">
+            <img src={BrandLogo} alt="Brand Logo" width="100" height="28" id="brandLogo" />
+          </Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
