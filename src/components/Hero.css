@@ -12,8 +12,9 @@
   height: 600px;
 }
 
-.title {
+#title {
   text-transform: uppercase;
+  font-weight: 600;
   color: white;
 }
 

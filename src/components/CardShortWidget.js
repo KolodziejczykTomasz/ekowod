@@ -9,6 +9,11 @@ import Water from 'assets/images/water.jpg';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    transition: '1s',
+    '&:hover': {
+      scale: 1.1,
+      zIndex: 9999,        
+    },
   },
   paper: {
     padding: theme.spacing(2),

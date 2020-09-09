@@ -4,7 +4,7 @@
   grid-template-columns: 20% auto;
   grid-column-gap: 1rem;
   max-width: 1250px;
-  margin: 0 auto;  
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -30,12 +30,12 @@
   width: 100%;
 }
 
-.asideMenu{
-  margin: .5rem auto;
+.asideMenu {
+  margin: 0.5rem auto;
   width: 100%;
 }
 
-.menuHeader{
+.menuHeader {
   width: auto;
 }
 
@@ -47,9 +47,10 @@
 }
 
 #cardShortWidget {
-   display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   column-gap: 4px;
   row-gap: 8px;
 }
+
