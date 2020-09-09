@@ -7,22 +7,13 @@ import {
   HomeOutlined,
   ChevronRightSharp,
 } from '@material-ui/icons';
-import Divider from '@material-ui/core/Divider';
 import BrandLogo from 'assets/images/logo.svg';
 import 'components/Footer.css';
-import { styled } from '@material-ui/core/styles';
 
-const DividerColor = styled(Divider)({
-  backgroundColor: '#1680BC',
-  width: '80%',
-  margin: '20px auto',
-  height: '1.5px',
-});
 
 
 const Footer = () => (
-  <div className="wrapperFooter">
-    <DividerColor />
+  <div className="wrapperFooter">    
     <div className="wrapperWidget">
       <div className="widgetLeft">
         <img className="footerPhoto" src={BrandLogo} alt="Logo" />

@@ -10,6 +10,8 @@ import AsideCard from 'components/AsideCard';
 import CardShortWidget from 'components/CardShortWidget';
 import { styled } from '@material-ui/core/styles';
 
+
+
 const DividerColor = styled(Divider)({
   backgroundColor: '#1680BC',
   width: '60%',
@@ -19,7 +21,7 @@ const DividerColor = styled(Divider)({
 
 class Main extends Component {
   render() {
-    return (
+    return ( 
       <div className="wrapper">
         <div className="asideSection ">
           <div className="asideMenu">
@@ -69,7 +71,7 @@ class Main extends Component {
             <CardWidget />
           </div>
         </div>
-      </div>
+      </div>    
     );
   }
 }

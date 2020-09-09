@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     transition: '1s',
     '&:hover': {
       scale: 1.1,
-      zIndex: 9999,        
+      zIndex: 9999,
     },
   },
   paper: {
@@ -56,8 +56,8 @@ export default function CardShortWidget() {
                 <Typography variant="body2" color="textSecondary">
                   ID: 1030114
                 </Typography>
-              </Grid>              
-            </Grid>            
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Paper>
