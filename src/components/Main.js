@@ -10,8 +10,6 @@ import AsideCard from 'components/AsideCard';
 import CardShortWidget from 'components/CardShortWidget';
 import { styled } from '@material-ui/core/styles';
 
-
-
 const DividerColor = styled(Divider)({
   backgroundColor: '#1680BC',
   width: '60%',
@@ -21,7 +19,7 @@ const DividerColor = styled(Divider)({
 
 class Main extends Component {
   render() {
-    return ( 
+    return (
       <div className="wrapper">
         <div className="asideSection ">
           <div className="asideMenu">
@@ -45,24 +43,12 @@ class Main extends Component {
         <div className="mainSection">
           <BreakeStartSection>Aktualności</BreakeStartSection>
           <div id="cardShortWidget">
-            <div id="cardShortWidgetItem">
-              <CardShortWidget />
-            </div>
-            <div id="cardShortWidgetItem">
-              <CardShortWidget />
-            </div>
-            <div id="cardShortWidgetItem">
-              <CardShortWidget />
-            </div>
-            <div id="cardShortWidgetItem">
-              <CardShortWidget />
-            </div>
-            <div id="cardShortWidgetItem">
-              <CardShortWidget />
-            </div>
-            <div id="cardShortWidgetItem">
-              <CardShortWidget />
-            </div>
+            <CardShortWidget />
+            <CardShortWidget />
+            <CardShortWidget />
+            <CardShortWidget />
+            <CardShortWidget />
+            <CardShortWidget />
           </div>
           <BreakeStartSection>Usługi</BreakeStartSection>
           <div id="cardWidget">
@@ -71,7 +57,7 @@ class Main extends Component {
             <CardWidget />
           </div>
         </div>
-      </div>    
+      </div>
     );
   }
 }

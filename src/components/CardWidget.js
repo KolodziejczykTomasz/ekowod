@@ -25,6 +25,13 @@ const useStyles = makeStyles((theme) => ({
       scale: 1.1,
       zIndex: 9999,
     },
+    [theme.breakpoints.down('sm')]: {
+      padding: '0 2px',
+      maxWidth: "100%",
+      '&:hover': {
+        scale: 1.0,
+      },
+    },
   },
   media: {
     height: 0,

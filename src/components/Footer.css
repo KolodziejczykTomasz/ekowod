@@ -2,9 +2,14 @@
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1250px;
-  margin: 80px auto 0 auto; 
-  background: rgb(218,218,218);
-background: linear-gradient(0deg, rgba(218,218,218,1) 0%, rgba(241,241,241,1) 33%, rgba(255,255,255,1) 100%);
+  margin: 80px auto 0 auto;
+  background: rgb(218, 218, 218);
+  background: linear-gradient(
+    0deg,
+    rgba(218, 218, 218, 1) 0%,
+    rgba(241, 241, 241, 1) 33%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .wrapperWidget {
@@ -12,6 +17,8 @@ background: linear-gradient(0deg, rgba(218,218,218,1) 0%, rgba(241,241,241,1) 33
   grid-template-rows: 1fr;
   grid-template-columns: 30% 40% 30%;
 }
+
+
 
 .widgetLeft {
   display: flex;
@@ -48,6 +55,7 @@ background: linear-gradient(0deg, rgba(218,218,218,1) 0%, rgba(241,241,241,1) 33
 .copyrightTitle {
   text-align: center;
   margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 .copyrightSubtitle {
@@ -56,15 +64,14 @@ background: linear-gradient(0deg, rgba(218,218,218,1) 0%, rgba(241,241,241,1) 33
 
 .widgetBottom {
   height: auto;
-  
 }
 
 .widgetBottomText {
   text-align: right;
   text-transform: uppercase;
-  font-size: .9rem;
-  padding-right: 0.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  padding-right: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .widgetTitle {
@@ -74,21 +81,32 @@ background: linear-gradient(0deg, rgba(218,218,218,1) 0%, rgba(241,241,241,1) 33
   height: 3rem;
 }
 
-
 .widgetIcon {
   margin: 0.2rem 0.5rem 0 0;
-  padding-top: 5px;  
-  color:#1680BC;
+  padding-top: 5px;
+  color: #1680bc;
   font-size: 12px;
 }
 
 .widgetIconSpan {
   display: inline-block;
   align-items: flex-start;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
   margin-top: -20px;
 }
 
 .widgetListItem {
-  margin: .4rem 0;
+  margin: 0.4rem 0;
+}
+
+
+@media (max-width: 600px) {
+  .wrapperWidget {
+    grid-template-columns: 1fr;
+    row-gap: 8px;  
+  }
+  .widgetCenter, .widgetRight, .widgetBottomText{
+    text-align: center;
+  }
+  
 }

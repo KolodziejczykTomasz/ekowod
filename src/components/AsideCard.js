@@ -9,14 +9,18 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Water from 'assets/images/water.jpg';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme)=>({
   root: {
     maxWidth: 345,
+    [theme.breakpoints.down('sm')]: {
+      padding: '0 2px',
+      maxWidth: "100%",      
+    }  
   },
   media: {
     height: 140,
   },
-});
+}));
 
 export default function AsideCard() {
   const classes = useStyles();

@@ -40,7 +40,7 @@ export default function CardSimpleWidget() {
                     adjective
         </Typography>
                 <Typography variant="body2" component="p">
-                    well meaning and kindly.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora error animi quam, inventore odio illum eius nostrum neque natus debitis?
           <br />
                     {'"a benevolent smile"'}
                 </Typography>
