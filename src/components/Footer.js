@@ -7,13 +7,21 @@ import {
   HomeOutlined,
   ChevronRightSharp,
 } from '@material-ui/icons';
+import Divider from '@material-ui/core/Divider';
 import BrandLogo from 'assets/images/logo.svg';
 import 'components/Footer.css';
+import { styled } from '@material-ui/core/styles';
 
-
+const DividerColor = styled(Divider)({
+  backgroundColor: '#1680BC',
+  width: '80%',
+  margin: '20px auto',
+  height: '1.5px',
+});
 
 const Footer = () => (
-  <div className="wrapperFooter">    
+  <div className="wrapperFooter">
+    <DividerColor />
     <div className="wrapperWidget">
       <div className="widgetLeft">
         <img className="footerPhoto" src={BrandLogo} alt="Logo" />
@@ -22,9 +30,7 @@ const Footer = () => (
         <p className="widgetTitle">Dane kontaktowe</p>
         <ul>
           <li className="widgetListItem">
-            <HomeOutlined className="widgetIcon" 
-            style={{ fontSize: 30, marginTop: '-7px' }} 
-            />
+            <HomeOutlined className="widgetIcon" style={{ fontSize: 30, marginTop: '-7px' }} />
             <span className="widgetIconSpan">EKOWOD</span>
           </li>
           <li className="widgetListItem">
@@ -35,10 +41,7 @@ const Footer = () => (
             <span className="widgetIconSpan">897670000</span>
           </li>
           <li className="widgetListItem">
-            <PinDropOutlined
-              className="widgetIcon"
-              style={{ fontSize: 30, marginTop: '-5px' }}
-            />
+            <PinDropOutlined className="widgetIcon" style={{ fontSize: 30, marginTop: '-5px' }} />
             <span className="widgetIconSpan">ul. Olsztyńska, 11-100 Lidzbark Warmiński</span>
           </li>
           <li className="widgetListItem">
