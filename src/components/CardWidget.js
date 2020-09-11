@@ -23,19 +23,28 @@ const useStyles = makeStyles((theme) => ({
     transition: '1s',
     '&:hover': {
       scale: 1.1,
-      zIndex: 9999,
     },
     [theme.breakpoints.down('sm')]: {
-      padding: '0 2px',
-      maxWidth: "100%",
+      padding: '0 15px',
+      maxWidth: '100%',
       '&:hover': {
         scale: 1.0,
       },
-    },
+    },   
   },
   media: {
     height: 0,
     paddingTop: '56.25%',
+    [theme.breakpoints.down('lg')]: {
+      height: 0,
+      paddingTop: '56.25%',
+      marginLeft: '15px',
+    },
+    [theme.breakpoints.down('md')]: {
+      height: 0,
+      paddingTop: '56.25%',
+      marginLeft: '15px',
+    },
   },
   expand: {
     transform: 'rotate(0deg)',

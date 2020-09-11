@@ -14,19 +14,24 @@
   }
 }
 
+@media (max-width: 960px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
 .mainSection {
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto;
   grid-row-gap: 0.5rem;
 }
 
 .asideSection {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
-  grid-column-gap: 0.5rem;
-  grid-row-gap: 0.5rem;
   width: 100%;
 }
 
@@ -41,28 +46,81 @@
 
 #cardWidget {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
   column-gap: 4px;
 }
 
-
 #cardShortWidget {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   column-gap: 4px;
   row-gap: 8px;
 }
 
-
-@media (max-width: 600px) {
+@media (min-width: 1281px) {
   #cardWidget {
-    grid-template-columns: 1fr;
-    row-gap: 8px;  
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 8px;
   }
   #cardShortWidget {
-    grid-template-columns: 1fr;    
-    row-gap: 8px;  
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8px;
+  }
+  .asideMenu {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #cardWidget {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 8px;
+  }
+  #cardShortWidget {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8px;
+  }
+  .asideMenu {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #cardWidget {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 8px;
+  }
+  #cardShortWidget {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8px;
+  }
+  .asideMenu {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #cardWidget {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+  #cardShortWidget {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+  .asideMenu {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  #cardWidget {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+  #cardShortWidget {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+  .asideMenu {
+    padding: 0 15px;
   }
 }

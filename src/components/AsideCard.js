@@ -13,9 +13,13 @@ const useStyles = makeStyles((theme)=>({
   root: {
     maxWidth: 345,
     [theme.breakpoints.down('sm')]: {
-      padding: '0 2px',
+      padding: '0 15px',
       maxWidth: "100%",      
-    }  
+    },  
+    [theme.breakpoints.down('lg')]: {
+  padding: '0 15px',
+  maxWidth: "100%",
+}  
   },
   media: {
     height: 140,

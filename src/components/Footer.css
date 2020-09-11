@@ -18,8 +18,6 @@
   grid-template-columns: 30% 40% 30%;
 }
 
-
-
 .widgetLeft {
   display: flex;
   align-items: center;
@@ -99,14 +97,36 @@
   margin: 0.4rem 0;
 }
 
+@media (max-width: 960px) {
+  .wrapperWidget {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+  .widgetCenter,
+  .widgetRight,
+  .widgetBottomText {
+    text-align: center;
+  }
+  .widgetLeft {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+  }
+}
 
 @media (max-width: 600px) {
   .wrapperWidget {
     grid-template-columns: 1fr;
-    row-gap: 8px;  
+    row-gap: 8px;
   }
-  .widgetCenter, .widgetRight, .widgetBottomText{
+  .widgetCenter,
+  .widgetRight,
+  .widgetBottomText {
     text-align: center;
   }
-  
+  .widgetLeft {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
 }

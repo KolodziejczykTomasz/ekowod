@@ -6,9 +6,13 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme)=>({
     root: {
         width: '100%',
+        [theme.breakpoints.down('sm')]: {
+            padding: '0 15px',
+            maxWidth: "100%",           
+        },
     },
     bullet: {
         display: 'inline-block',
@@ -21,7 +25,7 @@ const useStyles = makeStyles({
     pos: {
         marginBottom: 12,
     },
-});
+}));
 
 export default function CardSimpleWidget() {
     const classes = useStyles();
