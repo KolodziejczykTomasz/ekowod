@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
+import { styled } from '@material-ui/core/styles';
 import 'components/Main.css';
 import 'bulma/css/bulma.css';
 import Divider from '@material-ui/core/Divider';
@@ -8,7 +9,8 @@ import CardSimpleWidget from 'components/CardSimpleWidget';
 import CardWidget from 'components/CardWidget';
 import AsideCard from 'components/AsideCard';
 import CardShortWidget from 'components/CardShortWidget';
-import { styled } from '@material-ui/core/styles';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const DividerColor = styled(Divider)({
   backgroundColor: '#1680BC',
@@ -17,49 +19,50 @@ const DividerColor = styled(Divider)({
   height: '1.5px',
 });
 
-class Main extends Component {
-  render() {
-    return (
-      <div className="wrapper">
-        <div className="asideSection ">
-          <div className="asideMenu">
-            <div className="menuHeader">
-              <div className="wrapperAsideMenuHeader">Strefa klienta</div>
-            </div>
-            <AsideMenuItem>Klient</AsideMenuItem>
-            <AsideMenuItem>Kontakt</AsideMenuItem>
-            <AsideMenuItem>Obiekty</AsideMenuItem>
-            <AsideMenuItem>Cennik</AsideMenuItem>
+const Main = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+  return (
+    <div className="wrapper">
+      <div className="asideSection ">
+        <div className="asideMenu">
+          <div className="menuHeader">
+            <div className="wrapperAsideMenuHeader">Strefa klienta</div>
           </div>
-          <DividerColor />
-          <div>
-            <AsideCard />
-          </div>
-          <DividerColor />
-          <div>
-            <CardSimpleWidget />
-          </div>
+          <AsideMenuItem>Klient</AsideMenuItem>
+          <AsideMenuItem>Kontakt</AsideMenuItem>
+          <AsideMenuItem>Obiekty</AsideMenuItem>
+          <AsideMenuItem>Cennik</AsideMenuItem>
         </div>
-        <div className="mainSection">
-          <BreakeStartSection>Aktualności</BreakeStartSection>
-          <div id="cardShortWidget">
-            <CardShortWidget />
-            <CardShortWidget />
-            <CardShortWidget />
-            <CardShortWidget />
-            <CardShortWidget />
-            <CardShortWidget />
-          </div>
-          <BreakeStartSection>Usługi</BreakeStartSection>
-          <div id="cardWidget">
-            <CardWidget />
-            <CardWidget />
-            <CardWidget />
-          </div>
+        <DividerColor />
+        <div>
+          <AsideCard />
+        </div>
+        <DividerColor />
+        <div>
+          <CardSimpleWidget />
         </div>
       </div>
-    );
-  }
-}
+      <div className="mainSection">
+        <BreakeStartSection>Aktualności</BreakeStartSection>
+        <div id="cardShortWidget" data-aos="fade-up">
+          <CardShortWidget />
+          <CardShortWidget />
+          <CardShortWidget />
+          <CardShortWidget />
+          <CardShortWidget />
+          <CardShortWidget />
+        </div>
+        <BreakeStartSection>Usługi</BreakeStartSection>
+        <div id="cardWidget" data-aos="fade-up">
+          <CardWidget />
+          <CardWidget />
+          <CardWidget />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Main;

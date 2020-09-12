@@ -47,12 +47,14 @@
 #cardWidget {
   display: grid;
   column-gap: 4px;
+  cursor: pointer;
 }
 
 #cardShortWidget {
   display: grid;
   column-gap: 4px;
   row-gap: 8px;
+  cursor: pointer;
 }
 
 @media (min-width: 1281px) {
@@ -61,7 +63,7 @@
     row-gap: 8px;
   }
   #cardShortWidget {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 8px;
   }
   .asideMenu {

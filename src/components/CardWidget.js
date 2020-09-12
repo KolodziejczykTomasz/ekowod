@@ -20,15 +20,15 @@ import Water from 'assets/images/water.jpg';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
-    transition: '1s',
+    transition: '1s',    
     '&:hover': {
-      scale: 1.1,
+      scale: 1.01,
     },
     [theme.breakpoints.down('sm')]: {
       padding: '0 15px',
       maxWidth: '100%',
       '&:hover': {
-        scale: 1.0,
+        scale: 1.01,
       },
     },   
   },

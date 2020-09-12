@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
       padding: '0 0',
       width: '100%',
       '&:hover': {
-        scale: 1.0,
+        scale: 1.01,
       },
     },
     [theme.breakpoints.down('lg')]: {
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
       padding: '0 0',
       width: '100%',
       '&:hover': {
-        scale: 1.0,
+        scale: 1.01,
       },
     },
   },
