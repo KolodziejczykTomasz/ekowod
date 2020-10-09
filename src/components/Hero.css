@@ -10,6 +10,7 @@
   background: url('../assets/images/hero.jpg') fixed;
   background-position: center;
   height: 600px;
+  margin-top: 140px;
 }
 
 #title {
