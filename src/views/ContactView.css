@@ -1,0 +1,27 @@
+.contactTitle{
+    margin-left: -50px;
+}
+
+.wrapperContact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.wrapperContactSubtitle {
+  margin: 30px auto 30px auto;
+}
+
+.wrapperContactAccident {
+  margin-top: 80px;
+}
+.wrapperContactAddress {
+  align-self: center;
+}
+
+.wrapperContactAddressItem {
+  display: block;
+  margin-bottom: 20px;
+}
+.wrapperContactMap {
+  width: 100%;
+}

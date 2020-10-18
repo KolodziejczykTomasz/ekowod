@@ -38,22 +38,22 @@ const Footer = () => (
               className="widgetIcon"
               style={{ fontSize: 30, marginTop: '-5px' }}
             />
-            <span className="widgetIconSpan">897670000</span>
+            <span className="widgetIconSpan">89 764 20 26</span>
           </li>
           <li className="widgetListItem">
             <PinDropOutlined className="widgetIcon" style={{ fontSize: 30, marginTop: '-5px' }} />
-            <span className="widgetIconSpan">ul. Olsztyńska, 11-100 Lidzbark Warmiński</span>
+            <span className="widgetIconSpan">ul. Olsztyńska 10D, 11-100 Lidzbark Warmiński</span>
           </li>
           <li className="widgetListItem">
             <PhoneAndroidOutlined
               className="widgetIcon"
               style={{ fontSize: 30, marginTop: '-5px' }}
             />
-            <span className="widgetIconSpan">+48 123 456 789</span>
+            <span className="widgetIconSpan">+48 607 302 362</span>
           </li>
           <li className="widgetListItem">
             <EmailOutlined className="widgetIcon" style={{ fontSize: 30, marginTop: '-5px' }} />
-            <span className="widgetIconSpan">mail@gmail.com</span>
+            <span className="widgetIconSpan">biuro@ekowod-lidzbark.pl</span>
           </li>
         </ul>
       </div>
