@@ -1,11 +1,7 @@
-#breakeLine {
-  width: 90%;
-  margin: 5px auto 5px auto;
-}
-
 #wrapperBreakeLine {
   display: grid;
   margin: 40px 0 30px 0;
+  height: 80px;
 }
 
 #wrapperItemLeft {
@@ -13,6 +9,7 @@
   grid-column-end: 6;
   margin: 5px 0;
 }
+
 
 #wrapperItemCentral {
   grid-column-start: 6;
