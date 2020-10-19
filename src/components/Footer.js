@@ -1,7 +1,6 @@
 import React from 'react';
 import {
-  EmailOutlined,
-  PhoneAndroidOutlined,
+  EmailOutlined, 
   PinDropOutlined,
   LocalPhoneOutlined,
   HomeOutlined,
@@ -44,13 +43,7 @@ const Footer = () => (
             <PinDropOutlined className="widgetIcon" style={{ fontSize: 30, marginTop: '-5px' }} />
             <span className="widgetIconSpan">ul. Olsztyńska 10D, 11-100 Lidzbark Warmiński</span>
           </li>
-          <li className="widgetListItem">
-            <PhoneAndroidOutlined
-              className="widgetIcon"
-              style={{ fontSize: 30, marginTop: '-5px' }}
-            />
-            <span className="widgetIconSpan">+48 607 302 362</span>
-          </li>
+          
           <li className="widgetListItem">
             <EmailOutlined className="widgetIcon" style={{ fontSize: 30, marginTop: '-5px' }} />
             <span className="widgetIconSpan">biuro@ekowod-lidzbark.pl</span>

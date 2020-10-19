@@ -56,28 +56,69 @@ const NaviTop = (props) => {
                 </Link>
               </NavLink>
             </NavItem>
+
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav id="buttonLinkMore">
                 Obiekty
                 <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>
-                  <Link to="/" id="buttonLink">
-                    Option 1
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link to="/" id="buttonLink">
-                    Option 2
-                  </Link>
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  <Link to="/" id="buttonLink">
-                    Reset
-                  </Link>
-                </DropdownItem>
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav id="buttonLinkMore">
+                    Oczyszczalnie ścieków
+                    <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
+                  </DropdownToggle>
+                  <DropdownMenu right>
+                    <DropdownItem>               
+                      <Link to="/" id="buttonLink">
+                        Lidzbark Warmiński
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem>                   
+                      <Link to="/" id="buttonLink">
+                        Górowo Iławeckie
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem>                   
+                      <Link to="/" id="buttonLink">
+                        Lubomino
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem>                     
+                      <Link to="/" id="buttonLink">
+                        Kolno
+                      </Link>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav id="buttonLinkMore">
+                    Hydrofornie
+                    <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
+                  </DropdownToggle>
+                  <DropdownMenu right>
+                    <DropdownItem>                     
+                      <Link to="/" id="buttonLink">
+                        Kolno
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem>                    
+                      <Link to="/" id="buttonLink">
+                        Lubomino
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem>                    
+                      <Link to="/" id="buttonLink">
+                        Górowo Iławeckie
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem>                     
+                      <Link to="/" id="buttonLink">
+                        Lidzbark Warmiński
+                      </Link>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
