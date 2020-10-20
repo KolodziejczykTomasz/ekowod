@@ -1,0 +1,18 @@
+.asideMenu {
+  margin: 0.5rem auto;
+  width: 100%;
+}
+
+.menuHeader {
+  width: auto;
+}
+
+
+#buttonNaviAside{
+    color: white;
+    text-decoration: none;
+}
+
+#buttonNaviAside:hover {
+    color: grey;
+}

@@ -69,22 +69,22 @@ const NaviTop = (props) => {
                     <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
                   </DropdownToggle>
                   <DropdownMenu right>
-                    <DropdownItem>               
+                    <DropdownItem>
                       <Link to="/" id="buttonLink">
                         Lidzbark Warmiński
                       </Link>
                     </DropdownItem>
-                    <DropdownItem>                   
+                    <DropdownItem>
                       <Link to="/" id="buttonLink">
                         Górowo Iławeckie
                       </Link>
                     </DropdownItem>
-                    <DropdownItem>                   
+                    <DropdownItem>
                       <Link to="/" id="buttonLink">
                         Lubomino
                       </Link>
                     </DropdownItem>
-                    <DropdownItem>                     
+                    <DropdownItem>
                       <Link to="/" id="buttonLink">
                         Kolno
                       </Link>
@@ -97,23 +97,23 @@ const NaviTop = (props) => {
                     <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
                   </DropdownToggle>
                   <DropdownMenu right>
-                    <DropdownItem>                     
+                    <DropdownItem>
                       <Link to="/" id="buttonLink">
                         Kolno
                       </Link>
                     </DropdownItem>
-                    <DropdownItem>                    
+                    <DropdownItem>
                       <Link to="/" id="buttonLink">
                         Lubomino
                       </Link>
                     </DropdownItem>
-                    <DropdownItem>                    
-                      <Link to="/" id="buttonLink">
+                    <DropdownItem>
+                      <Link to="/hydrogi" id="buttonLink">
                         Górowo Iławeckie
                       </Link>
                     </DropdownItem>
-                    <DropdownItem>                     
-                      <Link to="/" id="buttonLink">
+                    <DropdownItem>
+                      <Link to="/hydrolw" id="buttonLink">
                         Lidzbark Warmiński
                       </Link>
                     </DropdownItem>

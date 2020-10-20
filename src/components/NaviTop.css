@@ -43,10 +43,7 @@
     top: -15px;
     margin-left: 100%;
   }
-  .dropdown-trigger button::after{     
-      content: '⦠'
-    }
-
+  
     button {
       padding: 0px 0px;
       border: 0px;

@@ -1,14 +1,14 @@
 import React from 'react';
 import { styled } from '@material-ui/core/styles';
-import 'components/Main.css';
-import 'bulma/css/bulma.css';
 import Divider from '@material-ui/core/Divider';
 import BreakeStartSection from 'components/BreakeStartSection';
-import AsideMenuItem from 'components/AsideMenuItem';
 import CardSimpleWidget from 'components/CardSimpleWidget';
 import AsideCard from 'components/AsideCard';
+import NaviAside from './NaviAside';
 
-import './MainTariff.css';
+import 'aos/dist/aos.css';
+import 'components/MainTariff.css';
+import 'bulma/css/bulma.css';
 
 const DividerColor = styled(Divider)({
   backgroundColor: '#1680BC',
@@ -17,19 +17,11 @@ const DividerColor = styled(Divider)({
   height: '1.5px',
 });
 
-const Main = () => {
+const MainTariff = () => {
   return (
     <div className="wrapper">
       <div className="asideSection ">
-        <div className="asideMenu">
-          <div className="menuHeader">
-            <div className="wrapperAsideMenuHeader">Strefa klienta</div>
-          </div>
-          <AsideMenuItem>Klient</AsideMenuItem>
-          <AsideMenuItem>Kontakt</AsideMenuItem>
-          <AsideMenuItem>Obiekty</AsideMenuItem>
-          <AsideMenuItem>Cennik</AsideMenuItem>
-        </div>
+        <NaviAside />
         <DividerColor />
         <div>
           <AsideCard />
@@ -122,4 +114,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainTariff;
