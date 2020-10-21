@@ -60,8 +60,27 @@
   text-align: center;
 }
 
-.widgetBottom {
-  height: auto;
+
+
+#widgetBottom {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  width: 100%;
+}
+
+#widgetBottomLeft{
+justify-self: start;
+margin-left: 15px;
+}
+
+#widgetBottomRight{
+justify-self: end;
+margin-right: 15px;
+}
+
+#greyText {
+  color: #818181;
+  font-size: small;
 }
 
 .widgetBottomText {
@@ -95,6 +114,16 @@
 
 .widgetListItem {
   margin: 0.4rem 0;
+}
+
+#linkFooter {
+  color: black;
+  text-decoration: none;
+}
+
+#linkFooter:hover {
+  color: #1680bc;
+  
 }
 
 @media (max-width: 960px) {

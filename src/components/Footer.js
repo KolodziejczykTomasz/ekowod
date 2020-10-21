@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  EmailOutlined, 
+  EmailOutlined,
   PinDropOutlined,
   LocalPhoneOutlined,
   HomeOutlined,
@@ -10,6 +10,7 @@ import Divider from '@material-ui/core/Divider';
 import BrandLogo from 'assets/images/logo.svg';
 import 'components/Footer.css';
 import { styled } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 
 const DividerColor = styled(Divider)({
   backgroundColor: '#1680BC',
@@ -43,7 +44,7 @@ const Footer = () => (
             <PinDropOutlined className="widgetIcon" style={{ fontSize: 30, marginTop: '-5px' }} />
             <span className="widgetIconSpan">ul. Olsztyńska 10D, 11-100 Lidzbark Warmiński</span>
           </li>
-          
+
           <li className="widgetListItem">
             <EmailOutlined className="widgetIcon" style={{ fontSize: 30, marginTop: '-5px' }} />
             <span className="widgetIconSpan">biuro@ekowod-lidzbark.pl</span>
@@ -61,28 +62,49 @@ const Footer = () => (
                 className="widgetIcon"
                 style={{ fontSize: 30, marginTop: '-5px' }}
               />
-              <span className="widgetIconSpan">Biuletyn Informacji Publicznej</span>
+              <span className="widgetIconSpan">
+                <a
+                  href="http://lidzbarkwarminski-ekowod.bip-wm.pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="linkFooter"
+                >
+                  Biuletyn Informacji Publicznej
+                </a>
+              </span>
             </li>
             <li className="widgetListItem">
               <ChevronRightSharp
                 className="widgetIcon"
                 style={{ fontSize: 30, marginTop: '-5px' }}
               />
-              <span className="widgetIconSpan">Cennik</span>
+              <span className="widgetIconSpan">
+                <Link to="/tariff" id="linkFooter">
+                  Cennik
+                </Link>
+              </span>
             </li>
             <li className="widgetListItem">
               <ChevronRightSharp
                 className="widgetIcon"
                 style={{ fontSize: 30, marginTop: '-5px' }}
               />
-              <span className="widgetIconSpan">Ochrona danych osobowych</span>
+              <span className="widgetIconSpan">
+                <Link to="/rodo" id="linkFooter">
+                  Ochrona danych osobowych
+                </Link>
+              </span>
             </li>
             <li className="widgetListItem">
               <ChevronRightSharp
                 className="widgetIcon"
                 style={{ fontSize: 30, marginTOp: '-5px' }}
               />
-              <span className="widgetIconSpan">Zgłoś awarię</span>
+              <span className="widgetIconSpan">
+                <Link to="/contact" id="linkFooter">
+                  Zgłoś awarię
+                </Link>
+              </span>
             </li>
           </ul>
         </div>
@@ -94,8 +116,19 @@ const Footer = () => (
       </p>
       <p className="copyrightSubtitle">Wszelkie prawa zastrzeżone</p>
     </div>
-    <div className="widgetBottom">
-      <p className="widgetBottomText">Polityka prywatności</p>
+    <div id="widgetBottom">
+      <div id="widgetBottomLeft">
+        <p className="widgetBottomText">
+          <Link to="/cookies" id="linkFooter">
+            Polityka prywatności
+          </Link>
+        </p>
+      </div>
+      <div id="widgetBottomRight">
+        <p>
+          <span id="greyText">Created by ATOM</span>
+        </p>
+      </div>
     </div>
   </div>
 );

@@ -9,6 +9,8 @@ import HydroGiView from 'views/HydroGiView';
 import HydroKolView from 'views/HydroKolView';
 import HydroLubView from 'views/HydroLubView';
 import DownloadView from 'views/DownloadView';
+import RodoView from 'views/RodoView';
+import CookiesView from 'views/CookiesView';
 
 const Root = () => {
   return (
@@ -23,6 +25,8 @@ const Root = () => {
         <Route exact path="/hydrogi" component={HydroGiView} />
         <Route exact path="/hydrolub" component={HydroLubView} />
         <Route exact path="/download" component={DownloadView} />
+        <Route exact path="/rodo" component={RodoView} />
+        <Route exact path="/cookies" component={CookiesView} />
       </Switch>
     </BrowserRouter>
   );

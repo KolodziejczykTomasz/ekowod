@@ -121,12 +121,10 @@ const NaviTop = (props) => {
                 </UncontrolledDropdown>
               </DropdownMenu>
             </UncontrolledDropdown>
-          </Nav>
-          <ButtonToggle id="buttonToggle" color="info">
+          </Nav>          
             <Link to="/contact">
-              awaria
-            </Link>
-          </ButtonToggle>
+              <ButtonToggle id="buttonToggle" color="info">awaria</ButtonToggle>
+            </Link>          
         </Collapse>
       </Navbar>
     </div>
