@@ -12,16 +12,24 @@ const NaviAside = () => (
       <div className="wrapperAsideMenuHeader">Strefa klienta</div>
     </div>
     <AsideMenuItem>
-      <Link to="/" id="buttonNaviAside">Klient</Link>
+      <Link to="/" id="buttonNaviAside">
+        Klient
+      </Link>
     </AsideMenuItem>
     <AsideMenuItem>
-      <Link to="/contact" id="buttonNaviAside">Kontakt</Link>
+      <Link to="/contact" id="buttonNaviAside">
+        Kontakt
+      </Link>
     </AsideMenuItem>
     <AsideMenuItem>
-      <Link to="/" id="buttonNaviAside">Obiekty</Link>
+      <Link to="/tariff" id="buttonNaviAside">
+        Cennik
+      </Link>
     </AsideMenuItem>
     <AsideMenuItem>
-      <Link to="/tariff" id="buttonNaviAside">Cennik</Link>
+      <Link to="/download" id="buttonNaviAside">
+        Do pobrania
+      </Link>
     </AsideMenuItem>
   </div>
 );

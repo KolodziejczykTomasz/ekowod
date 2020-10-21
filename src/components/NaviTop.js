@@ -98,12 +98,12 @@ const NaviTop = (props) => {
                   </DropdownToggle>
                   <DropdownMenu right>
                     <DropdownItem>
-                      <Link to="/" id="buttonLink">
+                      <Link to="/hydrokol" id="buttonLink">
                         Kolno
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/" id="buttonLink">
+                      <Link to="/hydrolub" id="buttonLink">
                         Lubomino
                       </Link>
                     </DropdownItem>
@@ -123,7 +123,9 @@ const NaviTop = (props) => {
             </UncontrolledDropdown>
           </Nav>
           <ButtonToggle id="buttonToggle" color="info">
-            awaria
+            <Link to="/contact">
+              awaria
+            </Link>
           </ButtonToggle>
         </Collapse>
       </Navbar>
