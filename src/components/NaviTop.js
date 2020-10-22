@@ -65,6 +65,34 @@ const NaviTop = (props) => {
               <DropdownMenu right>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav id="buttonLinkMore">
+                    Hydrofornie
+                    <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
+                  </DropdownToggle>
+                  <DropdownMenu right>
+                    <DropdownItem>
+                      <Link to="/hydrolw" id="buttonLink">
+                        Lidzbark Warmiński
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <Link to="/hydrogi" id="buttonLink">
+                        Górowo Iławeckie
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <Link to="/hydrokol" id="buttonLink">
+                        Kolno
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <Link to="/hydrolub" id="buttonLink">
+                        Lubomino
+                      </Link>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav id="buttonLinkMore">
                     Oczyszczalnie ścieków
                     <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
                   </DropdownToggle>
@@ -81,50 +109,24 @@ const NaviTop = (props) => {
                     </DropdownItem>
                     <DropdownItem>
                       <Link to="/" id="buttonLink">
-                        Lubomino
+                        Kolno
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
                       <Link to="/" id="buttonLink">
-                        Kolno
-                      </Link>
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav id="buttonLinkMore">
-                    Hydrofornie
-                    <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
-                  </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem>
-                      <Link to="/hydrokol" id="buttonLink">
-                        Kolno
-                      </Link>
-                    </DropdownItem>
-                    <DropdownItem>
-                      <Link to="/hydrolub" id="buttonLink">
                         Lubomino
-                      </Link>
-                    </DropdownItem>
-                    <DropdownItem>
-                      <Link to="/hydrogi" id="buttonLink">
-                        Górowo Iławeckie
-                      </Link>
-                    </DropdownItem>
-                    <DropdownItem>
-                      <Link to="/hydrolw" id="buttonLink">
-                        Lidzbark Warmiński
                       </Link>
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
               </DropdownMenu>
             </UncontrolledDropdown>
-          </Nav>          
-            <Link to="/contact">
-              <ButtonToggle id="buttonToggle" color="info">awaria</ButtonToggle>
-            </Link>          
+          </Nav>
+          <Link to="/contact">
+            <ButtonToggle id="buttonToggle" color="info">
+              awaria
+            </ButtonToggle>
+          </Link>
         </Collapse>
       </Navbar>
     </div>

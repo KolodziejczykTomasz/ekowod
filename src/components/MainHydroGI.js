@@ -238,6 +238,13 @@ const MainHydroGI = () => {
               <tr>
                 <td>Glądy</td>
               </tr>
+              <tr>
+                <th rowspan="2">Kamińsk</th>
+                <td>Kamińsk</td>
+              </tr>
+              <tr>
+                <td>Paustry</td>
+              </tr>
               <tr></tr>
             </tbody>
           </table>

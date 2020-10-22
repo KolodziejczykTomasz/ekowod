@@ -42,205 +42,155 @@ const MainHydroLW = () => {
               </th>
               <th>
                 <abbr title="Miejscowość">Miejscowość</abbr>
-              </th>
-              <th>
-                <abbr title="Ilość odbiorców">Ilość odbiorców</abbr>
-              </th>
+              </th>             
             </thead>
             <tbody>
               <tr>
                 <th rowspan="7">Rogóż</th>
-                <td>Rogóż</td>
-                <td>139</td>
+                <td>Rogóż</td>             
               </tr>
               <tr>
-                <td>Knipy</td>
-                <td>43</td>
+                <td>Knipy</td>               
               </tr>
               <tr>
-                <td>Marków</td>
-                <td>10</td>
+                <td>Marków</td>             
               </tr>
               <tr>
-                <td>Sarnowo</td>
-                <td>41</td>
+                <td>Sarnowo</td>              
               </tr>
               <tr>
-                <td>Medyny</td>
-                <td>63</td>
+                <td>Medyny</td>             
               </tr>
               <tr>
-                <td>Świętnik</td>
-                <td>17</td>
+                <td>Świętnik</td>              
               </tr>
               <tr>
-                <td>Markajmy</td>
-                <td>46</td>
+                <td>Markajmy</td>              
               </tr>
               <tr>
                 <th rowspan="14">Kraszewo</th>
-                <td>Kraszewo</td>
-                <td>159</td>
+                <td>Kraszewo</td>               
               </tr>
               <tr>
-                <td>Miłogórze</td>
-                <td>84</td>
+                <td>Miłogórze</td>        
               </tr>
               <tr>
-                <td>Nowosady</td>
-                <td>32</td>
+                <td>Nowosady</td>              
               </tr>
               <tr>
-                <td>Kochanówka</td>
-                <td>40</td>
+                <td>Kochanówka</td>             
               </tr>
               <tr>
-                <td>Chełm</td>
-                <td>2</td>
+                <td>Chełm</td>        
               </tr>
               <tr>
-                <td>Stryjkowo</td>
-                <td>44</td>
+                <td>Stryjkowo</td>               
               </tr>
               <tr>
-                <td>Jarandowo</td>
-                <td>42</td>
+                <td>Jarandowo</td>                
               </tr>
               <tr>
-                <td>Wróblik</td>
-                <td>15</td>
+                <td>Wróblik</td>             
               </tr>
               <tr>
-                <td>Łabno</td>
-                <td>21</td>
+                <td>Łabno</td>               
               </tr>
               <tr>
-                <td>Blanki</td>
-                <td>67</td>
+                <td>Blanki</td>             
               </tr>
               <tr>
-                <td>Suryty</td>
-                <td>62</td>
+                <td>Suryty</td>               
               </tr>
               <tr>
-                <td>Kierz</td>
-                <td>15</td>
+                <td>Kierz</td>             
               </tr>
               <tr>
-                <td>Gajlity</td>
-                <td>6</td>
+                <td>Gajlity</td>              
               </tr>
               <tr>
-                <td>Kłębowo</td>
-                <td>76</td>
+                <td>Kłębowo</td>            
               </tr>
               <tr>
                 <th rowspan="9">Babiak</th>
-                <td>Babiak</td>
-                <td>62</td>
+                <td>Babiak</td>               
               </tr>
               <tr>
-                <td>Bugi</td>
-                <td>16</td>
+                <td>Bugi</td>               
               </tr>
               <tr>
-                <td>Kaszuny</td>
-                <td>23</td>
+                <td>Kaszuny</td>              
               </tr>
               <tr>
-                <td>Miejska Wola</td>
-                <td>26</td>
+                <td>Miejska Wola</td>                
               </tr>
               <tr>
-                <td>Krasny Bór</td>
-                <td>2</td>
+                <td>Krasny Bór</td>            
               </tr>
               <tr>
-                <td>Drwęca</td>
-                <td>23</td>
+                <td>Drwęca</td>             
               </tr>
               <tr>
-                <td>Workiejmy</td>
-                <td>16</td>
+                <td>Workiejmy</td>               
               </tr>
               <tr>
-                <td>Stabunity</td>
-                <td>4</td>
+                <td>Stabunity</td>                
               </tr>
               <tr>
-                <td>Zaręby</td>
-                <td>30</td>
+                <td>Zaręby</td>              
               </tr>
               <tr>
                 <th rowspan="9">Runowo</th>
-                <td>Runowo</td>
-                <td>126</td>
+                <td>Runowo</td>                
               </tr>
               <tr>
-                <td>Ignalin</td>
-                <td>74</td>
+                <td>Ignalin</td>                
               </tr>
               <tr>
-                <td>Lauda</td>
-                <td>52</td>
+                <td>Lauda</td>                
               </tr>
               <tr>
-                <td>Pomorowo</td>
-                <td>6</td>
+                <td>Pomorowo</td>              
               </tr>
               <tr>
-                <td>Bobrownik</td>
-                <td>20</td>
+                <td>Bobrownik</td>              
               </tr>
               <tr>
-                <td>Długołęka</td>
-                <td>12</td>
+                <td>Długołęka</td>               
               </tr>
               <tr>
-                <td>Nowa Wieś Wielka</td>
-                <td>35</td>
+                <td>Nowa Wieś Wielka</td>              
               </tr>
               <tr>
-                <td>Widryki</td>
-                <td>15</td>
+                <td>Widryki</td>              
               </tr>
               <tr>
-                <td>Łaniewo</td>
-                <td>122</td>
+                <td>Łaniewo</td>               
               </tr>
               <tr>
                 <th rowspan="5">Morawa</th>
-                <td>Morawa</td>
-                <td>43</td>
+                <td>Morawa</td>           
               </tr>
               <tr>
-                <td>Kotowo</td>
-                <td>12</td>
+                <td>Kotowo</td>               
               </tr>
               <tr>
-                <td>Koniewo</td>
-                <td>56</td>
+                <td>Koniewo</td>                
               </tr>
               <tr>
-                <td>Budniki</td>
-                <td>9</td>
+                <td>Budniki</td>             
               </tr>
               <tr>
-                <td>Żytowo</td>
-                <td>9</td>
+                <td>Żytowo</td>             
               </tr>
               <tr>
                 <th rowspan="3">Redy</th>
-                <td>Redy</td>
-                <td>54</td>
+                <td>Redy</td>                
               </tr>
               <tr>
-                <td>Jagoty</td>
-                <td>19</td>
+                <td>Jagoty</td>                
               </tr>
               <tr>
-                <td>Wielochowo</td>
-                <td>49</td>               
+                <td>Wielochowo</td>                              
               </tr>
               <tr></tr>
             </tbody>

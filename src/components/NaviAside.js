@@ -12,16 +12,6 @@ const NaviAside = () => (
       <div className="wrapperAsideMenuHeader">Strefa klienta</div>
     </div>
     <AsideMenuItem>
-      <Link to="/" id="buttonNaviAside">
-        Klient
-      </Link>
-    </AsideMenuItem>
-    <AsideMenuItem>
-      <Link to="/contact" id="buttonNaviAside">
-        Kontakt
-      </Link>
-    </AsideMenuItem>
-    <AsideMenuItem>
       <Link to="/tariff" id="buttonNaviAside">
         Cennik
       </Link>
@@ -29,6 +19,11 @@ const NaviAside = () => (
     <AsideMenuItem>
       <Link to="/download" id="buttonNaviAside">
         Do pobrania
+      </Link>
+    </AsideMenuItem>
+    <AsideMenuItem>
+      <Link to="/contact" id="buttonNaviAside">
+        Kontakt
       </Link>
     </AsideMenuItem>
   </div>
