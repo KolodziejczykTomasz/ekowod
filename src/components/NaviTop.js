@@ -29,7 +29,7 @@ const NaviTop = (props) => {
       <Navbar color="light" light expand="md" fixed="top" id="navbar">
         <NavbarBrand>
           <Link to="/">
-            <img src={BrandLogo} alt="Brand Logo" width="100" height="28" id="brandLogo" />
+            <img src={BrandLogo} alt="Brand Logo" id="brandLogo" />
           </Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
@@ -98,22 +98,22 @@ const NaviTop = (props) => {
                   </DropdownToggle>
                   <DropdownMenu right>
                     <DropdownItem>
-                      <Link to="/" id="buttonLink">
+                      <Link to="/oczyszczlw" id="buttonLink">
                         Lidzbark Warmiński
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/" id="buttonLink">
+                      <Link to="/oczyszczgi" id="buttonLink">
                         Górowo Iławeckie
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/" id="buttonLink">
+                      <Link to="/oczyszczkol" id="buttonLink">
                         Kolno
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/" id="buttonLink">
+                      <Link to="/oczyszczlub" id="buttonLink">
                         Lubomino
                       </Link>
                     </DropdownItem>

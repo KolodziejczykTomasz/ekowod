@@ -1,16 +1,13 @@
 import React from 'react';
-
 import BreakeStartSection from 'components/BreakeStartSection';
-
 import NaviAside from './NaviAside';
 
 import 'aos/dist/aos.css';
-import 'components/MainHydroKol.css';
+import 'components/MainOczyszczKol.css';
 import 'bulma/css/bulma.css';
 
 
-
-const MainHydroKol = () => {
+const MainOczyszczKol = () => {
   return (
     <div className="wrapper">
       <div className="asideSection ">
@@ -18,12 +15,12 @@ const MainHydroKol = () => {
       </div>
       <div className="mainSection">
         <section>
-          <BreakeStartSection>Hydrofornie - Gmina Kolno</BreakeStartSection>
+          <BreakeStartSection>Oczyszczlanie ścieków - Gmina Kolno</BreakeStartSection>
 
           <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
             <thead>
               <th>
-                <abbr title="Hydrofornia">Hydrofornia</abbr>
+                <abbr title="Oczyszczalnia ścieków">Oczyszczalnia ścieków</abbr>
               </th>
               <th>
                 <abbr title="Miejscowość">Miejscowość</abbr>
@@ -35,57 +32,28 @@ const MainHydroKol = () => {
                 <td>Kolno</td>
               </tr>
               <tr>
-                <th rowspan="3">Samławki</th>
-                <td>Samławki</td>
+                <th>Bęsia</th>
+                <td>Bęsia</td>
               </tr>
               <tr>
-                <td>Kabiny</td>
+                <th rowspan="2">Wólka</th>
+                <td>Wólka</td>
               </tr>
               <tr>
-                <td>Kominki</td>
+                <td>Oterki</td>
               </tr>
               <tr>
                 <th rowspan="4">Lutry</th>
                 <td>Lutry</td>
               </tr>
               <tr>
-                <td>Wągsty</td>
-              </tr>
-              <tr>
-                <td>Wysoka Dąbrowa</td>
-              </tr>
-              <tr>
                 <td>Wójtowo</td>
               </tr>
               <tr>
-                <th rowspan="3">Tejstymy</th>
                 <td>Tejstymy</td>
               </tr>
               <tr>
-                <td>Kruzy</td>
-              </tr>
-              <tr>
                 <td>Górkowo</td>
-              </tr>
-              <tr>
-                <th>Ryn Reszelski</th>
-                <td>Ryn Reszelski</td>
-              </tr>
-              <tr>
-                <th rowspan="5">Bęsia</th>
-                <td>Bęsia</td>
-              </tr>
-              <tr>
-                <td>Górowo</td>
-              </tr>
-              <tr>
-                <td>Oterki</td>
-              </tr>
-              <tr>
-                <td>Wólka</td>
-              </tr>
-              <tr>
-                <td>Otry</td>
               </tr>
               <tr></tr>
             </tbody>
@@ -96,4 +64,4 @@ const MainHydroKol = () => {
   );
 };
 
-export default MainHydroKol;
+export default MainOczyszczKol;

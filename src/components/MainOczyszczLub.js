@@ -3,12 +3,12 @@ import BreakeStartSection from 'components/BreakeStartSection';
 import NaviAside from './NaviAside';
 
 import 'aos/dist/aos.css';
-import 'components/MainHydroLub.css';
+import 'components/MainOczyszczLub.css';
 import 'bulma/css/bulma.css';
 
 
 
-const MainHydroLub = () => {
+const MainOczyszczLub = () => {
   return (
     <div className="wrapper">
       <div className="asideSection ">
@@ -16,12 +16,12 @@ const MainHydroLub = () => {
       </div>
       <div className="mainSection">
         <section>
-          <BreakeStartSection>Hydrofornie - Gmina Lubomino</BreakeStartSection>
+          <BreakeStartSection>Oczyszczlanie ścieków - Gmina Lubomino</BreakeStartSection>
 
           <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
             <thead>
               <th>
-                <abbr title="Hydrofornia">Hydrofornia</abbr>
+                <abbr title="Oczyszczalnia ścieków">Oczyszczalnia ścieków</abbr>
               </th>
               <th>
                 <abbr title="Miejscowość">Miejscowość</abbr>
@@ -33,58 +33,30 @@ const MainHydroLub = () => {
                 <td>Lubomino</td>
               </tr>
               <tr>
-                <td>Karbówka</td>
+                <td>Zagony</td>
               </tr>
               <tr>
-                <th rowspan="4">Wapnik</th>
-                <td>Wapnik</td>
-              </tr>
-              <tr>
+                <th rowspan="2">Biała Wola</th>
                 <td>Biała Wola</td>
               </tr>
               <tr>
-                <td>Świękity</td>
+                <td>Wapnik</td>
               </tr>
               <tr>
-                <td>Wójtowo</td>
+                <th rowspan="5">Ełdyty Wielkie</th>
+                <td>Ełdyty Wielkie</td>
               </tr>
               <tr>
-                <th rowspan="4">Bieniewo</th>
-                <td>Bieniewo</td>
-              </tr>
-              <tr>
-                <td>Wolnica</td>
-              </tr>
-              <tr>
-                <td>Różyn</td>
-              </tr>
-              <tr>
-                <td>Gronowo</td>
-              </tr>
-              <tr>
-                <th rowspan="8">Wilczkowo</th>
-                <td>Wilczkowo</td>
+                <td>Ełdyty Małe</td>
               </tr>
               <tr>
                 <td>Rogiedle</td>
               </tr>
               <tr>
-                <td>Zagony</td>
-              </tr>
-              <tr>
-                <td>Piotrowo</td>
-              </tr>
-              <tr>
-                <td>Samborek</td>
+                <td>Wilczkowo</td>
               </tr>
               <tr>
                 <td>Zajączki</td>
-              </tr>
-              <tr>
-                <td>Ełdyty Wielkie</td>
-              </tr>
-              <tr>
-                <td>Ełdyty Małe</td>
               </tr>
               <tr></tr>
             </tbody>
@@ -95,4 +67,4 @@ const MainHydroLub = () => {
   );
 };
 
-export default MainHydroLub;
+export default MainOczyszczLub;

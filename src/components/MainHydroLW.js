@@ -1,196 +1,179 @@
 import React from 'react';
-import { styled } from '@material-ui/core/styles';
-import Divider from '@material-ui/core/Divider';
 import BreakeStartSection from 'components/BreakeStartSection';
-import CardSimpleWidget from 'components/CardSimpleWidget';
-import AsideCard from 'components/AsideCard';
 import NaviAside from './NaviAside';
 
 import 'aos/dist/aos.css';
 import 'components/MainHydroLW.css';
 import 'bulma/css/bulma.css';
 
-const DividerColor = styled(Divider)({
-  backgroundColor: '#1680BC',
-  width: '60%',
-  margin: '30px auto',
-  height: '1.5px',
-});
+
 
 const MainHydroLW = () => {
   return (
     <div className="wrapper">
       <div className="asideSection ">
         <NaviAside />
-        <DividerColor />
-        <div>
-          <AsideCard />
-        </div>
-        <DividerColor />
-        <div>
-          <CardSimpleWidget />
-        </div>
       </div>
       <div className="mainSection">
         <section>
           <BreakeStartSection>Hydrofornie - Gmina Lidzbark Warmiński</BreakeStartSection>
 
-          <table className="table">
+          <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
             <thead>
               <th>
                 <abbr title="Hydrofornia">Hydrofornia</abbr>
               </th>
               <th>
                 <abbr title="Miejscowość">Miejscowość</abbr>
-              </th>             
+              </th>
             </thead>
             <tbody>
               <tr>
                 <th rowspan="7">Rogóż</th>
-                <td>Rogóż</td>             
+                <td>Rogóż</td>
               </tr>
               <tr>
-                <td>Knipy</td>               
+                <td>Knipy</td>
               </tr>
               <tr>
-                <td>Marków</td>             
+                <td>Marków</td>
               </tr>
               <tr>
-                <td>Sarnowo</td>              
+                <td>Sarnowo</td>
               </tr>
               <tr>
-                <td>Medyny</td>             
+                <td>Medyny</td>
               </tr>
               <tr>
-                <td>Świętnik</td>              
+                <td>Świętnik</td>
               </tr>
               <tr>
-                <td>Markajmy</td>              
+                <td>Markajmy</td>
               </tr>
               <tr>
                 <th rowspan="14">Kraszewo</th>
-                <td>Kraszewo</td>               
+                <td>Kraszewo</td>
               </tr>
               <tr>
-                <td>Miłogórze</td>        
+                <td>Miłogórze</td>
               </tr>
               <tr>
-                <td>Nowosady</td>              
+                <td>Nowosady</td>
               </tr>
               <tr>
-                <td>Kochanówka</td>             
+                <td>Kochanówka</td>
               </tr>
               <tr>
-                <td>Chełm</td>        
+                <td>Chełm</td>
               </tr>
               <tr>
-                <td>Stryjkowo</td>               
+                <td>Stryjkowo</td>
               </tr>
               <tr>
-                <td>Jarandowo</td>                
+                <td>Jarandowo</td>
               </tr>
               <tr>
-                <td>Wróblik</td>             
+                <td>Wróblik</td>
               </tr>
               <tr>
-                <td>Łabno</td>               
+                <td>Łabno</td>
               </tr>
               <tr>
-                <td>Blanki</td>             
+                <td>Blanki</td>
               </tr>
               <tr>
-                <td>Suryty</td>               
+                <td>Suryty</td>
               </tr>
               <tr>
-                <td>Kierz</td>             
+                <td>Kierz</td>
               </tr>
               <tr>
-                <td>Gajlity</td>              
+                <td>Gajlity</td>
               </tr>
               <tr>
-                <td>Kłębowo</td>            
+                <td>Kłębowo</td>
               </tr>
               <tr>
                 <th rowspan="9">Babiak</th>
-                <td>Babiak</td>               
+                <td>Babiak</td>
               </tr>
               <tr>
-                <td>Bugi</td>               
+                <td>Bugi</td>
               </tr>
               <tr>
-                <td>Kaszuny</td>              
+                <td>Kaszuny</td>
               </tr>
               <tr>
-                <td>Miejska Wola</td>                
+                <td>Miejska Wola</td>
               </tr>
               <tr>
-                <td>Krasny Bór</td>            
+                <td>Krasny Bór</td>
               </tr>
               <tr>
-                <td>Drwęca</td>             
+                <td>Drwęca</td>
               </tr>
               <tr>
-                <td>Workiejmy</td>               
+                <td>Workiejmy</td>
               </tr>
               <tr>
-                <td>Stabunity</td>                
+                <td>Stabunity</td>
               </tr>
               <tr>
-                <td>Zaręby</td>              
+                <td>Zaręby</td>
               </tr>
               <tr>
                 <th rowspan="9">Runowo</th>
-                <td>Runowo</td>                
+                <td>Runowo</td>
               </tr>
               <tr>
-                <td>Ignalin</td>                
+                <td>Ignalin</td>
               </tr>
               <tr>
-                <td>Lauda</td>                
+                <td>Lauda</td>
               </tr>
               <tr>
-                <td>Pomorowo</td>              
+                <td>Pomorowo</td>
               </tr>
               <tr>
-                <td>Bobrownik</td>              
+                <td>Bobrownik</td>
               </tr>
               <tr>
-                <td>Długołęka</td>               
+                <td>Długołęka</td>
               </tr>
               <tr>
-                <td>Nowa Wieś Wielka</td>              
+                <td>Nowa Wieś Wielka</td>
               </tr>
               <tr>
-                <td>Widryki</td>              
+                <td>Widryki</td>
               </tr>
               <tr>
-                <td>Łaniewo</td>               
+                <td>Łaniewo</td>
               </tr>
               <tr>
                 <th rowspan="5">Morawa</th>
-                <td>Morawa</td>           
+                <td>Morawa</td>
               </tr>
               <tr>
-                <td>Kotowo</td>               
+                <td>Kotowo</td>
               </tr>
               <tr>
-                <td>Koniewo</td>                
+                <td>Koniewo</td>
               </tr>
               <tr>
-                <td>Budniki</td>             
+                <td>Budniki</td>
               </tr>
               <tr>
-                <td>Żytowo</td>             
+                <td>Żytowo</td>
               </tr>
               <tr>
                 <th rowspan="3">Redy</th>
-                <td>Redy</td>                
+                <td>Redy</td>
               </tr>
               <tr>
-                <td>Jagoty</td>                
+                <td>Jagoty</td>
               </tr>
               <tr>
-                <td>Wielochowo</td>                              
+                <td>Wielochowo</td>
               </tr>
               <tr></tr>
             </tbody>

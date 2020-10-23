@@ -1,0 +1,49 @@
+/*Aside*/
+
+.wrapper {
+  display: grid;
+  margin-bottom: 10rem;
+  grid-template-columns: 20% auto;
+  grid-column-gap: 1rem;
+  max-width: 1250px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 960px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.asideSection {
+  width: 100%;
+}
+
+.asideMenu {
+  margin: 0.5rem auto;
+  width: 100%;
+}
+
+.menuHeader {
+  width: auto;
+}
+
+
+/*Main*/
+.mainSection {
+  display: grid;
+  grid-template-columns: 1fr;
+}

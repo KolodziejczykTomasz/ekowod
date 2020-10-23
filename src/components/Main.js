@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
-import { styled } from '@material-ui/core/styles';
-import Divider from '@material-ui/core/Divider';
 import BreakeStartSection from 'components/BreakeStartSection';
-import CardSimpleWidget from 'components/CardSimpleWidget';
 import CardWidget from 'components/CardWidget';
-import AsideCard from 'components/AsideCard';
 import CardShortWidget from 'components/CardShortWidget';
 import Aos from 'aos';
 import NaviAside from './NaviAside';
@@ -14,14 +10,6 @@ import 'components/Main.css';
 import 'bulma/css/bulma.css';
 
 
-
-const DividerColor = styled(Divider)({
-  backgroundColor: '#1680BC',
-  width: '60%',
-  margin: '30px auto',
-  height: '1.5px',
-});
-
 const Main = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -29,15 +17,7 @@ const Main = () => {
   return (
     <div className="wrapper">
       <div className="asideSection ">
-       <NaviAside />
-        <DividerColor />
-        <div>
-          <AsideCard />
-        </div>
-        <DividerColor />
-        <div>
-          <CardSimpleWidget />
-        </div>
+        <NaviAside />
       </div>
       <div className="mainSection">
         <BreakeStartSection>Aktualności</BreakeStartSection>

@@ -8,6 +8,10 @@ import HydroLwView from 'views/HydroLwView';
 import HydroGiView from 'views/HydroGiView';
 import HydroKolView from 'views/HydroKolView';
 import HydroLubView from 'views/HydroLubView';
+import OczyszczLwView from 'views/OczyszczLwView';
+import OczyszczGiView from 'views/OczyszczGiView';
+import OczyszczKolView from 'views/OczyszczKolView';
+import OczyszczLubView from 'views/OczyszczLubView';
 import DownloadView from 'views/DownloadView';
 import RodoView from 'views/RodoView';
 import CookiesView from 'views/CookiesView';
@@ -27,6 +31,10 @@ const Root = () => {
         <Route exact path="/download" component={DownloadView} />
         <Route exact path="/rodo" component={RodoView} />
         <Route exact path="/cookies" component={CookiesView} />
+        <Route exact path="/oczyszczgi" component={OczyszczGiView} />
+        <Route exact path="/oczyszczlub" component={OczyszczLubView} />
+        <Route exact path="/oczyszczlw" component={OczyszczLwView} />
+        <Route exact path="/oczyszczkol" component={OczyszczKolView} />
       </Switch>
     </BrowserRouter>
   );
