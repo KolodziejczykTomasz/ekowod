@@ -1,4 +1,5 @@
 import React from 'react';
+import { EmailOutlined, LocalPhoneOutlined } from '@material-ui/icons';
 import NaviTop from 'components/NaviTop';
 import Jumbotron from 'components/Jumbotron';
 import Footer from 'components/Footer';
@@ -15,18 +16,32 @@ const ContactView = () => (
         <div className="wrapperContact">
           <div className="wrapperContactAddress">
             <h2 className="wrapperContactSubtitle">Biuro</h2>
-            <div className="wrapperContactAddressItem">biuro@ekowod-lidzbark.pl</div>
-            <div className="wrapperContactAddressItem">tel. 89-764-2026</div>
+            <div className="wrapperContactAddressItem">
+              <EmailOutlined className="widgetIcon" style={{ fontSize: 25, marginTop: '-5px' }} />
+              biuro@ekowod-lidzbark.pl
+            </div>
+            <div className="wrapperContactAddressItem">
+              <LocalPhoneOutlined
+                className="widgetIcon"
+                style={{ fontSize: 25, marginTop: '-5px' }}
+              />{' '}
+              89-764-2026
+            </div>
             <div className="wrapperContactAccident">
               <h2 className="wrapperContactSubtitle">Awarie</h2>
+              <p id="wrapperContactTextenter">
+                W przypadku zauważenia wycieku wody lub innej awarii na sieci lub przyłączu
+                wodociągowym bądź kanalizacyjnym prosimy o pilne zgłoszenie pod następujący numer
+                telefonu:
+              </p>
               <div className="wrapperContactAddressItem">
-                W godzinach 7 - 15 awarie zgłaszamy pod nr 89-764-2026
+                Od poniedziałku do piątku od 7:00 do 15:00 - <strong>89-764-2026</strong>
               </div>
               <div className="wrapperContactAddressItem">
-                Od pon do piątku: 15-20 tel. 607-302-362
+                Od poniedziałku do piątku od 15:00 do 20:00 - <strong>607-302-362</strong>
               </div>
               <div className="wrapperContactAddressItem">
-                Sobota niedziela: 8-20 tel. 607-302-362
+                Sobota i niedziela od 8:00 do 20:00 - <strong>607-302-362</strong>
               </div>
             </div>
           </div>

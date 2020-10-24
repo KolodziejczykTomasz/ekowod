@@ -11,11 +11,16 @@
   margin: 30px auto 30px auto;
 }
 
+#wrapperContactTextenter{
+  text-align: left;
+  margin-bottom: 40px;
+  padding-right: 20px;
+}
 .wrapperContactAccident {
   margin-top: 80px;
 }
 .wrapperContactAddress {
-  align-self: center;
+  align-self: left;
 }
 
 .wrapperContactAddressItem {

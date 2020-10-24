@@ -24,7 +24,7 @@ const MainTariff = () => {
           <table className="table">
             <thead>
               <th>
-                <abbr title="Przedmiot">Przedmiot</abbr>
+                <abbr title="Przedmiot">Usługa</abbr>
               </th>
               <th>
                 <abbr title="inne"></abbr>
@@ -41,28 +41,14 @@ const MainTariff = () => {
             </thead>
             <tbody>
               <tr>
-                <th>Woda</th>
+                <th>Dostawa wody [m3]</th>
                 <td> Wszystkie Gminy</td>
                 <td>3,00zł</td>
                 <td>0,24zł</td>
-                <td>0,24zł</td>
+                <td>3,24zł</td>
               </tr>
               <tr>
-                <th>Opłata abonamentowa</th>
-                <td>Wodomierz:</td>
-                <td>2,59zł</td>
-                <td>0,21zł</td>
-                <td>2,80zł</td>
-              </tr>
-              <tr>
-                <th></th>
-                <td>Ryczałt:</td>
-                <td>2,59zł</td>
-                <td>0,21zł</td>
-                <td>2,80zł</td>
-              </tr>
-              <tr>
-                <th>Ścieki</th>
+                <th>Odprowadzanie ścieków [m3]</th>
                 <td>Gmina Górowo Iławieckie</td>
                 <td>5,39zł</td>
                 <td>0,43zł</td>
@@ -89,6 +75,21 @@ const MainTariff = () => {
                 <td>0,42zł</td>
                 <td>5,69zł</td>
               </tr>
+              <tr>
+                <th>Opłata abonamentowa</th>
+                <td>Wodomierz:</td>
+                <td>2,59zł</td>
+                <td>0,21zł</td>
+                <td>2,80zł</td>
+              </tr>
+              <tr>
+                <th></th>
+                <td>Ryczałt:</td>
+                <td>2,59zł</td>
+                <td>0,21zł</td>
+                <td>2,80zł</td>
+              </tr>
+              <tr></tr>
             </tbody>
           </table>
         </section>

@@ -1,7 +1,7 @@
 .wrapper {
   display: grid;
   margin-bottom: 10rem;
-  grid-template-columns: .4fr .6fr;
+  grid-template-columns: 0.4fr 0.6fr;
   grid-column-gap: 1rem;
   max-width: 1250px;
   margin: 0 auto;
@@ -38,8 +38,7 @@
 }
 
 #cardWidget {
-  display: grid;
-  column-gap: 4px;
+  width: 100%;
   cursor: pointer;
 }
 

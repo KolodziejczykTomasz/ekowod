@@ -7,10 +7,7 @@ import './Main.css';
 import 'bulma/css/bulma.css';
 
 const NaviAside = () => (
-  <div className="asideMenu">
-    <div className="menuHeader">
-      <div className="wrapperAsideMenuHeader">Strefa klienta</div>
-    </div>
+  <div className="asideMenu">    
     <AsideMenuItem>
       <Link to="/tariff" id="buttonNaviAside">
         Cennik

@@ -11,11 +11,11 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  ButtonToggle,
 } from 'reactstrap';
 import { ArrowDropDown } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 import BrandLogo from 'assets/images/logo.svg';
+import BipLogo from 'assets/images/bip.png';
 
 import 'components/NaviTop.css';
 
@@ -122,11 +122,14 @@ const NaviTop = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <Link to="/contact">
-            <ButtonToggle id="buttonToggle" color="info">
-              awaria
-            </ButtonToggle>
-          </Link>
+          <a
+            href="http://lidzbarkwarminski-ekowod.bip-wm.pl"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="linkFooter"
+          >
+            <img src={BipLogo} alt="bip logo" style={{ height: '30px' }} />
+          </a>
         </Collapse>
       </Navbar>
     </div>

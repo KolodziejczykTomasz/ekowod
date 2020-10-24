@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import BreakeStartSection from 'components/BreakeStartSection';
-import CardWidget from 'components/CardWidget';
-import CardShortWidget from 'components/CardShortWidget';
+import WidgetCovid from 'components/widget/news/WidgetCovid';
+import CardShortWidget from 'components/widget/CardShortWidget';
 import Aos from 'aos';
 import NaviAside from './NaviAside';
 
@@ -21,6 +21,12 @@ const Main = () => {
       </div>
       <div className="mainSection">
         <BreakeStartSection>Aktualności</BreakeStartSection>
+        <div id="cardWidget" data-aos="fade-up">
+          <WidgetCovid />
+
+        </div>
+
+        <BreakeStartSection>Usługi</BreakeStartSection>
         <div id="cardShortWidget" data-aos="fade-up">
           <CardShortWidget />
           <CardShortWidget />
@@ -28,12 +34,6 @@ const Main = () => {
           <CardShortWidget />
           <CardShortWidget />
           <CardShortWidget />
-        </div>
-        <BreakeStartSection>Usługi</BreakeStartSection>
-        <div id="cardWidget" data-aos="fade-up">
-          <CardWidget />
-          <CardWidget />
-          <CardWidget />
         </div>
       </div>
     </div>

@@ -10,6 +10,14 @@
   box-sizing: border-box;
 }
 
+#cookiesTitle {
+  font-weight: 600;
+}
+
+#cookiesListNumber {
+  margin-left: 25px;
+}
+
 @media (max-width: 600px) {
   .wrapper {
     grid-template-columns: 1fr;
@@ -40,7 +48,6 @@
 .menuHeader {
   width: auto;
 }
-
 
 /*Main*/
 .mainSection {
