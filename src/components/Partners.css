@@ -1,0 +1,14 @@
+#partnersWrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 80px auto 30px auto;
+}
+
+#partnersWrapperItem{
+    height: 130px;
+}
+
+#partnersWrapperItemPhoto{
+    height: 100%;
+}

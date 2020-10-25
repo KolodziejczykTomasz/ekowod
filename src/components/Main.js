@@ -23,14 +23,11 @@ const Main = () => {
         <BreakeStartSection>Aktualności</BreakeStartSection>
         <div id="cardWidget" data-aos="fade-up">
           <WidgetCovid />
-
+          <WidgetCovid />
         </div>
 
         <BreakeStartSection>Usługi</BreakeStartSection>
         <div id="cardShortWidget" data-aos="fade-up">
-          <CardShortWidget />
-          <CardShortWidget />
-          <CardShortWidget />
           <CardShortWidget />
           <CardShortWidget />
           <CardShortWidget />
