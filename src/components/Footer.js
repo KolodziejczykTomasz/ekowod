@@ -126,7 +126,7 @@ const Footer = () => (
       </div>
       <div id="widgetBottomRight">
         <p>
-          <span id="greyText">Created by NetArt</span>
+          <span id="greyText">Created by NETTOM</span>
         </p>
       </div>
     </div>

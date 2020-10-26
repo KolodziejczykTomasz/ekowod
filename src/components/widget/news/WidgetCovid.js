@@ -5,13 +5,14 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
-import Typography from '@material-ui/core/Typography';
-import Info1 from 'assets/information/kom_12102020.jpg';
+import IconButton from '@material-ui/core/IconButton';
+import News1 from '../../../assets/information/kom_12102020.jpg';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: '100%',
-    height: 'auto',
+    maxWidth: 345,
     transition: '1s',
     '&:hover': {
       scale: 1.01,
@@ -20,30 +21,31 @@ const useStyles = makeStyles((theme) => ({
       padding: '0 15px',
       maxWidth: '100%',
       '&:hover': {
-        scale: 1.01,
+        scale: 1.21,
       },
     },
   },
-
   media: {
-    justifyContent: 'center',
-    height: '100%',
-    width: '90%',
-    paddingTop: '56.25%',
+    height: 400,
+    width: '100%',
+    Top: '56.25%',
+    marginTop: '30px',
     [theme.breakpoints.down('lg')]: {
-      height: 'auto',
-      paddingTop: '56.25%',
-      margin: '10px auto',
+      height: 400,
+      width: '100%',
+      Top: '56.25%', 
+      marginTop: '30px'     
     },
     [theme.breakpoints.down('md')]: {
-      height: 'auto',
-      paddingTop: '56.25%',
-      margin: '10px auto',
+      height: 400,
+      width: '100%',
+      Top: '56.25%', 
+      marginTop: '30px',  
     },
   },
   expand: {
     transform: 'rotate(0deg)',
-    margin: '10px auto',
+    marginLeft: 'auto',
     transition: theme.transitions.create('transform', {
       duration: theme.transitions.duration.shortest,
     }),
@@ -58,6 +60,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function CardWidget() {
   const classes = useStyles();
+
   return (
     <Card className={classes.root}>
       <CardHeader
@@ -66,15 +69,18 @@ export default function CardWidget() {
             I
           </Avatar>
         }
+        action={
+          <IconButton aria-label="settings">
+            <MoreVertIcon />
+          </IconButton>
+        }
         title="Informacja"
         subheader="Październik 12, 2020"
       />
-
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          <CardMedia className={classes.media} image={Info1} title="Informacja COVID" />
-        </Typography>
-      </CardContent>
+      <CardMedia className={classes.media} image={News1} title="Kropla wody" />
+      <CardContent>        
+      </CardContent> 
+    
     </Card>
   );
 }
