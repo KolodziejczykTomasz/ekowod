@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import AsideMenuItem from 'components/AsideMenuItem';
 
-import './NaviAside.css';
+import './NaviAsideVertical.css';
 import './Main.css';
 import 'bulma/css/bulma.css';
 
-const NaviAside = () => (
-  <div id="asideMenu">    
+const NaviAsideVertical = () => (
+  <div className="asideMenu">
     <AsideMenuItem>
       <Link to="/tariff" id="buttonNaviAside">
         Cennik
@@ -26,4 +26,4 @@ const NaviAside = () => (
   </div>
 );
 
-export default NaviAside;
+export default NaviAsideVertical;

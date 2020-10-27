@@ -1,0 +1,15 @@
+.asideMenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  width: 100%;
+}
+
+#buttonNaviAside {
+  color: white;
+  text-decoration: none;  
+}
+
+#buttonNaviAside:hover {
+  color: grey;
+}

@@ -1,55 +1,16 @@
-.wrapper {
+#wrapper {
   display: grid;
-  margin-bottom: 10rem;
-  grid-template-columns: 0.4fr 0.6fr;
-  grid-column-gap: 1rem;
+  grid-template-columns: 1fr;
   max-width: 1250px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
-.wrapperAsideMenuHeader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  margin: 0.5rem 0 0.9rem 0;
-  width: 100%;
-  background-color: #b2ca39;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 1.4rem;
-  letter-spacing: 0.1rem;
-  font-weight: 600;
-  border-radius: 4px;
-}
-
-.asideSection {
-  width: 100%;
-}
-
-.asideMenu {
-  margin: 0.5rem auto;
-  width: 100%;
-}
-
-.menuHeader {
-  width: auto;
+#menuVertical {
+ margin: 30px 0;
 }
 
 #cardWidget {
-
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-#cardShortWidget {
   display: grid;
-  column-gap: 4px;
-  row-gap: 8px;
-  cursor: pointer;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
 }
-
-
-

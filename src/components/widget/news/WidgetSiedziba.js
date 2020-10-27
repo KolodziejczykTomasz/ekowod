@@ -5,8 +5,9 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
-import News1 from 'assets/information/kom_12102020.jpg';
+import Typography from '@material-ui/core/Typography';
 
+import News2 from 'assets/information/kom_2.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,26 +20,22 @@ const useStyles = makeStyles((theme) => ({
       padding: '0 15px',
       maxWidth: '100%',
       '&:hover': {
-        scale: 1.21,
+        scale: 1.01,
       },
     },
   },
   media: {
-    height: 400,
-    width: '100%',
-    Top: '56.25%',
-    marginTop: '30px',
+    height: 0,
+    paddingTop: '56.25%',
     [theme.breakpoints.down('lg')]: {
-      height: 400,
-      width: '100%',
-      Top: '56.25%', 
-      marginTop: '30px'     
+      height: 0,
+      paddingTop: '56.25%',
+      marginLeft: '15px',
     },
     [theme.breakpoints.down('md')]: {
-      height: 400,
-      width: '100%',
-      Top: '56.25%', 
-      marginTop: '30px',  
+      height: 0,
+      paddingTop: '56.25%',
+      marginLeft: '15px',
     },
   },
   expand: {
@@ -56,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CardWidget() {
+export default function WidgetSiedziba() {
   const classes = useStyles();
 
   return (
@@ -64,16 +61,25 @@ export default function CardWidget() {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            I
+            N
           </Avatar>
         }
-        title="Informacja"
-        subheader="Październik 12, 2020"
+        title="Nowa siedziba"
+        subheader="Wrzesień 14, 2020"
       />
-      <CardMedia className={classes.media} image={News1} title="Kropla wody" />
-      <CardContent>        
-      </CardContent> 
-    
+      <CardMedia className={classes.media} image={News2} title="Nowa siedziba" />
+      <CardContent>
+        <Typography paragraph style={{ textAlign: 'center' }}>
+          Uwaga!!!
+        </Typography>
+        <Typography style={{ textAlign: 'justify', hyphens: 'auto' }} paragraph>
+          Zawiadamiamy, że zakończył się remont siedziby Związku Gmin "EKOWOD" i Zakładu Budżetowego
+          Związku Gmin "EKOWOD", zapraszamy do nowej siedziby na ul. Olsztyńską 10D,11-100 Lidzbark
+          Warmiński. Interesantów informujemy, że już nie urzędujemy w budynku Urzędu Gminy w
+          Lidzbarku Warmińskim Za utrudnienia przepraszamy.
+        </Typography>
+        <Typography style={{ textAlign: 'center' }}>Za utrudnienia przepraszamy.</Typography>
+      </CardContent>
     </Card>
   );
 }

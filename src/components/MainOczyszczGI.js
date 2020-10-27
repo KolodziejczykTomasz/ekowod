@@ -6,7 +6,6 @@ import 'aos/dist/aos.css';
 import 'components/MainOczyszczGI.css';
 import 'bulma/css/bulma.css';
 
-
 const MainOczyszczGI = () => {
   return (
     <div className="wrapper">
@@ -28,13 +27,30 @@ const MainOczyszczGI = () => {
             </thead>
             <tbody>
               <tr>
-                <th rowspan="2">.....</th>
-                <td>.....</td>
+                <th rowspan="2">Górowo Iławeckie</th>
+                <td>Górowo Iławeckie</td>
               </tr>
               <tr>
-                <td>.....</td>
+                <td>Kamińsk</td>
               </tr>
-
+              <tr>
+                <th rowspan="3">Bądle</th>
+                <td>Bądle</td>
+              </tr>
+              <tr>
+                <td>Nowa Karczma</td>
+              </tr>
+              <tr>
+                <td>Piasek</td>
+              </tr>
+              <tr>
+                <th>Kandyty</th>
+                <td>Kandyty</td>
+              </tr>
+              <tr>
+                <th>Piasty Wielkie</th>
+                <td>Piasty Wielkie</td>
+              </tr>
               <tr></tr>
             </tbody>
           </table>
