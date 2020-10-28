@@ -128,7 +128,7 @@ const NaviTop = (props) => {
             rel="noopener noreferrer"
             id="linkFooter"
           >
-            <img src={BipLogo} alt="bip logo" style={{ height: '30px' }} />
+            <img src={BipLogo} alt="bip logo" style={{ height: '30px' }} title="Biuletyn Informacji Publicznej"/>
           </a>
         </Collapse>
       </Navbar>

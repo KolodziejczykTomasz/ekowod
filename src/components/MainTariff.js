@@ -17,11 +17,11 @@ const MainTariff = () => {
       <div className="mainSection">
         <section>
           <BreakeStartSection>Cennik</BreakeStartSection>
-          <p>
+          <p style={{textAlign: 'center', marginBottom: 70, fontWeight: 600}}>
             Obowiązujące od 13 czerwca 2020 roku do 12 czerwca 2021 roku ceny: woda, ścieki i opłata
             abonamentowa.
           </p>
-          <table className="table">
+          <table className="table" style={{ width: '90%', margin: '0 auto' }}>
             <thead>
               <th>
                 <abbr title="Przedmiot">Usługa</abbr>

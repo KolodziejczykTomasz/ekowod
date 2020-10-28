@@ -19,7 +19,7 @@ const MainDownload = () => {
         <section>
           <BreakeStartSection>Pliki do pobrania</BreakeStartSection>
 
-          <table className="table">
+          <table className="table" style={{ width: '90%', margin: '0 auto' }}>
             <thead>
               <th>
                 <abbr title="Nazwa pliku"></abbr>

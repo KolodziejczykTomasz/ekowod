@@ -39,6 +39,10 @@ const MainOczyszczLW = () => {
                 <th>Rogóż</th>
                 <td>Rogóż</td>
               </tr>
+              <tr>
+                <th>Redy</th>
+                <td>Redy</td>
+              </tr>
             </tbody>
           </table>
         </section>

@@ -14,7 +14,8 @@
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-size: 18px;
   padding: 0 0.7rem;
 }
 
@@ -26,6 +27,8 @@
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+   letter-spacing: 2px;
+  font-size: 18px;
 }
 
 #iconDropDown {

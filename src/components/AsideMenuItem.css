@@ -1,5 +1,5 @@
 .wrapperAsideMenuItem {
-  height: 50px;
+  height: 80px;
   margin: 0.3rem 0;
   padding: 0 0.5rem;
   width: 100%;
@@ -9,4 +9,8 @@
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   font-weight: 600;
+}
+
+.wrapperAsideMenuItem:focus{
+  border: 2px solid darkblue;
 }

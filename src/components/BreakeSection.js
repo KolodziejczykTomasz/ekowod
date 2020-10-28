@@ -1,9 +1,9 @@
 import React from 'react';
 
-import 'components/BreakeStartSection.css';
+import 'components/BreakeSection.css';
 
 const BreakeStartSection = ({ children }) => (
-  <div id="wrapperStartBreakeLine">
+  <div id="wrapperBreakeLine">
     <div id="wrapperItemLeft">
       <hr style={{ borderTop: '1.5px solid #1680BC' }} />
     </div>

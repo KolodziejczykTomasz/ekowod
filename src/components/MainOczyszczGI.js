@@ -25,12 +25,9 @@ const MainOczyszczGI = () => {
                 <abbr title="Miejscowość">Miejscowość</abbr>
               </th>
             </thead>
-            <tbody>
+            <tbody>              
               <tr>
-                <th rowspan="2">Górowo Iławeckie</th>
-                <td>Górowo Iławeckie</td>
-              </tr>
-              <tr>
+                <th>Kamińsk</th>
                 <td>Kamińsk</td>
               </tr>
               <tr>

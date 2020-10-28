@@ -9,16 +9,31 @@ import './Partners.css';
 const Partners = () => (
   <div id="partnersWrapper">
     <div id="partnersWrapperItem">
-      <img src={uglw} alt="Herg Gminy Lidzbark Warmiński" id="partnersWrapperItemPhoto" />
+      <img
+        src={uglw}
+        alt="Herg Gminy Lidzbark Warmiński"
+        title="Gmina Lidzbark Warmiński"
+        id="partnersWrapperItemPhoto"
+      />  
     </div>
     <div id="partnersWrapperItem">
-      <img src={uglub} alt="Herg Gminy Lubomino" id="partnersWrapperItemPhoto" />
+      <img
+        src={uglub}
+        alt="Herg Gminy Lubomino"
+        title="Gmina Lubomino"
+        id="partnersWrapperItemPhoto"
+      />    
     </div>
     <div id="partnersWrapperItem">
-      <img src={ugkol} alt="Herg Gminy Kolno" id="partnersWrapperItemPhoto" />
+      <img src={ugkol} alt="Herg Gminy Kolno" title="Gmina Kolno" id="partnersWrapperItemPhoto" />     
     </div>
     <div id="partnersWrapperItem">
-      <img src={uggi} alt="Herg Gminy Górowo Iławeckie" id="partnersWrapperItemPhoto" />
+      <img
+        src={uggi}
+        alt="Herg Gminy Górowo Iławeckie"
+        title="Gmina Górowo Iławeckie"
+        id="partnersWrapperItemPhoto"        
+      />     
     </div>
   </div>
 );

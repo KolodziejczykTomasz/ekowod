@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import BreakeStartSection from 'components/BreakeStartSection';
+import BreakeSection from 'components/BreakeSection';
 import WidgetCovid from 'components/widget/news/WidgetCovid';
 import WidgetSiedziba from 'components/widget/news/WidgetSiedziba';
 import WidgetCennik from 'components/widget/news/WidgetCennik';
@@ -30,9 +31,9 @@ const Main = () => {
         <WidgetCennik />
       </div>
       <div>
-        <BreakeStartSection>
+        <BreakeSection style={{ marginTop: '40'}}>
           <img src={Drop} alt="Small Brand mark" style={{ height: 80 }} />
-        </BreakeStartSection>
+        </BreakeSection>
       </div>
     </div>
   );
