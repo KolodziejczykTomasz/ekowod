@@ -1,13 +1,13 @@
 import React from 'react';
 import NaviTop from 'components/NaviTop';
-import Hero from 'components/Hero';
+import Jumbotron from 'components/Jumbotron';
 import MainOczyszczLub from 'components/MainOczyszczLub';
 import Footer from 'components/Footer';
 
 const OczyszczLubView = () => (
   <>
     <NaviTop />
-    <Hero />
+    <Jumbotron />
     <MainOczyszczLub />
     <Footer />
   </>

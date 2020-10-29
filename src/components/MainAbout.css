@@ -41,9 +41,20 @@
   width: auto;
 }
 
-
 /*Main*/
 .mainSection {
   display: grid;
   grid-template-columns: 1fr;
+}
+#wrapper {
+  text-align: justify;
+  hyphens: auto;
+}
+
+#wrapperAbout {
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+  column-gap: 40px;
+  padding: 10px 30px 0 0;
+  margin-bottom: 30px;
 }

@@ -6,10 +6,7 @@ import 'aos/dist/aos.css';
 import 'components/MainAbout.css';
 import 'bulma/css/bulma.css';
 
-
-
 const MainAbout = () => {
- 
   return (
     <div className="wrapper">
       <div className="asideSection ">
@@ -18,7 +15,7 @@ const MainAbout = () => {
       <div className="mainSection">
         <section>
           <BreakeStartSection>O nas</BreakeStartSection>
-          <div>
+          <div id="wrapper">
             <p>
               <strong>
                 Zakład Budżetowy Związku Gmin „EKOWOD” w Lidzbarku Warmińskim został utworzony przez
@@ -33,20 +30,22 @@ const MainAbout = () => {
               Roczna produkcja wody w zakładzie kształtuje się na poziomie ok. 600-630tys. m3, a
               ilość odprowadzanych ścieków to ok. 150 tys. m3.
             </p>
-            <p>
-              Produkowana przez „EKOWOD” woda spełnia wszelkie wymagania dla wody pitnej, a jej
-              jakość jest stale monitorowana przez akredytowane laboratoria oraz powiatowe stacje
-              sanitarno – epidemiologiczne. Większość stacji uzdatniania wody to obiekty
-              dwustopniowe, a procesy technologiczne (odżelazianie i odmanganianie) opierają się
-              jedynie na metodzie filtracji przy zastosowaniu złóż żwirowych. Uzyskana w ten sposób
-              woda charakteryzuje się średnią twardością oraz bardzo dobrą jakością.
-            </p>
-            <p>
-              Większość oczyszczalni jest obiektami biologiczno-mechanicznymi, w których
-              oczyszczania ścieków opiera się na metodzie osadu czynnego. W dyspozycji zakładu są
-              również oczyszczalnie typu SBR oraz Biocler. Jakość odprowadzanych przez „EKOWOD”
-              ścieków odpowiada wszelkim normom wymaganym przez polskie prawo.
-            </p>
+            <div id="wrapperAbout">
+              <div>
+                Produkowana przez „EKOWOD” woda spełnia wszelkie wymagania dla wody pitnej, a jej
+                jakość jest stale monitorowana przez akredytowane laboratoria oraz powiatowe stacje
+                sanitarno – epidemiologiczne. Większość stacji uzdatniania wody to obiekty
+                dwustopniowe, a procesy technologiczne (odżelazianie i odmanganianie) opierają się
+                jedynie na metodzie filtracji przy zastosowaniu złóż żwirowych. Uzyskana w ten
+                sposób woda charakteryzuje się średnią twardością oraz bardzo dobrą jakością.
+              </div>
+              <div>
+                Większość oczyszczalni jest obiektami biologiczno-mechanicznymi, w których
+                oczyszczania ścieków opiera się na metodzie osadu czynnego. W dyspozycji zakładu są
+                również oczyszczalnie typu SBR oraz Biocler. Jakość odprowadzanych przez „EKOWOD”
+                ścieków odpowiada wszelkim normom wymaganym przez polskie prawo.
+              </div>
+            </div>
             <p>
               Mimo iż zakład nie jest odpowiedzialny za inwestycje wodno-kanalizacyjne na terenach
               obsługiwanych gmin, każdego roku inwestuje się w sprzęty niezbędne do sprawnego
@@ -59,6 +58,7 @@ const MainAbout = () => {
               zakładem. Powstała również strona internetowa, pozwalająca zainteresowanym czerpać
               informacje na temat działalności zakładu, aktualnych cen oraz wydarzeń.
             </p>
+
             <p>
               Priorytetem Zakładu Budżetowego Związku Gmin „EKOWOD” w Lidzbarku Warmińskim jest
               stale podwyższanie jakości usług zarówno związanych ze zbiorowym zaopatrzeniem w wodę,
@@ -118,6 +118,12 @@ const MainAbout = () => {
                 <th>Kierownik</th>
                 <td>mgr inż. Katarzyna Kozieł</td>
                 <td>k.koziel@ekowod-lidzbark.pl</td>
+              </tr>
+              <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
             </tbody>
           </table>

@@ -1,12 +1,12 @@
 import React from 'react';
+import Logo from 'assets/images/logo.svg';
 import './Jumbotron.css';
 
 const Jumbotron = () => (
   <section>
     <div className="wrapperJumbotron">
-      <div className="wrapperJumbotronText">
-        <h1 className="title">EKOWOD</h1>
-        <h2 className="subtitle">Zakład Budżetowy Związku Gmin</h2>
+      <div className="wrapperJumbotronPhotoBox">
+      <img src={Logo} alt="Jumbotron Logo" id="jumbotronPhoto"/>
       </div>
     </div>
   </section>

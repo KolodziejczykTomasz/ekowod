@@ -1,13 +1,13 @@
 import React from 'react';
 import NaviTop from 'components/NaviTop';
-import Hero from 'components/Hero';
+import Jumbotron from 'components/Jumbotron';
 import MainHydroLW from 'components/MainHydroLW';
 import Footer from 'components/Footer';
 
 const HydroLwView = () => (
   <>
     <NaviTop />
-    <Hero />
+    <Jumbotron />
     <MainHydroLW />
     <Footer />
   </>
