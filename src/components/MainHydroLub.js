@@ -10,7 +10,7 @@ import 'bulma/css/bulma.css';
 
 const MainHydroLub = () => {
   return (
-    <div className="wrapper">
+    <div className="wrapperMain">
       <div className="asideSection ">
         <NaviAside />
       </div>

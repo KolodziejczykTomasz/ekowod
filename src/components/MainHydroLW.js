@@ -6,18 +6,16 @@ import 'aos/dist/aos.css';
 import 'components/MainHydroLW.css';
 import 'bulma/css/bulma.css';
 
-
-
 const MainHydroLW = () => {
   return (
-    <div className="wrapper">
-      <div className="asideSection ">
+    <div className="wrapperMain">
+      <div>
         <NaviAside />
       </div>
-      <div className="mainSection">
-        <section>
-          <BreakeStartSection>Hydrofornie - Gmina Lidzbark Warmiński</BreakeStartSection>
 
+      <div className="mainSection">
+        <BreakeStartSection>Hydrofornie - Gmina Lidzbark Warmiński</BreakeStartSection>
+        <div id="mainWrapper">
           <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
             <thead>
               <th>
@@ -178,7 +176,7 @@ const MainHydroLW = () => {
               <tr></tr>
             </tbody>
           </table>
-        </section>
+        </div>
       </div>
     </div>
   );

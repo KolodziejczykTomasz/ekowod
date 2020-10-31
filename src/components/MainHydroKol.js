@@ -12,12 +12,11 @@ import 'bulma/css/bulma.css';
 
 const MainHydroKol = () => {
   return (
-    <div className="wrapper">
-      <div className="asideSection ">
+    <div className="wrapperMain">
+      <div>
         <NaviAside />
       </div>
-      <div className="mainSection">
-        <section>
+      <div className="mainSection">       
           <BreakeStartSection>Hydrofornie - Gmina Kolno</BreakeStartSection>
 
           <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
@@ -89,8 +88,7 @@ const MainHydroKol = () => {
               </tr>
               <tr></tr>
             </tbody>
-          </table>
-        </section>
+          </table>       
       </div>
     </div>
   );
