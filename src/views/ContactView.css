@@ -1,17 +1,19 @@
-.contactTitle{
-    margin-left: -50px;
-}
-
 .wrapperContact {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1250px;
+}
+
+.contactTitle {
+  margin-left: -50px;
 }
 
 .wrapperContactSubtitle {
   margin: 30px auto 30px auto;
 }
 
-#wrapperContactTextenter{
+#wrapperContactTextenter {
   text-align: left;
   margin-bottom: 40px;
   padding-right: 20px;
@@ -29,4 +31,82 @@
 }
 .wrapperContactMap {
   width: 100%;
+}
+
+/** @media **/
+
+@media only screen and (max-width: 600px) {
+  .wrapperContact {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapperContactAddress {
+    margin-bottom: 40px;
+  }
+
+  .contactTitle {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .wrapperContactTextenter {
+    text-align: justify;
+    hyphens: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapperContact {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .wrapperContactAddress {
+    margin-bottom: 40px;
+  }
+
+  .contactTitle {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .wrapperContactTextenter {
+    text-align: justify;
+    hyphens: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapperContact {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 30px 30px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrapperContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1250px;
+    padding: 30px 30px;
+  }
+
+  .contactTitle {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+
+  .wrapperContactTextenter{
+    padding-right: 30px;
+  }
+
+  .wrapperContactMap{
+    margin-top: 50px;
+  }
 }

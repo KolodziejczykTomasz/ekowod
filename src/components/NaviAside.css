@@ -16,3 +16,7 @@
 #buttonNaviAside:hover {
     color: grey;
 }
+
+@media only screen and (max-width: 600px) {
+#asideMenu {padding: 0 15px}
+}

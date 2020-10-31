@@ -1,6 +1,7 @@
 .wrapperFooter {
   display: grid;
   grid-template-columns: 1fr;
+  width: 100%;
   max-width: 1250px;
   margin: 80px auto 0 auto;
   background: rgb(218, 218, 218);
@@ -60,22 +61,20 @@
   text-align: center;
 }
 
-
-
 #widgetBottom {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   width: 100%;
 }
 
-#widgetBottomLeft{
-justify-self: start;
-margin-left: 15px;
+#widgetBottomLeft {
+  justify-self: start;
+  margin-left: 15px;
 }
 
-#widgetBottomRight{
-justify-self: end;
-margin-right: 15px;
+#widgetBottomRight {
+  justify-self: end;
+  margin-right: 15px;
 }
 
 #greyText {
@@ -123,7 +122,6 @@ margin-right: 15px;
 
 #linkFooter:hover {
   color: #1680bc;
-  
 }
 
 @media (max-width: 960px) {
@@ -158,4 +156,71 @@ margin-right: 15px;
     margin: 0 auto;
     width: 70%;
   }
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapperWidget {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+  .widgetCenter,
+  .widgetRight,
+  .widgetBottomText {
+    text-align: center;
+  }
+  .widgetLeft {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .widgetLeft {
+  display: flex;
+  align-items: center;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrapperFooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 1250px;
+    margin: 80px auto 0 auto;
+    background: rgb(218, 218, 218);
+    background: linear-gradient(
+      0deg,
+      rgba(218, 218, 218, 1) 0%,
+      rgba(241, 241, 241, 1) 33%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+    .wrapperWidget {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 40% 30%;
+  }
+  
+  .widgetCenter,
+  .widgetRight,
+  .widgetBottomText {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapperWidget {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 40% 30%;
+  }
+
+  .widgetCenter,
+  .widgetRight,
+  .widgetBottomText {
+    text-align: left;
+  }
+    .widgetLeft {
+  display: flex;
+  align-items: center;
+}
 }
