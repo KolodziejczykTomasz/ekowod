@@ -3,12 +3,12 @@ import BreakeStartSection from 'components/BreakeStartSection';
 import NaviAside from './NaviAside';
 
 import 'aos/dist/aos.css';
-import 'components/MainHydroLW.css';
+import 'components/MainHydroGI.css';
 import 'bulma/css/bulma.css';
 
 const MainHydroGI = () => {
   return (
-    <div className="wrapperMain">
+    <div className="wrapperMainHydroGI">
       <div>
         <NaviAside />
       </div>
@@ -17,12 +17,10 @@ const MainHydroGI = () => {
 
         <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
           <thead>
-            <th>
-              <abbr title="Hydrofornia">Hydrofornia</abbr>
-            </th>
-            <th>
-              <abbr title="Miejscowość">Miejscowość</abbr>
-            </th>
+            <tr>
+              <th>Hydrofornia</th>
+              <th>Miejscowość</th>
+            </tr>
           </thead>
           <tbody>
             <tr>

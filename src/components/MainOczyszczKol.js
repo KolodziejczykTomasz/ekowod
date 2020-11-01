@@ -8,7 +8,7 @@ import 'bulma/css/bulma.css';
 
 const MainOczyszczKol = () => {
   return (
-    <div className="mainSection">
+    <div className="wrapperMainOczyszczKol">
       <div>
         <NaviAside />
       </div>
@@ -17,12 +17,10 @@ const MainOczyszczKol = () => {
 
         <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
           <thead>
-            <th>
-              <abbr title="Oczyszczalnia ścieków">Oczyszczalnia ścieków</abbr>
-            </th>
-            <th>
-              <abbr title="Miejscowość">Miejscowość</abbr>
-            </th>
+            <tr>
+              <th>Oczyszczalnia ścieków</th>
+              <th>Miejscowość</th>
+            </tr>
           </thead>
           <tbody>
             <tr>

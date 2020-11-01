@@ -19,7 +19,6 @@ class MainAbout extends Component {
         <div>
           <NaviAside />
         </div>
-
         <div className="mainSection">
           <BreakeStartSection>O nas</BreakeStartSection>
           <div id="mainWrapper">

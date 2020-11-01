@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
-  height: 7rem;  
+  min-height: 7rem;
 }
 
 #brandLogo {
@@ -28,7 +28,7 @@
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-   letter-spacing: 2px;
+  letter-spacing: 2px;
   font-size: 18px;
 }
 
@@ -45,10 +45,6 @@
   display: block;
 }
 
-.dropdown-menu {
-  top: -15px;
-  margin-left: 100%;
-}
 
 button {
   padding: 0px 0px;
@@ -56,4 +52,12 @@ button {
   font-size: 14px;
   font-weight: 400;
   height: 2em;
+}
+
+#buttonLinkMoreItem {
+  letter-spacing: 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
 }

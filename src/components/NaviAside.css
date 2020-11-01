@@ -1,4 +1,6 @@
 #asideMenu {
+  display: grid;
+  grid-template-columns: 1fr;
   margin: 0.5rem auto;
   width: 100%;
 }
@@ -7,16 +9,17 @@
   width: auto;
 }
 
-
-#buttonNaviAside{
-    color: white;
-    text-decoration: none;
+#buttonNaviAside {
+  color: white;
+  text-decoration: none;
 }
 
 #buttonNaviAside:hover {
-    color: grey;
+  color: grey;
 }
 
 @media only screen and (max-width: 600px) {
-#asideMenu {padding: 0 15px}
+  #asideMenu {
+    padding: 0 15px;
+  }
 }

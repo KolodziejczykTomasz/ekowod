@@ -8,20 +8,19 @@ import 'bulma/css/bulma.css';
 
 const MainOczyszczGI = () => {
   return (
-    <div className="wrapperMain ">
-      <NaviAside />
-
+    <div className="wrapperMainOczyszczGI">
+      <div>
+        <NaviAside />
+      </div>
       <div className="mainSection">
         <BreakeStartSection>Oczyszczlanie ścieków - Gmina Górowo Iławeckie</BreakeStartSection>
 
         <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
           <thead>
-            <th>
-              <abbr title="Oczyszczalnia ścieków">Oczyszczalnia ścieków</abbr>
-            </th>
-            <th>
-              <abbr title="Miejscowość">Miejscowość</abbr>
-            </th>
+            <tr>
+              <th>Oczyszczalnia ścieków</th>
+              <th>Miejscowość</th>
+            </tr>
           </thead>
           <tbody>
             <tr>

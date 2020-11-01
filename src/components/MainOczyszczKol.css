@@ -1,6 +1,4 @@
-/*Aside*/
-
-.wrapperMain {
+.wrapperMainOczyszczKol {
   display: grid;
   margin-bottom: 10rem;
   grid-template-columns: 20% auto;
@@ -10,10 +8,33 @@
   box-sizing: border-box;
 }
 
-
+/*Aside*/
 
 /*Main*/
+
 .mainSection {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .wrapperMainOczyszczKol {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 600px) {
+  .wrapperMainOczyszczKol {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .wrapperMainOczyszczKol {
+    display: flex;
+    flex-direction: row;
+  }
 }

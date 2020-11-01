@@ -10,8 +10,8 @@ import 'bulma/css/bulma.css';
 
 const MainRodo = () => {
   return (
-    <div className="wrapper">
-      <div className="asideSection ">
+    <div className="wrapperMain">
+      <div>
         <NaviAside />
       </div>
       <div className="mainSection">

@@ -1,6 +1,4 @@
-/*Aside*/
-
-.wrapperMain {
+.wrapperMainHydroKol {
   display: grid;
   margin-bottom: 10rem;
   grid-template-columns: 20% auto;
@@ -10,10 +8,38 @@
   box-sizing: border-box;
 }
 
-
+/*Aside*/
 
 /*Main*/
 .mainSection {
   display: grid;
   grid-template-columns: 1fr;
+  width: 100%;
+}
+
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .wrapperMainHydroKol {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 600px) {
+  .wrapperMainHydroKol {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .wrapperMainHydroKol {
+    display: flex;
+    flex-direction: row;
+  }
 }

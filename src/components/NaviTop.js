@@ -62,30 +62,30 @@ const NaviTop = (props) => {
                 Obiekty
                 <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
               </DropdownToggle>
-              <DropdownMenu right>
+              <DropdownMenu down>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav id="buttonLinkMore">
                     Hydrofornie
                     <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
                   </DropdownToggle>
-                  <DropdownMenu right>
+                  <DropdownMenu down>
                     <DropdownItem>
-                      <Link to="/hydrolw" id="buttonLink">
+                      <Link to="/hydrolw" id="buttonLinkMoreItem">
                         Lidzbark Warmiński
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/hydrogi" id="buttonLink">
+                      <Link to="/hydrogi" id="buttonLinkMoreItem">
                         Górowo Iławeckie
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/hydrokol" id="buttonLink">
+                      <Link to="/hydrokol" id="buttonLinkMoreItem">
                         Kolno
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/hydrolub" id="buttonLink">
+                      <Link to="/hydrolub" id="buttonLinkMoreItem">
                         Lubomino
                       </Link>
                     </DropdownItem>
@@ -96,24 +96,24 @@ const NaviTop = (props) => {
                     Oczyszczalnie ścieków
                     <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
                   </DropdownToggle>
-                  <DropdownMenu right>
+                  <DropdownMenu down>
                     <DropdownItem>
-                      <Link to="/oczyszczlw" id="buttonLink">
+                      <Link to="/oczyszczlw" id="buttonLinkMoreItem">
                         Lidzbark Warmiński
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/oczyszczgi" id="buttonLink">
+                      <Link to="/oczyszczgi" id="buttonLinkMoreItem">
                         Górowo Iławeckie
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/oczyszczkol" id="buttonLink">
+                      <Link to="/oczyszczkol" id="buttonLinkMoreItem">
                         Kolno
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/oczyszczlub" id="buttonLink">
+                      <Link to="/oczyszczlub" id="buttonLinkMoreItem">
                         Lubomino
                       </Link>
                     </DropdownItem>
@@ -128,7 +128,12 @@ const NaviTop = (props) => {
             rel="noopener noreferrer"
             id="linkFooter"
           >
-            <img src={BipLogo} alt="bip logo" style={{ height: '30px' }} title="Biuletyn Informacji Publicznej"/>
+            <img
+              src={BipLogo}
+              alt="bip logo"
+              style={{ height: '30px' }}
+              title="Biuletyn Informacji Publicznej"
+            />
           </a>
         </Collapse>
       </Navbar>

@@ -10,8 +10,8 @@ import 'bulma/css/bulma.css';
 
 const MainHydroLub = () => {
   return (
-    <div className="wrapperMain">
-      <div className="asideSection ">
+    <div className="wrapperMainHydroLub">
+      <div>
         <NaviAside />
       </div>
       <div className="mainSection">
@@ -20,12 +20,10 @@ const MainHydroLub = () => {
 
           <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
             <thead>
-              <th>
-                <abbr title="Hydrofornia">Hydrofornia</abbr>
-              </th>
-              <th>
-                <abbr title="Miejscowość">Miejscowość</abbr>
-              </th>
+              <tr>
+                <th>Hydrofornia</th>
+                <th>Miejscowość</th>
+              </tr>
             </thead>
             <tbody>
               <tr>
