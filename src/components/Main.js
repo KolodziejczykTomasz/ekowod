@@ -31,7 +31,7 @@ const Main = () => {
         <WidgetCennik />
       </div>
       <div>
-        <BreakeSection style={{ marginTop: '40'}}>
+        <BreakeSection style={{ marginTop: '40' }}>
           <img src={Drop} alt="Small Brand mark" style={{ height: 80 }} />
         </BreakeSection>
       </div>
