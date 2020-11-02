@@ -10,6 +10,22 @@
   box-sizing: border-box;
 }
 
+
+/*Main*/
+
+.mainSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+thead{
+  text-transform: uppercase;
+}
+
+
+/*@media*/
+
 @media (max-width: 600px) {
   .wrapperMain {
     grid-template-columns: 1fr;
@@ -26,14 +42,4 @@
   .wrapperMain {
     grid-template-rows: 1fr 1fr;
   }
-}
-
-
-
-
-/*Main*/
-.mainSection {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
 }

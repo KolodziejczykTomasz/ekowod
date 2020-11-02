@@ -23,6 +23,11 @@
   flex-direction: column;
 }
 
+thead{
+  text-transform: uppercase;
+}
+
+
 @media (max-width: 600px) {
   .wrapperMainHydroKol {
     display: flex;

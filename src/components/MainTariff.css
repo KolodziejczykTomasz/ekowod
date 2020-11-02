@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+thead{
+  text-transform: uppercase;
+}
+
 @media (max-width: 600px) {
   .wrapperTariff {
     grid-template-columns: 1fr;

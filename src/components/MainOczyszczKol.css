@@ -18,6 +18,10 @@
   width: 100%;
 }
 
+thead{
+  text-transform: uppercase;
+}
+
 @media (max-width: 600px) {
   .wrapperMainOczyszczKol {
     display: flex;

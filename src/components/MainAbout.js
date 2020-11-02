@@ -76,18 +76,12 @@ class MainAbout extends Component {
           <BreakeStartSection>Nasza Kadra</BreakeStartSection>
           <table className="table" style={{ margin: '0 auto', textAlign: 'center' }}>
             <thead>
-              <th>
-                <abbr title="Dział">Dział</abbr>
-              </th>
-              <th>
-                <abbr title="Dane pracownika">Imię i Nazwisko</abbr>
-              </th>
-              <th>
-                <abbr title="Adres email">Adres e-mail</abbr>
-              </th>
-              <th>
-                <abbr title="Nr wewnętrzny tel.">Nr wewnętrzny tel.</abbr>
-              </th>
+              <tr>
+                <th>Dział</th>
+                <th>Imię i Nazwisko</th>
+                <th>Adres e-mail</th>
+                <th>Nr wewnętrzny tel.</th>
+              </tr>
             </thead>
             <tbody>
               <tr>

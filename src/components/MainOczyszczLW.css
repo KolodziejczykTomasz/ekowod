@@ -24,6 +24,10 @@
 }
 
 
+thead{
+  text-transform: uppercase;
+}
+
 @media (max-width: 600px) {
   .wrapperMainOczyszczLW {
     display: flex;

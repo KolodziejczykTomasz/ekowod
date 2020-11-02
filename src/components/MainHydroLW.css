@@ -22,6 +22,11 @@
   width: 100%;
 }
 
+thead{
+  text-transform: uppercase;
+}
+
+
 @media (max-width: 600px) {
   .wrapperMainHydroLW {
     display: flex;
