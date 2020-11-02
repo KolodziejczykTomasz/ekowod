@@ -38,7 +38,7 @@ const NaviTop = (props) => {
             <NavItem>
               <NavLink>
                 <Link to="/" id="buttonLink">
-                  Start
+                 Start
                 </Link>
               </NavLink>
             </NavItem>
@@ -63,7 +63,7 @@ const NaviTop = (props) => {
                 <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
               </DropdownToggle>
               <DropdownMenu down>
-                <UncontrolledDropdown nav inNavbar>
+                <UncontrolledDropdown>
                   <DropdownToggle nav id="buttonLinkMore">
                     Hydrofornie
                     <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
@@ -91,7 +91,8 @@ const NaviTop = (props) => {
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
-                <UncontrolledDropdown nav inNavbar>
+
+                <UncontrolledDropdown>
                   <DropdownToggle nav id="buttonLinkMore">
                     Oczyszczalnie ścieków
                     <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
