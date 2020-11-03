@@ -101,6 +101,17 @@ const Footer = () => (
                 style={{ fontSize: 30, marginTOp: '-5px' }}
               />
               <span className="widgetIconSpan">
+                <Link to="/wcag" id="linkFooter">
+                  Oświadczenie o dostępności
+                </Link>
+              </span>
+            </li>
+            <li className="widgetListItem">
+              <ChevronRightSharp
+                className="widgetIcon"
+                style={{ fontSize: 30, marginTOp: '-5px' }}
+              />
+              <span className="widgetIconSpan">
                 <Link to="/contact" id="linkFooter">
                   Zgłoś awarię
                 </Link>

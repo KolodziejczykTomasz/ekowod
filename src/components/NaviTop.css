@@ -1,8 +1,18 @@
+body {
+  padding-top: 45px;
+}
 #navbar {
   width: 100%;
   max-width: 1250px;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
   min-height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2.5rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
 }
 
 #brandLogo {
@@ -45,7 +55,6 @@
   display: block;
 }
 
-
 button {
   padding: 0px 0px;
   border: 0px;
@@ -56,7 +65,7 @@ button {
 
 .inNavbar {
   display: block;
- width: 200px;
+  width: 200px;
 }
 
 #buttonLinkMoreItem {
@@ -65,4 +74,65 @@ button {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+}
+
+#acces {
+  height: 50px;
+  background-color: red;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.sticky {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: moveDown 0.5s ease-in-out;
+}
+
+#accessibleIcon {
+  font-size: 32px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+#accessibleIconButton{
+  margin-right: 5px;
+  background-color: #F8F9FA;
+}
+
+#accessibleIconButton:focus {
+  color: red;
+}
+
+#accessibleIconButton:hover {
+  color: #1680bc;
+}
+.navbar--logo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  animation: rotate 0.7s ease-in-out 0.5s;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0rem);
+  }
 }

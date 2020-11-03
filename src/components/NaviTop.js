@@ -14,8 +14,13 @@ import {
 } from 'reactstrap';
 import { ArrowDropDown } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
+import { Icon } from '@iconify/react';
 import BrandLogo from 'assets/images/logo.svg';
 import BipLogo from 'assets/images/bip.png';
+import formatFontSizeDecrease from '@iconify/icons-mdi/format-font-size-decrease';
+import formatFontSizeIncrease from '@iconify/icons-mdi/format-font-size-increase';
+import fontSize from '@iconify/icons-radix-icons/font-size';
+import brightnessContrast from '@iconify/icons-carbon/brightness-contrast';
 
 import 'components/NaviTop.css';
 
@@ -26,7 +31,7 @@ const NaviTop = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md" fixed="top" id="navbar">
+      <Navbar color="light" light expand="md" fixed="top" className="sticky">
         <NavbarBrand>
           <Link to="/">
             <img src={BrandLogo} alt="Brand Logo" id="brandLogo" />
@@ -38,7 +43,7 @@ const NaviTop = (props) => {
             <NavItem>
               <NavLink>
                 <Link to="/" id="buttonLink">
-                 Start
+                  Start
                 </Link>
               </NavLink>
             </NavItem>
@@ -123,19 +128,35 @@ const NaviTop = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <a
-            href="http://lidzbarkwarminski-ekowod.bip-wm.pl"
-            target="_blank"
-            rel="noopener noreferrer"
-            id="linkFooter"
-          >
-            <img
-              src={BipLogo}
-              alt="bip logo"
-              style={{ height: '30px' }}
-              title="Biuletyn Informacji Publicznej"
-            />
-          </a>
+          <div>
+            <button type="submit" id="accessibleIconButton">
+              <Icon icon={brightnessContrast} id="accessibleIcon" aria-hidden="true" />             
+            </button>
+            <button type="submit" id="accessibleIconButton">
+              <Icon icon={formatFontSizeIncrease} id="accessibleIcon" aria-hidden="true" />
+            </button>
+            <button type="submit" id="accessibleIconButton">
+              <Icon icon={formatFontSizeDecrease} id="accessibleIcon" aria-hidden="true" />
+            </button>
+            <button type="submit" id="accessibleIconButton">
+              <Icon icon={fontSize} id="accessibleIcon" aria-hidden="true" />
+            </button>
+          </div>
+          <div>
+            <a
+              href="http://lidzbarkwarminski-ekowod.bip-wm.pl"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="linkFooter"
+            >
+              <img
+                src={BipLogo}
+                alt="bip logo"
+                style={{ height: '30px' }}
+                title="Biuletyn Informacji Publicznej"
+              />
+            </a>
+          </div>
         </Collapse>
       </Navbar>
     </div>

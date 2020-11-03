@@ -15,6 +15,7 @@ import OczyszczLubView from 'views/OczyszczLubView';
 import DownloadView from 'views/DownloadView';
 import RodoView from 'views/RodoView';
 import CookiesView from 'views/CookiesView';
+import WcagView from 'views/WcagView';
 
 const Root = () => {
   return (
@@ -35,6 +36,7 @@ const Root = () => {
         <Route exact path="/oczyszczlub" component={OczyszczLubView} />
         <Route exact path="/oczyszczlw" component={OczyszczLwView} />
         <Route exact path="/oczyszczkol" component={OczyszczKolView} />
+        <Route exact path="/wcag" component={WcagView} />
       </Switch>
     </BrowserRouter>
   );
