@@ -103,10 +103,13 @@ button {
 #accessibleIconButton{
   margin-right: 5px;
   background-color: #F8F9FA;
+  border: 2px solid transparent;
 }
 
-#accessibleIconButton:focus {
-  color: red;
+#accessibleIconButton:focus,
+#accessibleIconButton:active {
+  border-color: red;  
+  border-style: dotted;
 }
 
 #accessibleIconButton:hover {
