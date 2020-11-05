@@ -24,7 +24,7 @@ import brightnessContrast from '@iconify/icons-carbon/brightness-contrast';
 
 import 'components/NaviTop.css';
 
-const NaviTop = (props) => {
+const NaviTop = ({ clickContrastFn, growFontFn, shrinkFontFn, resetFontFn }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -130,16 +130,40 @@ const NaviTop = (props) => {
           </Nav>
           <div>
             <button type="submit" id="accessibleIconButton">
-              <Icon icon={brightnessContrast} id="accessibleIcon" aria-hidden="true" />             
+              <Icon
+                icon={brightnessContrast}
+                id="accessibleIcon"
+                aria-label="Zmiana kontrastu strony po kliknięciu"
+                onClick={clickContrastFn}
+                aria-hidden="true"
+              />
             </button>
             <button type="submit" id="accessibleIconButton">
-              <Icon icon={formatFontSizeIncrease} id="accessibleIcon" aria-hidden="true" />
+              <Icon
+                icon={formatFontSizeIncrease}
+                id="accessibleIcon"
+                aria-label="Powiększenie czcionki na stronie po kliknięciu"
+                onClick={growFontFn}
+                aria-hidden="true"
+              />
             </button>
             <button type="submit" id="accessibleIconButton">
-              <Icon icon={formatFontSizeDecrease} id="accessibleIcon" aria-hidden="true" />
+              <Icon
+                icon={formatFontSizeDecrease}
+                id="accessibleIcon"
+                aria-label="Zmniejszenie czcionki na stronie po kliknięciu"
+                onClick={shrinkFontFn}
+                aria-hidden="true"
+              />
             </button>
             <button type="submit" id="accessibleIconButton">
-              <Icon icon={fontSize} id="accessibleIcon" aria-hidden="true" />
+              <Icon
+                icon={fontSize}
+                id="accessibleIcon"
+                aria-label="Przywrócenie początkowej wielkości czcionki na stronie po kliknięciu"
+                onClick={resetFontFn}
+                aria-hidden="true"
+              />
             </button>
           </div>
           <div>

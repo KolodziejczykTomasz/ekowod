@@ -124,6 +124,14 @@
   color: #1680bc;
 }
 
+.buttonTrue {
+  background-color: #ffff00;
+}
+
+.buttonFalse {
+  background-color: white;
+}
+
 @media (max-width: 960px) {
   .wrapperWidget {
     grid-template-columns: 1fr;
@@ -174,9 +182,9 @@
     width: 70%;
   }
   .widgetLeft {
-  display: flex;
-  align-items: center;
-}
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -194,12 +202,12 @@
       rgba(255, 255, 255, 1) 100%
     );
   }
-    .wrapperWidget {
+  .wrapperWidget {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 30% 40% 30%;
   }
-  
+
   .widgetCenter,
   .widgetRight,
   .widgetBottomText {
@@ -219,8 +227,8 @@
   .widgetBottomText {
     text-align: left;
   }
-    .widgetLeft {
-  display: flex;
-  align-items: center;
-}
+  .widgetLeft {
+    display: flex;
+    align-items: center;
+  }
 }
