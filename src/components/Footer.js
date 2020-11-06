@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import {
   EmailOutlined,
   PinDropOutlined,
@@ -6,22 +8,25 @@ import {
   HomeOutlined,
   ChevronRightSharp,
 } from '@material-ui/icons';
-import Divider from '@material-ui/core/Divider';
+
+import DividerLine from 'components/DividerLine';
 import BrandLogo from 'assets/images/logo.svg';
+
 import 'components/Footer.css';
-import { styled } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
-const DividerColor = styled(Divider)({
-  backgroundColor: '#1680BC',
-  width: '80%',
-  margin: '20px auto',
-  height: '1.5px',
-});
+const FooterWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 1250px;
+  margin: 80px auto 0 auto; 
+  background-color: ${({ activeColor, theme }) => (activeColor ? theme[activeColor] : 'white')};
+`;
 
-const Footer = () => (
-  <div className="wrapperFooter">
-    <DividerColor />
+const Footer = ({ contrastType }) => (
+  <FooterWrapper activeColor={contrastType}>
+    <DividerLine />
     <div className="wrapperWidget">
       <div className="widgetLeft">
         <img className="footerPhoto" src={BrandLogo} alt="Logo" />
@@ -141,7 +146,14 @@ const Footer = () => (
         </p>
       </div>
     </div>
-  </div>
+  </FooterWrapper>
 );
 
+Footer.propTypes = {
+  contrastType: PropTypes.oneOf(['yellow', 'white']),
+};
+
+Footer.defaultProps = {
+  contrastType: 'white',
+};
 export default Footer;

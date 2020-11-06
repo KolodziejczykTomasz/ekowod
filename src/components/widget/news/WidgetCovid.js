@@ -23,6 +23,21 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  root2: {
+    maxWidth: '100%',
+    backgroundColor: 'yellow',
+    transition: '1s',
+    '&:hover': {
+      scale: 1.01,
+    },
+    [theme.breakpoints.down('sm')]: {
+      padding: '0 15px',
+      maxWidth: '100%',
+      '&:hover': {
+        scale: 1.21,
+      },
+    },
+  },
   media: {
     height: 400,
     width: '100%',
@@ -31,14 +46,14 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('lg')]: {
       height: 400,
       width: '100%',
-      Top: '56.25%', 
-      marginTop: '30px'     
+      Top: '56.25%',
+      marginTop: '30px',
     },
     [theme.breakpoints.down('md')]: {
       height: 400,
       width: '100%',
-      Top: '56.25%', 
-      marginTop: '30px',  
+      Top: '56.25%',
+      marginTop: '30px',
     },
   },
   expand: {
@@ -56,11 +71,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CardWidget() {
+export default function CardWidget({ activeColor }) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className={activeColor !== 'yellow' ? classes.root : classes.root2}>
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
@@ -71,9 +86,7 @@ export default function CardWidget() {
         subheader="Październik 12, 2020"
       />
       <CardMedia className={classes.media} image={News1} title="Kropla wody" />
-      <CardContent>        
-      </CardContent> 
-    
+      <CardContent></CardContent>
     </Card>
   );
 }

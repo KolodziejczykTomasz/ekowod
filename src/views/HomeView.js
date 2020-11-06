@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { theme } from 'theme/theme';
 import styled from 'styled-components';
 import NaviTop from 'components/NaviTop';
 import Hero from 'components/Hero';
@@ -9,11 +11,16 @@ import GlobalStyle from 'theme/GlobalStyle';
 
 import './HomeView.css';
 
-const Box = styled.div``;
+const Box = styled.div`
+  padding: 0 auto;
+  max-width: 1250px;
+  background-color: ${({ activeColor, theme }) => (activeColor ? theme[activeColor] : 'white')};
+`;
 
 class HomeView extends Component {
   state = {
     contrast: false,
+    contrastType: 'white',
     fontSizeChange: 14,
   };
 
@@ -24,9 +31,15 @@ class HomeView extends Component {
   };
 
   handleClick = () => {
-    this.setState({
-      contrast: !this.state.contrast,
-    });
+    if (this.state.contrastType === 'yellow') {
+      this.setState({
+        contrastType: 'white',
+      });
+    } else {
+      this.setState({
+        contrastType: 'yellow',
+      });
+    }
   };
 
   handleGrowFontSize = () => {
@@ -44,25 +57,30 @@ class HomeView extends Component {
   };
 
   render() {
-    const { fontSizeChange } = this.state;
+    const { fontSizeChange, contrastType } = this.state;
 
     return (
-      <Box
-        className={this.state.contrast ? 'contrastTrue' : 'contrastFalse'}
-        style={{ fontSize: fontSizeChange }}
-      >
+      <>
         <GlobalStyle />
-        <NaviTop
-          clickContrastFn={this.handleClick}
-          growFontFn={this.handleGrowFontSize}
-          shrinkFontFn={this.handleShrinkFontSize}
-          resetFontFn={this.handleResetFontSize}
-        />
-        <Hero />
-        <Main />
-        <Partners />
-        <Footer />
-      </Box>
+        <ThemeProvider theme={theme}>
+          <Box
+            activeColor={contrastType}
+            style={{ fontSize: fontSizeChange, backgroundColor: contrastType }}
+          >
+            <NaviTop
+              clickContrastFn={this.handleClick}
+              growFontFn={this.handleGrowFontSize}
+              shrinkFontFn={this.handleShrinkFontSize}
+              resetFontFn={this.handleResetFontSize}
+              contrastType={`${this.state.contrastType}`}
+            />
+            <Hero contrastType={`${this.state.contrastType}`} />
+            <Main contrastType={`${this.state.contrastType}`} />
+            <Partners contrastType={`${this.state.contrastType}`} />
+            <Footer contrastType={`${this.state.contrastType}`} />
+          </Box>
+        </ThemeProvider>
+      </>
     );
   }
 }

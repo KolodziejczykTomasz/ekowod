@@ -7,11 +7,24 @@ import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: '100%',
     transition: '1s',
+    '&:hover': {
+      scale: 1.01,
+    },
+    [theme.breakpoints.down('sm')]: {
+      padding: '0 15px',
+      maxWidth: '100%',
+      '&:hover': {
+        scale: 1.01,
+      },
+    },
+  },
+  root2: {
+    maxWidth: '100%',
+    backgroundColor: 'yellow',
     '&:hover': {
       scale: 1.01,
     },
@@ -52,11 +65,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function WidgetCennik() {
+const WidgetCennik = ({ activeColor }) => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className={activeColor !== 'yellow' ? classes.root : classes.root2}>
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
@@ -67,7 +80,7 @@ export default function WidgetCennik() {
         subheader="Wrzesień 14, 2020"
       />
 
-      <CardContent>       
+      <CardContent>
         <Typography paragraph style={{ textAlign: 'center', marginTop: 20 }}>
           Informacja o zmianie ceny wody i ścieków
         </Typography>
@@ -88,4 +101,5 @@ export default function WidgetCennik() {
       </CardContent>
     </Card>
   );
-}
+};
+export default WidgetCennik;

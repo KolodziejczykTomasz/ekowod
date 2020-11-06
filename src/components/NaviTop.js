@@ -24,14 +24,15 @@ import brightnessContrast from '@iconify/icons-carbon/brightness-contrast';
 
 import 'components/NaviTop.css';
 
-const NaviTop = ({ clickContrastFn, growFontFn, shrinkFontFn, resetFontFn }) => {
+
+const NaviTop = ({ contrastType, clickContrastFn, growFontFn, shrinkFontFn, resetFontFn }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div>
-      <Navbar color="light" light expand="md" fixed="top" className="sticky">
+      <Navbar expand="md" fixed="top" className="sticky" style={{ backgroundColor: contrastType }}>
         <NavbarBrand>
           <Link to="/">
             <img src={BrandLogo} alt="Brand Logo" id="brandLogo" />
