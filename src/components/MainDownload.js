@@ -7,15 +7,18 @@ import 'aos/dist/aos.css';
 import 'components/MainDownload.css';
 import 'bulma/css/bulma.css';
 
-const MainDownload = () => {
+const MainDownload = ({ contrastType, fontSizeChange }) => {
   return (
-    <div className="wrapperMain">
+    <div className="wrapperMain" activeColor={contrastType} activeSize={fontSizeChange}>
       <div>
         <NaviAside />
       </div>
       <div className="mainSection">
         <BreakeStartSection>Pliki do pobrania</BreakeStartSection>
-        <table className="table" style={{ width: '90%', margin: '0 auto' }}>
+        <table
+          className="table"
+          style={{ width: '90%', margin: '0 auto', backgroundColor: contrastType }}
+        >
           <thead>
             <tr>
               <th>Nazwa pliku</th>

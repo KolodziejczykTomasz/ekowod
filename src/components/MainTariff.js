@@ -6,19 +6,30 @@ import 'aos/dist/aos.css';
 import 'components/MainTariff.css';
 import 'bulma/css/bulma.css';
 
-const MainTariff = () => {
+const MainTariff = ({ contrastType, fontSizeChange }) => {
   return (
     <div className="wrapperTariff">
       <div>
         <NaviAside />
       </div>
-      <div className="mainSection">
+      <div className="mainSection" activeColor={contrastType} activeSize={fontSizeChange}>
         <BreakeStartSection>Cennik</BreakeStartSection>
-        <p style={{ textAlign: 'center', marginBottom: 70, fontWeight: 600 }}>
+        <p
+          style={{
+            textAlign: 'center',
+            marginBottom: 70,
+            fontWeight: 600,
+            backgroundColor: contrastType,
+          }}
+        >
           Obowiązujące od 13 czerwca 2020 roku do 12 czerwca 2021 roku ceny: woda, ścieki i opłata
           abonamentowa.
         </p>
-        <table className="table" style={{ width: '90%', margin: '0 auto' }}>
+       
+        <table
+          className="table"
+          style={{ width: '90%', margin: '0 auto', backgroundColor: contrastType }}
+        >
           <thead>
             <tr>
               <th>Usługa</th>

@@ -19,7 +19,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     max-width: 1250px;
     font-size: 1.6rem;
-    font-family: 'Open Sans', Arial, sans-serif; 
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: transparent; 
+   overflow: hidden; 
   }
   `;
 

@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: '100%',
     transition: '1s',
+    fontSize: '14px',
     '&:hover': {
       scale: 1.01,
     },
@@ -62,15 +63,19 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     backgroundColor: '#B2CA39',
-  },
+  }, 
 }));
 
-const WidgetCennik = ({ activeColor }) => {
+const WidgetCennik = ({ activeColor, activeSize }) => {
   const classes = useStyles();
 
   return (
-    <Card className={activeColor !== 'yellow' ? classes.root : classes.root2}>
+    <Card
+      className={activeColor !== 'yellow' ? classes.root : classes.root2}
+      style={{ fontSize: `${activeSize}px` }}
+    >
       <CardHeader
+        style={{ fontSize: `${activeSize}px` }}
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
             Z
@@ -80,20 +85,26 @@ const WidgetCennik = ({ activeColor }) => {
         subheader="Wrzesień 14, 2020"
       />
 
-      <CardContent>
-        <Typography paragraph style={{ textAlign: 'center', marginTop: 20 }}>
+      <CardContent activeSize>
+        <Typography
+          paragraph
+          style={{ textAlign: 'center', marginTop: 20, fontSize: `${activeSize}px` }}
+        >
           Informacja o zmianie ceny wody i ścieków
         </Typography>
-        <Typography style={{ textAlign: 'justify', hyphens: 'auto' }} paragraph>
+        <Typography
+          style={{ textAlign: 'justify', hyphens: 'auto', fontSize: `${activeSize}px` }}
+          paragraph
+        >
           Zakład Budżetowy Związku Gmin "EKOWOD" w Lidzbarku Warmińskim podaje do wiadomości, iż na
           podstawie złożonego wniosku do Państwowego Gospodarstwa Wody Polskie Dyrektor Regionalnego
           Zarządu Gospodarki Wodnej w Białymstoku zatwierdził nową taryfę opłat za pobraną wodę i
           odprowadzanie ścieków, która obowiązuje
         </Typography>
-        <Typography style={{ textAlign: 'center' }}>
+        <Typography style={{ textAlign: 'center', fontSize: `${activeSize}px` }}>
           od 13 czerwca 2020 r. (w okresie od 25 do 36 miesiąca obowiązywania taryfy)
         </Typography>
-        <Typography style={{ textAlign: 'center' }}>
+        <Typography style={{ textAlign: 'center', fontSize: `${activeSize}px` }}>
           <Link to="/tariff" id="linkFooter">
             Cennik
           </Link>

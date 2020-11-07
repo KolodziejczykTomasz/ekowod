@@ -21,13 +21,13 @@ const MainWarpper = styled.div`
   background-color: ${({ activeColor, theme }) => (activeColor ? theme[activeColor] : 'white')};
 `;
 
-const Main = ({ contrastType }) => {
+const Main = ({ contrastType, fontSizeChange }) => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
   return (
-    <MainWarpper activeColor={contrastType}>
+    <MainWarpper activeSize={fontSizeChange} activeColor={contrastType}>
       <div id="menuVertical">
         <NaviAsideVertical />
       </div>
@@ -35,9 +35,9 @@ const Main = ({ contrastType }) => {
         <BreakeStartSection>Aktualności</BreakeStartSection>
       </div>
       <div id="cardWidget" data-aos="fade-up">
-        <WidgetCovid activeColor={contrastType} />
-        <WidgetSiedziba activeColor={contrastType} />
-        <WidgetCennik activeColor={contrastType} />
+        <WidgetCovid activeColor={contrastType} activeSize={fontSizeChange} />
+        <WidgetSiedziba activeColor={contrastType} activeSize={fontSizeChange} />
+        <WidgetCennik activeColor={contrastType} activeSize={fontSizeChange} />
       </div>
       <div>
         <BreakeSection style={{ marginTop: '40' }}>

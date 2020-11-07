@@ -68,12 +68,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const WidgetSiedziba = ({ activeColor }) => {
+const WidgetSiedziba = ({ activeColor, activeSize }) => {
   const classes = useStyles();
 
   return (
     <Card className={activeColor !== 'yellow' ? classes.root : classes.root2}>
       <CardHeader
+        style={{ fontSize: `${activeSize}px` }}
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
             N
@@ -82,18 +83,28 @@ const WidgetSiedziba = ({ activeColor }) => {
         title="Nowa siedziba"
         subheader="Wrzesień 14, 2020"
       />
-      <CardMedia className={classes.media} image={News2} title="Nowa siedziba" />
-      <CardContent>
-        <Typography paragraph style={{ textAlign: 'center' }}>
+      <CardMedia
+        className={classes.media}
+        style={{ fontSize: `${activeSize}px` }}
+        image={News2}
+        title="Nowa siedziba"
+      />
+      <CardContent style={{ fontSize: `${activeSize}px` }}>
+        <Typography paragraph style={{ textAlign: 'center', fontSize: `${activeSize}px` }}>
           Uwaga!!!
         </Typography>
-        <Typography style={{ textAlign: 'justify', hyphens: 'auto' }} paragraph>
+        <Typography
+          style={{ textAlign: 'justify', hyphens: 'auto', fontSize: `${activeSize}px` }}
+          paragraph
+        >
           Zawiadamiamy, że zakończył się remont siedziby Związku Gmin "EKOWOD" i Zakładu Budżetowego
           Związku Gmin "EKOWOD", zapraszamy do nowej siedziby na ul. Olsztyńską 10D,11-100 Lidzbark
           Warmiński. Interesantów informujemy, że już nie urzędujemy w budynku Urzędu Gminy w
           Lidzbarku Warmińskim Za utrudnienia przepraszamy.
         </Typography>
-        <Typography style={{ textAlign: 'center' }}>Za utrudnienia przepraszamy.</Typography>
+        <Typography style={{ textAlign: 'center', fontSize: `${activeSize}px` }}>
+          Za utrudnienia przepraszamy.
+        </Typography>
       </CardContent>
     </Card>
   );
