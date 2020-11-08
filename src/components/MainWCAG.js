@@ -8,11 +8,11 @@ import 'bulma/css/bulma.css';
 
 
 
-const MainWCAG = () => {
+const MainWCAG = ({ contrastType }) => {
   return (
     <div className="wrapperMain">
       <div>
-        <NaviAside />
+        <NaviAside activeColor={contrastType} />
       </div>
       <div className="mainSection">
         <section>

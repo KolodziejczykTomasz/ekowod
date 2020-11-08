@@ -24,6 +24,7 @@
 
 thead{
   text-transform: uppercase;
+  font-size: 18px;
 }
 
 @media (max-width: 600px) {

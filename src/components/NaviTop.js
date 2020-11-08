@@ -135,6 +135,7 @@ const NaviTop = ({ contrastType, clickContrastFn, growFontFn, shrinkFontFn, rese
                 icon={brightnessContrast}
                 id="accessibleIcon"
                 aria-label="Zmiana kontrastu strony po kliknięciu"
+                style={{ backgroundColor: "yellow" }}
                 onClick={clickContrastFn}
                 aria-hidden="true"
               />

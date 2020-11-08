@@ -8,11 +8,11 @@ import 'bulma/css/bulma.css';
 
 
 
-const MainRodo = () => {
+const MainRodo = ({ contrastType }) => {
   return (
     <div className="wrapperMain">
       <div>
-        <NaviAside />
+        <NaviAside activeColor={contrastType} />
       </div>
       <div className="mainSection">
         <section>

@@ -7,22 +7,31 @@ import './NaviAsideVertical.css';
 import './Main.css';
 import 'bulma/css/bulma.css';
 
-const NaviAsideVertical = () => (
+const NaviAsideVertical = ({ activeColor }) => (
   <div className="asideMenu">
-    <AsideMenuItem>
-      <Link to="/tariff" id="buttonNaviAside">
+    <AsideMenuItem activeItem={activeColor}>
+      <Link
+        to="/tariff"
+        className={activeColor !== 'yellow' ? 'buttonNaviAside' : 'buttonNaviAsideContrast'}
+      >
         <AttachMoneyOutlined className="iconMenu" style={{ fontSize: 30 }} />
         Cennik
       </Link>
     </AsideMenuItem>
-    <AsideMenuItem>
-      <Link to="/download" id="buttonNaviAside">
+    <AsideMenuItem activeItem={activeColor}>
+      <Link
+        to="/download"
+        className={activeColor !== 'yellow' ? 'buttonNaviAside' : 'buttonNaviAsideContrast'}
+      >
         <SaveAltOutlined className="iconMenu" style={{ fontSize: 30 }} />
         Do pobrania
       </Link>
     </AsideMenuItem>
-    <AsideMenuItem>
-      <Link to="/contact" id="buttonNaviAside">
+    <AsideMenuItem activeItem={activeColor}>
+      <Link
+        to="/contact"
+        className={activeColor !== 'yellow' ? 'buttonNaviAside' : 'buttonNaviAsideContrast'}
+      >
         <ContactPhoneOutlined className="iconMenu" style={{ fontSize: 30 }} />
         Kontakt
       </Link>

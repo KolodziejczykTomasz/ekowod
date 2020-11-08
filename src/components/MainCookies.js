@@ -7,11 +7,11 @@ import 'components/MainCookies.css';
 import 'bulma/css/bulma.css';
 
 
-const MainRodo = () => {
+const MainRodo = ({ contrastType }) => {
   return (
     <div className="wrapperCookies">
       <div>
-        <NaviAside />
+        <NaviAside activeColor={contrastType} />
       </div>
       <div className="mainSection">
         <BreakeStartSection>POLITYKA PLIKÓW „COOKIES”</BreakeStartSection>

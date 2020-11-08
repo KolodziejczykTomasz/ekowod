@@ -4,7 +4,7 @@ import NaviAside from './NaviAside';
 import gallery from 'data/gallery';
 
 import 'aos/dist/aos.css';
-import 'components/MainAbout.css';
+import './MainAbout.css';
 import 'bulma/css/bulma.css';
 
 class MainAbout extends Component {
@@ -14,10 +14,11 @@ class MainAbout extends Component {
 
   render() {
     const { gallery } = this.state;
+    const { contrastType } = this.props;
     return (
       <div className="wrapperAbout">
         <div>
-          <NaviAside />
+          <NaviAside activeColor={contrastType} />
         </div>
         <div className="mainSection">
           <BreakeStartSection>O nas</BreakeStartSection>
@@ -74,7 +75,10 @@ class MainAbout extends Component {
             </p>
           </div>
           <BreakeStartSection>Nasza Kadra</BreakeStartSection>
-          <table className="table" style={{ margin: '0 auto', textAlign: 'center' }}>
+          <table
+            className="table"
+            style={{ margin: '0 auto', textAlign: 'center', backgroundColor: contrastType }}
+          >
             <thead>
               <tr>
                 <th>Dział</th>

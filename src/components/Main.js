@@ -29,7 +29,7 @@ const Main = ({ contrastType, fontSizeChange }) => {
   return (
     <MainWarpper activeSize={fontSizeChange} activeColor={contrastType}>
       <div id="menuVertical">
-        <NaviAsideVertical />
+        <NaviAsideVertical activeColor={contrastType} />
       </div>
       <div>
         <BreakeStartSection>Aktualności</BreakeStartSection>

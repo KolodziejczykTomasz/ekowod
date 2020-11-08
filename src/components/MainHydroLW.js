@@ -6,15 +6,23 @@ import 'aos/dist/aos.css';
 import 'components/MainHydroLW.css';
 import 'bulma/css/bulma.css';
 
-const MainHydroLW = () => {
+const MainHydroLW = ({ contrastType }) => {
   return (
     <div className="wrapperMainHydroLW">
       <div>
-        <NaviAside />
+        <NaviAside activeColor={contrastType} />
       </div>
       <div className="mainSection">
         <BreakeStartSection>Hydrofornie - Gmina Lidzbark Warmiński</BreakeStartSection>
-        <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
+        <table
+          className="table"
+          style={{
+            width: '80%',
+            margin: '0 auto',
+            textAlign: 'center',
+            backgroundColor: contrastType,
+          }}
+        >
           <thead>
             <tr>
               <th>Hydrofornia</th>

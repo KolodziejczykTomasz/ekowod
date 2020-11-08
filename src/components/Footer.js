@@ -12,20 +12,11 @@ import {
 import DividerLine from 'components/DividerLine';
 import BrandLogo from 'assets/images/logo.svg';
 
-import 'components/Footer.css';
-import styled from 'styled-components';
+import './Footer.css';
 
-const FooterWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
-  max-width: 1250px;
-  margin: 80px auto 0 auto; 
-  background-color: ${({ activeColor, theme }) => (activeColor ? theme[activeColor] : 'white')};
-`;
 
 const Footer = ({ contrastType }) => (
-  <FooterWrapper activeColor={contrastType}>
+  <div className={contrastType !== 'yellow' ? "wrapperFooter" : "wrapperFooterContrast"}>
     <DividerLine />
     <div className="wrapperWidget">
       <div className="widgetLeft">
@@ -146,7 +137,7 @@ const Footer = ({ contrastType }) => (
         </p>
       </div>
     </div>
-  </FooterWrapper>
+  </div>
 );
 
 Footer.propTypes = {

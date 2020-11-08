@@ -6,16 +6,24 @@ import 'aos/dist/aos.css';
 import 'components/MainOczyszczLub.css';
 import 'bulma/css/bulma.css';
 
-const MainOczyszczLub = () => {
+const MainOczyszczLub = ({ contrastType }) => {
   return (
     <div className="wrapperMainOczyszczLub">
       <div>
-        <NaviAside />
+        <NaviAside activeColor={contrastType} />
       </div>
       <div className="mainSection">
         <BreakeStartSection>Oczyszczlanie ścieków - Gmina Lubomino</BreakeStartSection>
 
-        <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
+        <table
+          className="table"
+          style={{
+            width: '80%',
+            margin: '0 auto',
+            textAlign: 'center',
+            backgroundColor: contrastType,
+          }}
+        >
           <thead>
             <tr>
               <th>Oczyszczalnia ścieków</th>

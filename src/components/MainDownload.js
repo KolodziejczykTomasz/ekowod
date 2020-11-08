@@ -4,14 +4,14 @@ import BreakeStartSection from 'components/BreakeStartSection';
 import NaviAside from './NaviAside';
 
 import 'aos/dist/aos.css';
-import 'components/MainDownload.css';
+import './MainDownload.css';
 import 'bulma/css/bulma.css';
 
 const MainDownload = ({ contrastType, fontSizeChange }) => {
   return (
     <div className="wrapperMain" activeColor={contrastType} activeSize={fontSizeChange}>
       <div>
-        <NaviAside />
+        <NaviAside activeColor={contrastType} />
       </div>
       <div className="mainSection">
         <BreakeStartSection>Pliki do pobrania</BreakeStartSection>
@@ -28,13 +28,14 @@ const MainDownload = ({ contrastType, fontSizeChange }) => {
           <tbody>
             <tr>
               <th>Klauzula RODO</th>
-              <td>
+              <td style={{ margin: '0 auto' }}>
                 <a
                   href="http://ekowod.netlify.app/files/RODO _klauzula.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={{ margin: '0 auto' }}
                 >
-                  <SaveAltIcon style={{ fontSize: 30 }} />
+                  <SaveAltIcon style={{ fontSize: 30, margin: '0 auto' }} />
                 </a>
               </td>
             </tr>
@@ -45,6 +46,7 @@ const MainDownload = ({ contrastType, fontSizeChange }) => {
                   href="http://ekowod.netlify.app/files/Wniosek warunki techniczne.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={{ marginleft: '15' }}
                 >
                   <SaveAltIcon style={{ fontSize: 30 }} />
                 </a>

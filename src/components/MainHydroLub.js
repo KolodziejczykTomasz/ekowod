@@ -8,17 +8,25 @@ import 'bulma/css/bulma.css';
 
 
 
-const MainHydroLub = () => {
+const MainHydroLub = ({ contrastType }) => {
   return (
     <div className="wrapperMainHydroLub">
       <div>
-        <NaviAside />
+        <NaviAside activeColor={contrastType} />
       </div>
       <div className="mainSection">
         <section>
           <BreakeStartSection>Hydrofornie - Gmina Lubomino</BreakeStartSection>
 
-          <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
+          <table
+            className="table"
+            style={{
+              width: '80%',
+              margin: '0 auto',
+              textAlign: 'center',
+              backgroundColor: contrastType,
+            }}
+          >
             <thead>
               <tr>
                 <th>Hydrofornia</th>

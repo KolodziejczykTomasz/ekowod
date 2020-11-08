@@ -6,20 +6,29 @@ import './NaviAside.css';
 import './Main.css';
 import 'bulma/css/bulma.css';
 
-const NaviAside = () => (
-  <div id="asideMenu">    
-    <AsideMenuItem>
-      <Link to="/tariff" id="buttonNaviAside">
+const NaviAside = ({ activeColor }) => (
+  <div id="asideMenu">
+    <AsideMenuItem activeItem={activeColor}>
+      <Link
+        to="/tariff"
+        className={activeColor !== 'yellow' ? 'buttonNaviAside' : 'buttonNaviAsideContrast'}
+      >
         Cennik
       </Link>
     </AsideMenuItem>
-    <AsideMenuItem>
-      <Link to="/download" id="buttonNaviAside">
+    <AsideMenuItem activeItem={activeColor}>
+      <Link
+        to="/download"
+        className={activeColor !== 'yellow' ? 'buttonNaviAside' : 'buttonNaviAsideContrast'}      
+      >
         Do pobrania
       </Link>
     </AsideMenuItem>
-    <AsideMenuItem>
-      <Link to="/contact" id="buttonNaviAside">
+    <AsideMenuItem activeItem={activeColor}>
+      <Link
+        to="/contact"
+        className={activeColor !== 'yellow' ? 'buttonNaviAside' : 'buttonNaviAsideContrast'}      
+      >
         Kontakt
       </Link>
     </AsideMenuItem>

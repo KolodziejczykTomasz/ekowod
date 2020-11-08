@@ -10,16 +10,24 @@ import 'bulma/css/bulma.css';
 
 
 
-const MainHydroKol = () => {
+const MainHydroKol = ({ contrastType }) => {
   return (
     <div className="wrapperMainHydroKol">
       <div>
-        <NaviAside />
+        <NaviAside activeColor={contrastType} />
       </div>
       <div className="mainSection">
         <BreakeStartSection>Hydrofornie - Gmina Kolno</BreakeStartSection>
 
-        <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
+        <table
+          className="table"
+          style={{
+            width: '80%',
+            margin: '0 auto',
+            textAlign: 'center',
+            backgroundColor: contrastType,
+          }}
+        >
           <thead>
             <tr>
               <th>Hydrofornia</th>

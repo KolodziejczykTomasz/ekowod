@@ -6,16 +6,24 @@ import 'aos/dist/aos.css';
 import 'components/MainOczyszczKol.css';
 import 'bulma/css/bulma.css';
 
-const MainOczyszczKol = () => {
+const MainOczyszczKol = ({ contrastType }) => {
   return (
     <div className="wrapperMainOczyszczKol">
       <div>
-        <NaviAside />
+        <NaviAside activeColor={contrastType} />
       </div>
       <div className="mainSection">
         <BreakeStartSection>Oczyszczlanie ścieków - Gmina Kolno</BreakeStartSection>
 
-        <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
+        <table
+          className="table"
+          style={{
+            width: '80%',
+            margin: '0 auto',
+            textAlign: 'center',
+            backgroundColor: contrastType,
+          }}
+        >
           <thead>
             <tr>
               <th>Oczyszczalnia ścieków</th>

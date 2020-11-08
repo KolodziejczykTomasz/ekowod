@@ -6,16 +6,24 @@ import 'aos/dist/aos.css';
 import 'components/MainOczyszczLW.css';
 import 'bulma/css/bulma.css';
 
-const MainOczyszczLW = () => {
+const MainOczyszczLW = ({ contrastType }) => {
   return (
     <div className="wrapperMainOczyszczLW">
       <div>
-        <NaviAside />
+        <NaviAside activeColor={contrastType} />
       </div>
       <div className="mainSection">
         <BreakeStartSection>Oczyszczlanie ścieków - Gmina Lidzbark Warmiński</BreakeStartSection>
 
-        <table className="table" style={{ width: '80%', margin: '0 auto', textAlign: 'center' }}>
+        <table
+          className="table"
+          style={{
+            width: '80%',
+            margin: '0 auto',
+            textAlign: 'center',
+            backgroundColor: contrastType,
+          }}
+        >
           <thead>
             <tr>
               <th>Oczyszczalnia ścieków</th>
