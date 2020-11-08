@@ -8,7 +8,7 @@ import MainCookies from 'components/MainCookies';
 import Footer from 'components/Footer';
 import GlobalStyle from 'theme/GlobalStyle';
 import styled from 'styled-components';
-
+import ScrollUpButton from 'react-scroll-up-button';
 const Box = styled.div`
   padding: 0 auto;
   max-width: 1250px;
@@ -78,9 +78,11 @@ class CookiesView extends Component {
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}
             />
-        <MainCookies contrastType={`${this.state.contrastType}`}
+            <MainCookies
+              contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}
             />
+            <ScrollUpButton />
             <Footer
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}

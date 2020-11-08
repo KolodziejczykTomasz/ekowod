@@ -10,6 +10,16 @@
   box-sizing: border-box;
 }
 
+#rodoList {
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+#rodoListItem {
+  margin-bottom: 15px;
+  line-height: 24px;
+}
+
 @media (max-width: 600px) {
   .wrapperMain {
     grid-template-columns: 1fr;
@@ -27,8 +37,6 @@
     grid-template-rows: 1fr 1fr;
   }
 }
-
-
 
 /*Main*/
 .mainSection {

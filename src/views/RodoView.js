@@ -8,7 +8,7 @@ import MainRodo from 'components/MainRodo';
 import Footer from 'components/Footer';
 import styled from 'styled-components';
 import GlobalStyle from 'theme/GlobalStyle';
-
+import ScrollUpButton from 'react-scroll-up-button';
 const Box = styled.div`
   padding: 0 auto;
   max-width: 1250px;
@@ -83,6 +83,7 @@ class RodoView extends Component {
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}
             />
+            <ScrollUpButton />
             <Footer
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}

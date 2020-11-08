@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'theme/theme';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import CookieConsent from 'react-cookie-consent';
 import styled from 'styled-components';
 import NaviTop from 'components/NaviTop';
 import Hero from 'components/Hero';
@@ -9,7 +11,7 @@ import Main from 'components/Main';
 import Footer from 'components/Footer';
 import Partners from 'components/Partners';
 import GlobalStyle from 'theme/GlobalStyle';
-
+import ScrollUpButton from 'react-scroll-up-button';
 
 import './HomeView.css';
 
@@ -72,7 +74,6 @@ class HomeView extends Component {
             <Helmet activeColor={contrastType}>
               {contrastType === 'yellow' ? <style>{'html{ background-color:yellow}'}</style> : null}
             </Helmet>
-
             <NaviTop
               clickContrastFn={this.handleClick}
               growFontFn={this.handleGrowFontSize}
@@ -93,6 +94,25 @@ class HomeView extends Component {
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}
             />
+            <ScrollUpButton />
+            <CookieConsent
+              location="bottom"
+              buttonText="Wyrażam zgodę"
+              cookieName="myAwesomeCookieName2"
+              style={{ background: '#2B373B', width: '100%' }}
+              buttonStyle={{ color: '#4e503b', fontSize: '13px' }}
+              expires={150}
+            >
+                   
+              <span id="cookieSpan">
+                 Nasz serwis, jak większość serwisów internetowych, wykorzystuje tzw. pliki cookies.
+                Korzystanie z serwisu oznacza zgodę na ich zapis lub wykorzystanie. Więcej
+                informacji można znaleźć w „Polityce prywatności”. Akceptuję{' '}
+                <Link to="/cookies">"Politykę prywatności"</Link> i wykorzystania plików cookies w
+                serwisie.
+              </span>
+                  
+            </CookieConsent>
             <Footer
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}

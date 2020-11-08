@@ -32,7 +32,7 @@ const NaviTop = ({ contrastType, clickContrastFn, growFontFn, shrinkFontFn, rese
 
   return (
     <div>
-      <Navbar expand="md" fixed="top" className="sticky" style={{ backgroundColor: contrastType }}>
+      <Navbar expand="md" fixed="top" light id="navbar" style={{ backgroundColor: contrastType }}>
         <NavbarBrand>
           <Link to="/">
             <img src={BrandLogo} alt="Brand Logo" id="brandLogo" />
