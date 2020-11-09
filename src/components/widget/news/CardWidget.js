@@ -20,7 +20,7 @@ import Water from 'assets/images/water.jpg';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
-    transition: '1s',    
+    transition: '1s',
     '&:hover': {
       scale: 1.01,
     },
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
       '&:hover': {
         scale: 1.01,
       },
-    },   
+    },
   },
   media: {
     height: 0,
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: '#B2CA39',
+    backgroundColor: '#637201',
   },
 }));
 

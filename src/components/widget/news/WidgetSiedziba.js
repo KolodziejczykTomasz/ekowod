@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: '100%',
     transition: '1s',
+    backgroundColor: '#fff',
     '&:hover': {
       scale: 1.01,
     },
@@ -64,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: '#B2CA39',
+    backgroundColor: '#637201',
   },
 }));
 

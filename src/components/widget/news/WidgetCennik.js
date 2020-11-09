@@ -62,8 +62,8 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: '#B2CA39',
-  }, 
+    backgroundColor: '#637201',
+  },
 }));
 
 const WidgetCennik = ({ activeColor, activeSize }) => {
