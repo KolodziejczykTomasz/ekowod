@@ -15,35 +15,31 @@ const MainDownload = ({ contrastType, fontSizeChange }) => {
       </div>
       <div className="mainSection">
         <BreakeStartSection>Pliki do pobrania</BreakeStartSection>
-        <table
-          className="table"
-          style={{ width: '90%', margin: '0 auto', backgroundColor: contrastType }}
-        >
+        <table className="table" style={{ width: '90%', backgroundColor: contrastType }}>
           <thead>
             <tr>
               <th>Nazwa pliku</th>
-              <th>Pobierz</th>
+              <th style={{textAlign:"center"}}>Pobierz</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th>Klauzula RODO</th>
-              <td style={{ margin: '0 auto' }}>
+              <td align="center">
                 <a
-                  href="http://ekowod.netlify.app/files/RODO _klauzula.pdf"
+                  href="http://ekowod-lidzbark.pl/files/RODO _klauzula.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ margin: '0 auto' }}
                 >
-                  <SaveAltIcon style={{ fontSize: 30, margin: '0 auto' }} />
+                  <SaveAltIcon style={{ fontSize: 30 }} />
                 </a>
               </td>
             </tr>
             <tr>
               <th>Wniosek o wydanie warunków technicznych</th>
-              <td>
+              <td align="center">
                 <a
-                  href="http://ekowod.netlify.app/files/Wniosek warunki techniczne.pdf"
+                  href="http://ekowod-lidzbark.pl/files/Wniosek warunki techniczne.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ marginleft: '15' }}
