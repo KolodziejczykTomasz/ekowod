@@ -61,10 +61,7 @@ const MainWCAG = ({ contrastType }) => {
                 niepełnosprawnetelefonicznie mogą zgłaszać potrzebę obsługi bez konieczności
                 wchodzenia do budynku.
               </li>
-              <li>
-                Przed wejściem do budynku znajduje się parking z miejscami dla osób
-                niepełnosprawnych.
-              </li>
+              <li>Z tyłu budynku znajduje się parking z miejscami dla osób niepełnosprawnych.</li>
               <li>Nie ma przeciwwskazań wstępu osoby niepełnosprawnej z psem asystującym.</li>
               <li>
                 Z.B.Z.G "EKOWOD" nie ma możliwości zapewnienia tłumacza języka migowego na miejscu
