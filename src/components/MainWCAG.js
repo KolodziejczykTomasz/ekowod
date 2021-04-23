@@ -30,7 +30,7 @@ const MainWCAG = ({ contrastType }) => {
               <li> Data ostatniej istotnej aktualizacji: 2020-11-20</li>
               <li>Oświadczenie sporządzono dnia: 2020-11-20</li>
             </ul>
-            <p className="wcagDescritpion">
+            <p className="wcagDescritpion" style={{margin: "20px 0 40px 0"}}>
               Deklarację sporządzono na podstawie samooceny przeprowadzonej przez podmiot publiczny.
               W przypadku stwierdzenia niedostępności strony internetowej lub jej elementów prosimy
               o kontakt z w/w osobą kontaktową.
@@ -51,7 +51,7 @@ const MainWCAG = ({ contrastType }) => {
               lub aplikacjami użytkowników.
             </p>
             <h2 className="wcagh2"> Dostępność architektoniczna</h2>
-            <ul className="wcagList">
+            <ul className="wcagDescritpion">
               <li>
                 Siedziba Z.B.Z.G "EKOWOD" znajduje się w budynku przy ul. Olsztyńskiej 10D, 11-100
                 Lidzbark Warmiński
