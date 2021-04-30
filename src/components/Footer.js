@@ -16,7 +16,7 @@ import './Footer.css';
 
 
 const Footer = ({ contrastType }) => (
-  <div className={contrastType !== 'yellow' ? "wrapperFooter" : "wrapperFooterContrast"}>
+  <div className={contrastType !== 'yellow' ? 'wrapperFooter' : 'wrapperFooterContrast'}>
     <DividerLine />
     <div className="wrapperWidget">
       <div className="widgetLeft">
@@ -100,6 +100,22 @@ const Footer = ({ contrastType }) => (
                 <Link to="/wcag" id="linkFooter">
                   Oświadczenie o dostępności
                 </Link>
+              </span>
+            </li>
+            <li className="widgetListItem">
+              <ChevronRightSharp
+                className="widgetIcon"
+                style={{ fontSize: 30, marginTOp: '-5px' }}
+              />
+              <span className="widgetIconSpan">
+                <a
+                  href="http://ekowod-lidzbark.pl/files/raport.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="linkFooter"
+                >
+                  Raport dostępności
+                </a>
               </span>
             </li>
             <li className="widgetListItem">
