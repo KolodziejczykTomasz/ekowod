@@ -1,5 +1,6 @@
 import React from 'react';
 import BreakeStartSection from 'components/BreakeStartSection';
+import SaveAltIcon from '@material-ui/icons/SaveAlt';
 import NaviAside from './NaviAside';
 
 import 'aos/dist/aos.css';
@@ -22,8 +23,7 @@ const MainTariff = ({ contrastType, fontSizeChange }) => {
             backgroundColor: contrastType,
           }}
         >
-          Obowiązujące od 13 czerwca 2020 roku do 12 czerwca 2021 roku ceny: woda, ścieki i opłata
-          abonamentowa.
+          Obowiązujące od 14 maja 2021 roku ceny: woda, ścieki i opłata abonamentowa.
         </p>
 
         <table
@@ -50,30 +50,30 @@ const MainTariff = ({ contrastType, fontSizeChange }) => {
             <tr>
               <th>Odprowadzanie ścieków [m3]</th>
               <td>Gmina Górowo Iławieckie</td>
-              <td>5,39zł</td>
-              <td>0,43zł</td>
-              <td>5,82zł</td>
+              <td>5,13zł</td>
+              <td>0,41zł</td>
+              <td>5,54zł</td>
             </tr>
             <tr>
               <th></th>
               <td>Gmina Lidzbark Warmiński</td>
-              <td>4,21zł</td>
-              <td>0,34zł</td>
-              <td>4,55zł</td>
+              <td>4,52zł</td>
+              <td>0,36zł</td>
+              <td>4,88zł</td>
             </tr>
             <tr>
               <th></th>
               <td>Gmina Kolno</td>
-              <td>7,91zł</td>
-              <td>0,63zł</td>
-              <td>8,54zł</td>
+              <td>7,14zł</td>
+              <td>0,57zł</td>
+              <td>7,71zł</td>
             </tr>
             <tr>
               <th></th>
               <td>Gmina Lubomino</td>
-              <td>5,27zł</td>
-              <td>0,42zł</td>
-              <td>5,69zł</td>
+              <td>5,46zł</td>
+              <td>0,44zł</td>
+              <td>5,90zł</td>
             </tr>
             <tr>
               <th>Opłata abonamentowa</th>
@@ -92,6 +92,28 @@ const MainTariff = ({ contrastType, fontSizeChange }) => {
             <tr></tr>
           </tbody>
         </table>
+        <div>
+          <table className="table" style={{ width: '90%', backgroundColor: contrastType, margin: "75px auto" }}>            
+            <tbody>
+              <tr>
+                <th>
+                  Decyzja zatwierdzająca taryfę za zbiorowe zaopatrzenie w wodę i zbiorowe
+                  odprowadzanie ścieków
+                </th>
+                <td align="center">
+                  <a
+                    href="http://ekowod-lidzbark.pl/files/taryfa.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <SaveAltIcon style={{ fontSize: 30 }} />
+                  </a>
+                </td>
+              </tr>
+              <tr></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
