@@ -3,16 +3,14 @@ import { Button } from 'components/Button';
 import { Link } from 'react-router-dom';
 import BreakeStartSection from 'components/BreakeStartSection';
 import BreakeSection from 'components/BreakeSection';
-import WidgetCovid from 'components/widget/news/WidgetCovid';
-import WidgetSiedziba from 'components/widget/news/WidgetSiedziba';
-import WidgetPrzetarg1 from 'components/widget/news/WidgetPrzetarg1';
+import WidgetCennik from 'components/widget/news/WidgetCennik';
 import styled from 'styled-components';
 import Aos from 'aos';
 import NaviAsideVertical from './NaviAsideVertical';
 import Drop from '../assets/images/smlogo.svg';
 
 import 'aos/dist/aos.css';
-import 'components/Main.css';
+import 'components/AllNews.css';
 import 'bulma/css/bulma.css';
 
 const MainWarpper = styled.div`
@@ -24,7 +22,7 @@ const MainWarpper = styled.div`
 `;
 
 const ButtonLink = styled(Link)`
-  color: white;
+color: white;
   text-decoration: none;
    &:hover a  {
     text-decoration: none;
@@ -45,13 +43,11 @@ const Main = ({ contrastType, fontSizeChange }) => {
         <BreakeStartSection>Aktualności</BreakeStartSection>
       </div>
       <div id="cardWidget" data-aos="fade-up">
-        <WidgetPrzetarg1 activeColor={contrastType} activeSize={fontSizeChange} />
-        <WidgetCovid activeColor={contrastType} activeSize={fontSizeChange} />
-        <WidgetSiedziba activeColor={contrastType} activeSize={fontSizeChange} />
+        <WidgetCennik activeColor={contrastType} activeSize={fontSizeChange} />
       </div>
-      <Button>
-        <ButtonLink to="/allnews">więcej</ButtonLink>
-      </Button>
+      <Button><ButtonLink to="/">
+      Strona Główna
+      </ButtonLink></Button>
       <div>
         <BreakeSection style={{ marginTop: '40' }}>
           <img src={Drop} alt="Small Brand mark" style={{ height: 80 }} />

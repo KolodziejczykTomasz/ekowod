@@ -16,6 +16,7 @@ import DownloadView from 'views/DownloadView';
 import RodoView from 'views/RodoView';
 import CookiesView from 'views/CookiesView';
 import WcagView from 'views/WcagView';
+import AllNews from 'views/AllNews';
 
 const Root = () => {
   return (
@@ -24,6 +25,7 @@ const Root = () => {
         <Route exact path="/" component={HomeView} />
         <Route exact path="/about" component={AboutView} />
         <Route exact path="/contact" component={ContactView} />
+        <Route exact path="/allnews" component={AllNews} />
         <Route exact path="/hydrokol" component={HydroKolView} />
         <Route exact path="/tariff" component={TariffView} />
         <Route exact path="/hydrolw" component={HydroLwView} />

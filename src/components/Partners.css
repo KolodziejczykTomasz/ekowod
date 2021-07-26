@@ -1,6 +1,7 @@
 #partnersWrapper {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
   width: 80%;
   margin: 0 auto;
 }
@@ -39,24 +40,27 @@
 @media only screen and (min-width: 1250px) {
   #partnersWrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    width: 80%;
+    margin: 0 auto;
     max-width: 1250px;
   }
 }
 
-#partnersWrapperItem {
-  height: 130px;
+#partnersWrapperItem { 
+  display: grid;
   margin-top: 40px;
+  height: 100%;
+  width: 100%; 
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 #partnersWrapperItemPhoto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  display: block;
   transition: 1s;
+  max-height: 150px;  
   cursor: pointer;
 }
 
