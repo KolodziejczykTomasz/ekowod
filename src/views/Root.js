@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { routes } from 'routes';
 import HomeView from 'views/HomeView';
 import ContactView from 'views/ContactView';
 import AboutView from 'views/AboutView';
@@ -22,23 +23,23 @@ const Root = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={HomeView} />
-        <Route exact path="/about" component={AboutView} />
-        <Route exact path="/contact" component={ContactView} />
-        <Route exact path="/allnews" component={AllNews} />
-        <Route exact path="/hydrokol" component={HydroKolView} />
-        <Route exact path="/tariff" component={TariffView} />
-        <Route exact path="/hydrolw" component={HydroLwView} />
-        <Route exact path="/hydrogi" component={HydroGiView} />
-        <Route exact path="/hydrolub" component={HydroLubView} />
-        <Route exact path="/download" component={DownloadView} />
-        <Route exact path="/rodo" component={RodoView} />
-        <Route exact path="/cookies" component={CookiesView} />
-        <Route exact path="/oczyszczgi" component={OczyszczGiView} />
-        <Route exact path="/oczyszczlub" component={OczyszczLubView} />
-        <Route exact path="/oczyszczlw" component={OczyszczLwView} />
-        <Route exact path="/oczyszczkol" component={OczyszczKolView} />
-        <Route exact path="/wcag" component={WcagView} />
+        <Route exact path={routes.home} component={HomeView} />   
+        <Route path={routes.about} component={AboutView} />
+        <Route path={routes.contact} component={ContactView} />
+        <Route path={routes.allnews} component={AllNews} />
+        <Route path={routes.hydrokol} component={HydroKolView} />
+        <Route path={routes.tariff} component={TariffView} />
+        <Route path={routes.hydrolw} component={HydroLwView} />
+        <Route path={routes.hydrogi} component={HydroGiView} />
+        <Route path={routes.hydrolub} component={HydroLubView} />
+        <Route path={routes.download} component={DownloadView} />
+        <Route path={routes.rodo} component={RodoView} />
+        <Route path={routes.cookies} component={CookiesView} />
+        <Route path={routes.oczyszczgi} component={OczyszczGiView} />
+        <Route path={routes.oczyszczlub} component={OczyszczLubView} />
+        <Route path={routes.oczyszczlw} component={OczyszczLwView} />
+        <Route path={routes.oczyszczkol} component={OczyszczKolView} />
+        <Route path={routes.wcag} component={WcagView} />
       </Switch>
     </BrowserRouter>
   );
