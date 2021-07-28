@@ -22,23 +22,27 @@
 }
 
 .wrapperHero {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  padding-left: 10px;
   width: 100%;
+  height: 100%;
   margin: 30px auto;
 }
 
 .heroTextWrapper {
-  top: 40%;
+  top: 80%;
   left: 0;
-  width: 100%;
+  width: 50%;
   margin: 0 auto;
-  text-align: center;
-  font-size: 1.5em;
+  text-align: left;
+  font-size: 1.8em;
   font-weight: bold;
   text-decoration: none;
   z-index: 1;
   position: absolute;
-  height: auto;
-  max-width: 1250px;
   opacity: 1;
   transition: opacity 0.5s;
   background:#436fa9bd;
@@ -47,7 +51,9 @@
 
 @media only screen and (max-width: 600px) {
   .heroTextWrapper {
+  margin-top: -40px;
     font-size: 0.8em;
+    height: 60%;  
   }
   .hero-body {
     background: none;
@@ -62,15 +68,24 @@
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (max-width: 1024px) {
   .heroTextWrapper {
-    font-size: 1.2em;
+    top: 40%; 
+    width: 100%; 
+    text-align: center;
   }
   .hero-body {
     background-position: -20px -250px;
     background-repeat: no-repeat;
   }
 }
+@media only screen and (min-width: 900px) {
+  .heroTextWrapper {
+    font-size: 1.2em;    
+  }
+
+}
+
 
 @media only screen and (min-width: 1024px) {
   .heroTextWrapper {

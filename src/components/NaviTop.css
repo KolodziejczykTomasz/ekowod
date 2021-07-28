@@ -12,6 +12,10 @@ body {
   animation: moveDown 0.5s ease-in-out;
 }
 
+#nav {
+  margin: 0 auto;
+}
+
 #brandLogo {
   padding: 0.1rem 0.1rem;
   margin-right: 3rem;
@@ -31,12 +35,27 @@ body {
   border-bottom: 3px solid#1680BC;
 }
 
+@media (max-width: 900px) {
+  #buttonLink {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+}
+
 #buttonLinkMore {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  #buttonLinkMore {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-top: -4px;
+  }
 }
 
 #iconDropDown {
@@ -81,23 +100,21 @@ button {
   margin: 0 auto;
 }
 
-
-
 #accessibleIcon {
   font-size: 32px;
   padding: 5px 5px;
   cursor: pointer;
 }
 
-#accessibleIconButton{
+#accessibleIconButton {
   margin-right: 5px;
-  background-color: #F8F9FA;
-  border: 2px solid transparent;
+  background-color: #f8f9fa;
+  border: 2px solid transparent;
 }
 
 #accessibleIconButton:focus,
 #accessibleIconButton:active {
-  border-color: red;  
+  border-color: red;
   border-style: dotted;
 }
 

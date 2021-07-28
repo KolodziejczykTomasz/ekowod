@@ -40,7 +40,7 @@ const NaviTop = ({ contrastType, clickContrastFn, growFontFn, shrinkFontFn, rese
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="mr-auto" id="nav" navbar>
             <NavItem>
               <NavLink>
                 <Link to="/" id="buttonLink">
@@ -135,7 +135,7 @@ const NaviTop = ({ contrastType, clickContrastFn, growFontFn, shrinkFontFn, rese
                 icon={brightnessContrast}
                 id="accessibleIcon"
                 aria-label="Zmiana kontrastu strony po kliknięciu"
-                style={{ backgroundColor: "yellow" }}
+                style={{ backgroundColor: 'yellow' }}
                 onClick={clickContrastFn}
                 aria-hidden="true"
               />
