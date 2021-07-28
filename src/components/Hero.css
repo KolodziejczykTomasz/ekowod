@@ -33,7 +33,7 @@
 }
 
 .heroTextWrapper {
-  top: 80%;
+  bottom: 0;
   left: 0;
   width: 50%;
   margin: 0 auto;
@@ -69,8 +69,8 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .heroTextWrapper {
-    top: 40%; 
+  .heroTextWrapper {    
+    
     width: 100%; 
     text-align: center;
   }
