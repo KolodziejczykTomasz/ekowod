@@ -9,7 +9,9 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: '100%',
+    width: '100%',
+    maxWidth: 375,
+    height: '100%',
     transition: '1s',
     fontSize: '14px',
     '&:hover': {

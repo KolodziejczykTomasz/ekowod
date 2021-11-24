@@ -10,8 +10,11 @@ import News1 from 'assets/information/kom_12102020.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: '100%',
+    width: '100%',
+    maxWidth: 375,
+    height: '100%',
     transition: '1s',
+    
     '&:hover': {
       scale: 1.01,
     },

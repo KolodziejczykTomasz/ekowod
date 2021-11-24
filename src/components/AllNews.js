@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import BreakeStartSection from 'components/BreakeStartSection';
 import BreakeSection from 'components/BreakeSection';
 import WidgetCennik from 'components/widget/news/WidgetCennik';
+import WidgetSiedziba from 'components/widget/news/WidgetSiedziba';
 import styled from 'styled-components';
 import Aos from 'aos';
 import NaviAsideVertical from './NaviAsideVertical';
@@ -16,6 +17,7 @@ import 'bulma/css/bulma.css';
 const MainWarpper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+
   max-width: 1250px;
   margin: 0 auto;
   background-color: ${({ activeColor, theme }) => (activeColor ? theme[activeColor] : 'white')};
@@ -42,12 +44,17 @@ const Main = ({ contrastType, fontSizeChange }) => {
       <div>
         <BreakeStartSection>Aktualności</BreakeStartSection>
       </div>
-      <div id="cardWidget" data-aos="fade-up">
-        <WidgetCennik activeColor={contrastType} activeSize={fontSizeChange} />
+      <div id="wrapperWidget">
+        <div data-aos="fade-up">
+          <WidgetCennik activeColor={contrastType} activeSize={fontSizeChange} />
+        </div>
+        <div data-aos="fade-up">
+          <WidgetSiedziba activeColor={contrastType} activeSize={fontSizeChange} />
+        </div>
       </div>
-      <Button><ButtonLink to="/">
-      Strona Główna
-      </ButtonLink></Button>
+      <Button>
+        <ButtonLink to="/">Strona Główna</ButtonLink>
+      </Button>
       <div>
         <BreakeSection style={{ marginTop: '40' }}>
           <img src={Drop} alt="Small Brand mark" style={{ height: 80 }} />

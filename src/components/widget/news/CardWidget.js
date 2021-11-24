@@ -19,7 +19,7 @@ import Water from 'assets/images/water.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    maxWidth: '100%',
     transition: '1s',
     '&:hover': {
       scale: 1.01,
