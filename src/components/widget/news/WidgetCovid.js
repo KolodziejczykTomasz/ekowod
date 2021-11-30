@@ -10,6 +10,7 @@ import News1 from 'assets/information/kom_12102020.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    dispaly: "flex",
     width: '100%',
     maxWidth: 375,
     height: '100%',

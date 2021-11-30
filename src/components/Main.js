@@ -17,10 +17,33 @@ import 'bulma/css/bulma.css';
 
 const MainWarpper = styled.div`
   display: grid;
-  grid-template-columns: 1fr;
   max-width: 1250px;
   margin: 0 auto;
   background-color: ${({ activeColor, theme }) => (activeColor ? theme[activeColor] : 'white')};
+`;
+
+const WrapperWidgetCard = styled.div`
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+
+  @media (max-width: 350px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (min-width: 351px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 560px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 976px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 976px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 const ButtonLink = styled(Link)`
@@ -44,7 +67,7 @@ const Main = ({ contrastType, fontSizeChange }) => {
       <div>
         <BreakeStartSection>Aktualności</BreakeStartSection>
       </div>
-      <div id="wrapperWidgetCard">
+      <WrapperWidgetCard>
         <div data-aos="fade-up">
           <WidgetPrzetarg2 activeColor={contrastType} activeSize={fontSizeChange} />
         </div>
@@ -54,7 +77,7 @@ const Main = ({ contrastType, fontSizeChange }) => {
         <div data-aos="fade-up">
           <WidgetCovid activeColor={contrastType} activeSize={fontSizeChange} />
         </div>
-      </div>
+      </WrapperWidgetCard>
       <Button>
         <ButtonLink to="/allnews">więcej</ButtonLink>
       </Button>

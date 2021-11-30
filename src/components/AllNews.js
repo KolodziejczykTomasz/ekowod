@@ -17,7 +17,6 @@ import 'bulma/css/bulma.css';
 const MainWarpper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-
   max-width: 1250px;
   margin: 0 auto;
   background-color: ${({ activeColor, theme }) => (activeColor ? theme[activeColor] : 'white')};
