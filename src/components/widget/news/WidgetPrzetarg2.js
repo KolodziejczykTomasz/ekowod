@@ -114,7 +114,7 @@ const WidgetPrzetarg1 = ({ activeColor, activeSize }) => {
           <ul>
             <li>
               <a
-                href="http://ekowod-lidzbark.pl/files/przetarg/ogloszenie.pdf"
+                href="http://ekowod-lidzbark.pl/files/przetarg2/ogloszenie.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -123,7 +123,7 @@ const WidgetPrzetarg1 = ({ activeColor, activeSize }) => {
             </li>
             <li>
               <a
-                href="http://ekowod-lidzbark.pl/files/przetarg/regulamin.pdf"
+                href="http://ekowod-lidzbark.pl/files/przetarg2/regulamin.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -132,6 +132,21 @@ const WidgetPrzetarg1 = ({ activeColor, activeSize }) => {
             </li>
           </ul>
         </Typography>
+        <br/>
+        <Typography paragraph style={{ textAlign: 'left', fontSize: `${activeSize}px` }}>
+          Informacja o wyniku przetargu
+        </Typography>
+         <ul>
+            <li>
+              <a
+                href="http://ekowod-lidzbark.pl/files/przetarg2/wyniki_przetargu2.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Wyniki przetargu
+              </a>
+            </li>
+            </ul>
       </CardContent>
     </Card>
   );
