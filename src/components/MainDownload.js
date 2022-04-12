@@ -19,7 +19,7 @@ const MainDownload = ({ contrastType, fontSizeChange }) => {
           <thead>
             <tr>
               <th>Nazwa pliku</th>
-              <th style={{textAlign:"center"}}>Pobierz</th>
+              <th style={{ textAlign: 'center' }}>Pobierz</th>
             </tr>
           </thead>
           <tbody>
@@ -36,10 +36,31 @@ const MainDownload = ({ contrastType, fontSizeChange }) => {
               </td>
             </tr>
             <tr>
-              <th>Wniosek o wydanie warunków technicznych</th>
+              <th>
+                <p>Wniosek o wydanie warunków technicznych</p>
+                <p>
+                  <small>
+                    Do wniosku o warunki techniczne należy załączyć: mapę zasadniczą z widoczną
+                    siecią wodociągową potwierdzoną przez Starostwo Powiatowe
+                  </small>
+                </p>
+              </th>
               <td align="center">
                 <a
                   href="http://ekowod-lidzbark.pl/files/Wniosek warunki techniczne.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ marginleft: '15' }}
+                >
+                  <SaveAltIcon style={{ fontSize: 30 }} />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th>Wniosek o możliwości przyłączenia się do sieci wodno-kanalizacyjnej</th>
+              <td align="center">
+                <a
+                  href="http://ekowod-lidzbark.pl/files/wniosek.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ marginleft: '15' }}

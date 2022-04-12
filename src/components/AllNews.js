@@ -3,6 +3,10 @@ import { Button } from 'components/Button';
 import { Link } from 'react-router-dom';
 import BreakeStartSection from 'components/BreakeStartSection';
 import BreakeSection from 'components/BreakeSection';
+import WidgetWielkanoc from 'components/widget/news/WidgetWielkanoc';
+import WidgetPrzetarg1 from 'components/widget/news/WidgetPrzetarg1';
+import WidgetPrzetarg2 from 'components/widget/news/WidgetPrzetarg2';
+import WidgetCovid from 'components/widget/news/WidgetCovid';
 import WidgetCennik from 'components/widget/news/WidgetCennik';
 import WidgetSiedziba from 'components/widget/news/WidgetSiedziba';
 import styled from 'styled-components';
@@ -44,6 +48,18 @@ const Main = ({ contrastType, fontSizeChange }) => {
         <BreakeStartSection>Aktualności</BreakeStartSection>
       </div>
       <div id="wrapperWidget">
+        <div data-aos="fade-up">
+          <WidgetWielkanoc />
+        </div>
+        <div data-aos="fade-up">
+          <WidgetPrzetarg2 activeColor={contrastType} activeSize={fontSizeChange} />
+        </div>
+        <div data-aos="fade-up">
+          <WidgetPrzetarg1 activeColor={contrastType} activeSize={fontSizeChange} />
+        </div>
+        <div data-aos="fade-up">
+          <WidgetCovid activeColor={contrastType} activeSize={fontSizeChange} />
+        </div>
         <div data-aos="fade-up">
           <WidgetCennik activeColor={contrastType} activeSize={fontSizeChange} />
         </div>
