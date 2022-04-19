@@ -5,7 +5,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
-import News1 from 'assets/information/kom_12102020.jpg';
+import News1 from "../../../images/information/kom_12102020.jpg";
 
 
 const useStyles = makeStyles((theme) => ({

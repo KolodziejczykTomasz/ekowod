@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
-import 'components/AsideMenuItem.css';
+import '../components/AsideMenuItem.css';
 
 
 const AsideMenuItem = ({ children, activeItem }) => (

@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Water from 'assets/images/water.jpg';
+import Water from '../images/water.jpg';
 
 const useStyles = makeStyles((theme)=>({
   root: {

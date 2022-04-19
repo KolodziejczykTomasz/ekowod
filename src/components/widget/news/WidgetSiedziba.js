@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 
-import News2 from '../../../assets/information/kom_2.jpg';
+import News2 from "../../../images/information/kom_2.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {

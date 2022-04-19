@@ -1,6 +1,6 @@
 import React from 'react';
 
-import 'components/BreakeStartSection.css';
+import '../components/BreakeStartSection.css';
 
 const BreakeStartSection = ({ children }) => (
   <div id="wrapperStartBreakeLine">

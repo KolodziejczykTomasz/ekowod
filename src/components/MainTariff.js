@@ -1,5 +1,5 @@
 import React from 'react';
-import BreakeStartSection from 'components/BreakeStartSection';
+import BreakeStartSection from '../components/BreakeStartSection';
 import SaveAltIcon from '@material-ui/icons/SaveAlt';
 import NaviAside from './NaviAside';
 
@@ -33,7 +33,7 @@ const MainTariff = ({ contrastType, fontSizeChange }) => {
           <thead>
             <tr>
               <th>Usługa</th>
-              <th></th>
+              <th> </th>
               <th>Netto</th>
               <th>VAT [8%]</th>
               <th>Brutto</th>
@@ -55,21 +55,21 @@ const MainTariff = ({ contrastType, fontSizeChange }) => {
               <td>5,54zł</td>
             </tr>
             <tr>
-              <th></th>
+              <th> </th>
               <td>Gmina Lidzbark Warmiński</td>
               <td>4,52zł</td>
               <td>0,36zł</td>
               <td>4,88zł</td>
             </tr>
             <tr>
-              <th></th>
+              <th> </th>
               <td>Gmina Kolno</td>
               <td>7,14zł</td>
               <td>0,57zł</td>
               <td>7,71zł</td>
             </tr>
             <tr>
-              <th></th>
+              <th> </th>
               <td>Gmina Lubomino</td>
               <td>5,46zł</td>
               <td>0,44zł</td>
@@ -83,13 +83,13 @@ const MainTariff = ({ contrastType, fontSizeChange }) => {
               <td>2,80zł</td>
             </tr>
             <tr>
-              <th></th>
+              <th> </th>
               <td>Ryczałt:</td>
               <td>2,59zł</td>
               <td>0,21zł</td>
               <td>2,80zł</td>
             </tr>
-            <tr></tr>
+            <tr> </tr>
           </tbody>
         </table>
         <div>

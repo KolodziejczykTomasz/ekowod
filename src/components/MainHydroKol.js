@@ -1,11 +1,11 @@
 import React from 'react';
 
-import BreakeStartSection from 'components/BreakeStartSection';
+import BreakeStartSection from '../components/BreakeStartSection';
 
 import NaviAside from './NaviAside';
 
 import 'aos/dist/aos.css';
-import 'components/MainHydroKol.css';
+import '../components/MainHydroKol.css';
 import 'bulma/css/bulma.css';
 
 

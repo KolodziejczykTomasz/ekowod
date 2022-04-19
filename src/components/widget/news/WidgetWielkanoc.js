@@ -3,8 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import Avatar from '@material-ui/core/Avatar';
-import ImageView from 'react-single-image-viewer';
-import News1 from 'assets/images/wielkanoc.jpg';
+import News1 from '../../../images/wielkanoc.jpg';
 
 import styled from 'styled-components';
 
@@ -20,7 +19,7 @@ const FotoWrapper = styled.div`
     width: 100%;
   }
 `;
-const ImageStyled = styled(ImageView)`
+const ImageStyled = styled.img`
   cursor: pointer;
   border: 10px solid white;
 `;

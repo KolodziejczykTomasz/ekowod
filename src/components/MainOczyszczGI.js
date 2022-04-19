@@ -1,9 +1,9 @@
 import React from 'react';
-import BreakeStartSection from 'components/BreakeStartSection';
+import BreakeStartSection from '../components/BreakeStartSection';
 import NaviAside from './NaviAside';
 
 import 'aos/dist/aos.css';
-import 'components/MainOczyszczGI.css';
+import '../components/MainOczyszczGI.css';
 import 'bulma/css/bulma.css';
 
 const MainOczyszczGI = ({ contrastType }) => {

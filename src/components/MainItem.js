@@ -1,5 +1,5 @@
 import React from 'react';
-import 'components/MainItem.css';
+import '../components/MainItem.css';
 
 const MainItem = ({ children }) => <div className="mainContainer">{children}</div>;
 

@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react';
-import { Button } from 'components/Button';
-import { Link } from 'react-router-dom';
-import BreakeStartSection from 'components/BreakeStartSection';
-import BreakeSection from 'components/BreakeSection';
-import WidgetWielkanoc from 'components/widget/news/WidgetWielkanoc';
-import WidgetPrzetarg1 from 'components/widget/news/WidgetPrzetarg1';
-import WidgetPrzetarg2 from 'components/widget/news/WidgetPrzetarg2';
+import { Button } from '../components/Button';
+import { Link } from "gatsby";
+import BreakeStartSection from '../components/BreakeStartSection';
+import BreakeSection from '../components/BreakeSection';
+import WidgetWielkanoc from '../components/widget/news/WidgetWielkanoc';
+import WidgetPrzetarg1 from '../components/widget/news/WidgetPrzetarg1';
+import WidgetPrzetarg2 from '../components/widget/news/WidgetPrzetarg2';
 import styled from 'styled-components';
 import Aos from 'aos';
 import NaviAsideVertical from './NaviAsideVertical';
-import Drop from '../assets/images/smlogo.svg';
+import Drop from '../images/smlogo.svg';
 
 import 'aos/dist/aos.css';
-import 'components/Main.css';
+import '../components/Main.css';
 import 'bulma/css/bulma.css';
 
 const MainWarpper = styled.div`
@@ -79,7 +79,7 @@ const Main = ({ contrastType, fontSizeChange }) => {
         </div>
       </WrapperWidgetCard>
       <Button>
-        <ButtonLink to="/allnews">więcej</ButtonLink>
+        <ButtonLink to="/AllNews">więcej</ButtonLink>
       </Button>
       <div>
         <BreakeSection style={{ marginTop: '40' }}>

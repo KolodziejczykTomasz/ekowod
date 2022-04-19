@@ -1,59 +1,65 @@
 {
-  "name": "ekowod",
-  "version": "0.1.0",
+  "name": "my-gatsby-site",
+  "version": "1.0.0",
   "private": true,
+  "description": "my-gatsby-site",
+  "author": "Tomasz Kolodziejczyk",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/styles": "^4.10.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@iconify/icons-mdi": "^1.2.8",
+    "@iconify/icons-radix-icons": "^1.2.2",
+    "@iconify/react": "^3.2.1",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.2",
     "aos": "^2.3.4",
-    "bootstrap": "^4.5.3",
-    "bulma": "^0.9.0",
-    "node-sass": "^7.0.1",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.4.0",
-    "react-cookie-consent": "^6.1.0",
-    "react-dom": "^16.13.1",
+    "babel-plugin-styled-components": "^2.0.7",
+    "bootstrap": "^5.1.3",
+    "bulma": "^0.9.3",
+    "clsx": "^1.1.1",
+    "gatsby": "^4.12.1",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-google-analytics": "^4.12.1",
+    "gatsby-plugin-image": "^2.12.1",
+    "gatsby-plugin-manifest": "^4.12.1",
+    "gatsby-plugin-material-ui": "^4.0.2",
+    "gatsby-plugin-mdx": "^3.12.1",
+    "gatsby-plugin-react-helmet": "^5.12.1",
+    "gatsby-plugin-sass": "^5.12.1",
+    "gatsby-plugin-sharp": "^4.12.1",
+    "gatsby-plugin-sitemap": "^5.12.1",
+    "gatsby-plugin-styled-components": "^5.12.1",
+    "gatsby-source-contentful": "^7.10.1",
+    "gatsby-source-filesystem": "^4.12.1",
+    "gatsby-transformer-sharp": "^4.12.1",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "react": "^17.0.2",
+    "react-cookie-consent": "^7.4.1",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+    "react-icons": "^4.3.1",
     "react-iframe": "^1.8.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
-    "react-scroll-button": "^1.1.2",
-    "react-scroll-up": "^1.3.5",
     "react-scroll-up-button": "^1.6.4",
     "react-simple-image-viewer": "^1.2.1",
-    "react-single-image-viewer": "^1.0.1",
-    "react-to-print": "^2.10.3",
-    "reactstrap": "^8.5.1",
-    "styled-components": "^5.2.1",
-    "styled-theming": "^2.2.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "reactstrap": "^9.0.2",
+    "sass": "^1.50.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
-    "@iconify/icons-carbon": "^1.0.6",
-    "@iconify/icons-mdi": "^1.0.149",
-    "@iconify/icons-radix-icons": "^1.0.1",
-    "@iconify/react": "^1.1.3",
-    "eslint-plugin-jsx-a11y": "^6.4.1"
+    "@iconify/icons-carbon": "^1.2.4"
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import 'components/Hero.css';
+import './Hero.css';
 
 const Hero = () => (
   <section className="hero is-medium is-bold">

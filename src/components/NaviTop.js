@@ -12,34 +12,41 @@ import {
   DropdownMenu,
   DropdownItem,
 } from 'reactstrap';
+
 import { ArrowDropDown } from '@material-ui/icons';
-import { Link } from 'react-router-dom';
+import { Link } from "gatsby";
 import { Icon } from '@iconify/react';
-import BrandLogo from 'assets/images/logo.svg';
-import BipLogo from 'assets/images/bip.png';
+
 import formatFontSizeDecrease from '@iconify/icons-mdi/format-font-size-decrease';
 import formatFontSizeIncrease from '@iconify/icons-mdi/format-font-size-increase';
 import fontSize from '@iconify/icons-radix-icons/font-size';
 import brightnessContrast from '@iconify/icons-carbon/brightness-contrast';
 
-import 'components/NaviTop.css';
+import BrandLogo from '../images/logo.svg';
+import BipLogo from '../images/bip.png';
+
+import './NaviTop.css';
 
 
 const NaviTop = ({ contrastType, clickContrastFn, growFontFn, shrinkFontFn, resetFontFn }) => {
-  const [isOpen, setIsOpen] = useState(false);
 
+  const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  return (
-    <div>
-      <Navbar expand="md" fixed="top" light id="navbar" style={{ backgroundColor: contrastType }}>
+  return (  
+      <Navbar
+        expand="md"
+        fixed="top"
+        light
+        id="navbar"
+        style={{ backgroundColor: contrastType }}>
         <NavbarBrand>
           <Link to="/">
             <img src={BrandLogo} alt="Brand Logo" id="brandLogo" />
           </Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <Collapse navbar>
           <Nav className="mr-auto" id="nav" navbar>
             <NavItem>
               <NavLink>
@@ -50,14 +57,14 @@ const NaviTop = ({ contrastType, clickContrastFn, growFontFn, shrinkFontFn, rese
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/about" id="buttonLink">
+                <Link to="/AboutView" id="buttonLink">
                   O nas
                 </Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/contact" id="buttonLink">
+                <Link to="/ContactView" id="buttonLink">
                   Kontakt
                 </Link>
               </NavLink>
@@ -66,32 +73,38 @@ const NaviTop = ({ contrastType, clickContrastFn, growFontFn, shrinkFontFn, rese
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav id="buttonLinkMore">
                 Obiekty
-                <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
+                <ArrowDropDown
+                  id="iconDropDown"
+                  style={{ marginLeft: "-7px" }}
+                />
               </DropdownToggle>
               <DropdownMenu down>
                 <UncontrolledDropdown>
                   <DropdownToggle nav id="buttonLinkMore">
                     Hydrofornie
-                    <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
+                    <ArrowDropDown
+                      id="iconDropDown"
+                      style={{ marginLeft: "-7px" }}
+                    />
                   </DropdownToggle>
                   <DropdownMenu down>
                     <DropdownItem>
-                      <Link to="/hydrolw" id="buttonLinkMoreItem">
+                      <Link to="/HydroLwView" id="buttonLinkMoreItem">
                         Lidzbark Warmiński
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/hydrogi" id="buttonLinkMoreItem">
+                      <Link to="/HydroGiView" id="buttonLinkMoreItem">
                         Górowo Iławeckie
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/hydrokol" id="buttonLinkMoreItem">
+                      <Link to="/HydroKolView" id="buttonLinkMoreItem">
                         Kolno
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/hydrolub" id="buttonLinkMoreItem">
+                      <Link to="/HydroLubView" id="buttonLinkMoreItem">
                         Lubomino
                       </Link>
                     </DropdownItem>
@@ -101,26 +114,29 @@ const NaviTop = ({ contrastType, clickContrastFn, growFontFn, shrinkFontFn, rese
                 <UncontrolledDropdown>
                   <DropdownToggle nav id="buttonLinkMore">
                     Oczyszczalnie ścieków
-                    <ArrowDropDown id="iconDropDown" style={{ marginLeft: '-7px' }} />
+                    <ArrowDropDown
+                      id="iconDropDown"
+                      style={{ marginLeft: "-7px" }}
+                    />
                   </DropdownToggle>
                   <DropdownMenu down>
                     <DropdownItem>
-                      <Link to="/oczyszczlw" id="buttonLinkMoreItem">
+                      <Link to="/OczyszczLwView" id="buttonLinkMoreItem">
                         Lidzbark Warmiński
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/oczyszczgi" id="buttonLinkMoreItem">
+                      <Link to="/OczyszczGiView" id="buttonLinkMoreItem">
                         Górowo Iławeckie
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/oczyszczkol" id="buttonLinkMoreItem">
+                      <Link to="/OczyszczKolView" id="buttonLinkMoreItem">
                         Kolno
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/oczyszczlub" id="buttonLinkMoreItem">
+                      <Link to="/OczyszczLubView" id="buttonLinkMoreItem">
                         Lubomino
                       </Link>
                     </DropdownItem>
@@ -135,7 +151,7 @@ const NaviTop = ({ contrastType, clickContrastFn, growFontFn, shrinkFontFn, rese
                 icon={brightnessContrast}
                 id="accessibleIcon"
                 aria-label="Zmiana kontrastu strony po kliknięciu"
-                style={{ backgroundColor: 'yellow' }}
+                style={{ backgroundColor: "yellow" }}
                 onClick={clickContrastFn}
                 aria-hidden="true"
               />
@@ -173,19 +189,17 @@ const NaviTop = ({ contrastType, clickContrastFn, growFontFn, shrinkFontFn, rese
               href="http://lidzbarkwarminski-ekowod.bip-wm.pl"
               target="_blank"
               rel="noopener noreferrer"
-              id="linkFooter"
-            >
+              id="linkFooter">
               <img
                 src={BipLogo}
                 alt="bip logo"
-                style={{ height: '30px' }}
+                style={{ height: "30px" }}
                 title="Biuletyn Informacji Publicznej"
               />
             </a>
           </div>
         </Collapse>
       </Navbar>
-    </div>
   );
 };
 

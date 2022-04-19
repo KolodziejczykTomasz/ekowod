@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link } from "gatsby";
 import {
   EmailOutlined,
   PinDropOutlined,
@@ -9,8 +9,8 @@ import {
   ChevronRightSharp,
 } from '@material-ui/icons';
 
-import DividerLine from 'components/DividerLine';
-import BrandLogo from 'assets/images/logo.svg';
+import DividerLine from '../components/DividerLine';
+import BrandLogo from '../images/logo.svg';
 
 import './Footer.css';
 
@@ -75,7 +75,7 @@ const Footer = ({ contrastType }) => (
                 style={{ fontSize: 30, marginTop: '-5px' }}
               />
               <span className="widgetIconSpan">
-                <Link to="/tariff" id="linkFooter">
+                <Link to="/TariffView" id="linkFooter">
                   Cennik
                 </Link>
               </span>
@@ -86,7 +86,7 @@ const Footer = ({ contrastType }) => (
                 style={{ fontSize: 30, marginTop: '-5px' }}
               />
               <span className="widgetIconSpan">
-                <Link to="/rodo" id="linkFooter">
+                <Link to="/RodoView" id="linkFooter">
                   Ochrona danych osobowych
                 </Link>
               </span>
@@ -97,7 +97,7 @@ const Footer = ({ contrastType }) => (
                 style={{ fontSize: 30, marginTOp: '-5px' }}
               />
               <span className="widgetIconSpan">
-                <Link to="/wcag" id="linkFooter">
+                <Link to="/WcagView" id="linkFooter">
                   Oświadczenie o dostępności
                 </Link>
               </span>
@@ -124,7 +124,7 @@ const Footer = ({ contrastType }) => (
                 style={{ fontSize: 30, marginTOp: '-5px' }}
               />
               <span className="widgetIconSpan">
-                <Link to="/contact" id="linkFooter">
+                <Link to="/ContactView" id="linkFooter">
                   Zgłoś awarię
                 </Link>
               </span>
@@ -142,7 +142,7 @@ const Footer = ({ contrastType }) => (
     <div id="widgetBottom">
       <div id="widgetBottomLeft">
         <p className="widgetBottomText">
-          <Link to="/cookies" id="linkFooter">
+          <Link to="/CookiesView" id="linkFooter">
             Polityka prywatności
           </Link>
         </p>

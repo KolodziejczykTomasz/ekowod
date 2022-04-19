@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 
-import uglw from '../assets/images/herb/uglw.png';
-import ugkol from '../assets/images/herb/ugkol.jpg';
-import uglub from '../assets/images/herb/uglub.png';
-import uggi from '../assets/images/herb/uggi.jpg';
+import uglw from '../images/herb/uglw.png';
+import ugkol from '../images/herb/ugkol.jpg';
+import uglub from '../images/herb/uglub.png';
+import uggi from '../images/herb/uggi.jpg';
 
 
 import Aos from 'aos';
