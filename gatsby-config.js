@@ -11,15 +11,21 @@ module.exports = {
         spaceId: "217wzw7zaz6a",
       },
     },
+    {
+      resolve: "gatsby-plugin-static-folders",
+      options: {
+        folders: ["./src/static"],
+      },
+    },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-react-helmet",    
     "gatsby-plugin-sitemap",
     `gatsby-plugin-material-ui`,
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "./src/images/favicon.png",
       },
     },
     "gatsby-plugin-mdx",

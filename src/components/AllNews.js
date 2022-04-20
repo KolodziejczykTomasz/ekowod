@@ -6,7 +6,7 @@ import { notice as noticeData } from "../data/notice";
 
 import BreakeStartSection from "../components/BreakeStartSection";
 import BreakeSection from "../components/BreakeSection";
-import CardWidget from "../components/widget/news/CardWidget";
+import CardWidget from "./widget/CardWidget";
 
 import styled from "styled-components";
 import Aos from "aos";
@@ -22,8 +22,6 @@ const MainWarpper = styled.div`
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
-  background-color: ${({ activeColor, theme }) =>
-    activeColor ? theme[activeColor] : "white"};
 `;
 
 const ButtonLink = styled(Link)`
@@ -40,9 +38,21 @@ const WrapperNotice = styled.div`
   width: 100%;
   column-gap: 20px;
   row-gap: 30px;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
-const Main = ({ contrastType, fontSizeChange, data }) => {
+const AllNews = ({ contrastType, fontSizeChange }) => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -57,9 +67,9 @@ const Main = ({ contrastType, fontSizeChange, data }) => {
       </div>
       <div id="wrapperWidget">
         {noticeData.length ? (
-          <WrapperNotice activeColor={contrastType} activeSize={fontSizeChange}>
+          <WrapperNotice activeSize={fontSizeChange} activeColor={contrastType}>
             {noticeData
-              .reverse()
+              .sort((a, b) => b.id - a.id)
               .map(
                 ({
                   id,
@@ -106,6 +116,8 @@ const Main = ({ contrastType, fontSizeChange, data }) => {
                       fileLink3={fileLink3}
                       zipName={zipName}
                       zipLink={zipLink}
+                      activeColor={contrastType}
+                      activeSize={fontSizeChange}
                     />
                   </div>
                 )
@@ -127,4 +139,4 @@ const Main = ({ contrastType, fontSizeChange, data }) => {
   );
 };
 
-export default Main;
+export default AllNews;

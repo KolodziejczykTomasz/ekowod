@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import Collapse from "@material-ui/core/Collapse";
@@ -71,12 +70,14 @@ const FooterTitle = styled.p`
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: "100%",
-    minHeight: "580px",
+    minHeight: 620,
     height: "auto",
     transition: "1s",
+    backgroundColor: "#fff",
     "&:hover": {
       scale: 1.01,
     },
+
     [theme.breakpoints.down("sm")]: {
       padding: "0 15px",
       maxWidth: "100%",
@@ -112,6 +113,16 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     backgroundColor: "#637201",
   },
+  root2: {
+    backgroundColor: "yellow",
+    maxWidth: "100%",
+    minHeight: 620,
+    height: "auto",
+    transition: "1s",
+    "&:hover": {
+      scale: 1.01,
+    },
+  },
 }));
 
 const CardWidget = ({
@@ -133,6 +144,8 @@ const CardWidget = ({
   fileLink3,
   zipName,
   zipLink,
+  activeColor,
+  activeSize,
 }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
@@ -141,11 +154,11 @@ const CardWidget = ({
     setExpanded(!expanded);
   };
 
-  const Default = "/static/images/logo.svg";
-
+  const Default = "/images/logo.svg";
+  console.log(activeColor);
   return (
-    <Card className={classes.root}>
-      <CardHeader>
+    <Card className={activeColor !== "yellow" ? classes.root : classes.root2}>
+      <CardHeader style={{ fontSize: `${activeSize}px` }}>
         <Header>
           <AvatarWrapper>
             <Avatar aria-label="recipe" className={classes.avatar}>
@@ -164,27 +177,34 @@ const CardWidget = ({
           </div>
         </Header>
       </CardHeader>
-
-      <CardContent>
+      <CardContent style={{ fontSize: `${activeSize}px` }}>
         {image.length ? (
           <>
-            <CardMedia
+            <img
               component="img"
-              image={image}
+              src={image}
               alt={title}
-              style={{ maxHeight: "400px" }}
+              style={{
+                display: "block",
+                maxHeight: "460px",
+                width: "90%",
+                height: "80%",
+                margin: "0 auto",
+              }}
             />
           </>
         ) : (
           <>
-            <CardMedia
+            <img
               component="img"
-              image={Default}
+              src={Default}
               alt={title}
               style={{
+                display: "block",
                 width: "70%",
                 padding: "20px 20px 40px 20px",
                 margin: "0 auto",
+                maxHeight: "340px",
               }}
             />
           </>
@@ -193,7 +213,6 @@ const CardWidget = ({
         <Subtitle>{subtitle}</Subtitle>
         <ParagraphFirst>{content1}</ParagraphFirst>
       </CardContent>
-
       {content2.length ? (
         <>
           <CardActions disableSpacing>

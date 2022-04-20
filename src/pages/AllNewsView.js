@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import { Helmet } from 'react-helmet';
+
 import { theme } from '../theme/theme';
+import GlobalStyle from '../theme/GlobalStyle';
+
+import ScrollUpButton from 'react-scroll-up-button';
 import NaviTop from '../components/NaviTop';
 import Jumbotron from '../components/Jumbotron';
 import AllNews from '../components/AllNews';
 import Footer from '../components/Footer';
-import GlobalStyle from '../theme/GlobalStyle';
-import styled from 'styled-components';
-import ScrollUpButton from 'react-scroll-up-button';
+
+
 import './ContactView.css';
 
 const Box = styled.div`
@@ -17,9 +20,14 @@ const Box = styled.div`
   background-color: ${({ activeColor, theme }) => (activeColor ? theme[activeColor] : 'white')};
 `;
 
-class AboutView extends Component {
+class AllNewsView extends Component {
   state = {
-    contrastType: 'white',
+    contrastType: "white",
+    fontSizeChange: 14,
+  };
+
+  state = {
+    contrastType: "white",
     fontSizeChange: 14,
   };
 
@@ -30,13 +38,13 @@ class AboutView extends Component {
   };
 
   handleClick = () => {
-    if (this.state.contrastType === 'yellow') {
+    if (this.state.contrastType === "yellow") {
       this.setState({
-        contrastType: 'white',
+        contrastType: "white",
       });
     } else {
       this.setState({
-        contrastType: 'yellow',
+        contrastType: "yellow",
       });
     }
   };
@@ -54,6 +62,7 @@ class AboutView extends Component {
       fontSizeChange: this.state.fontSizeChange - number,
     });
   };
+
   render() {
     const { fontSizeChange, contrastType } = this.state;
     return (
@@ -63,31 +72,32 @@ class AboutView extends Component {
         <ThemeProvider theme={theme}>
           <Box
             activeColor={contrastType}
-            style={{ fontSize: fontSizeChange, backgroundColor: contrastType }}
-          >
+            style={{ fontSize: fontSizeChange, backgroundColor: contrastType }}>
             <Helmet activeColor={contrastType}>
-              {contrastType === 'yellow' ? <style>{'html{ background-color:yellow}'}</style> : null}
+              {contrastType === "yellow" ? (
+                <style>{"html{ background-color:yellow}"}</style>
+              ) : null}
             </Helmet>
             <NaviTop
               clickContrastFn={this.handleClick}
               growFontFn={this.handleGrowFontSize}
               shrinkFontFn={this.handleShrinkFontSize}
               resetFontFn={this.handleResetFontSize}
-              contrastType={`${this.state.contrastType}`}
-              fontSizeChange={`${this.state.fontSizeChange}`}
+              contrastType={`${contrastType}`}
+              fontSizeChange={`${fontSizeChange}`}
             />
             <Jumbotron
-              contrastType={`${this.state.contrastType}`}
-              fontSizeChange={`${this.state.fontSizeChange}`}
+              contrastType={`${contrastType}`}
+              fontSizeChange={`${fontSizeChange}`}
             />
             <AllNews
-              contrastType={`${this.state.contrastType}`}
-              fontSizeChange={`${this.state.fontSizeChange}`}
+              contrastType={`${contrastType}`}
+              fontSizeChange={`${fontSizeChange}`}
             />
             <ScrollUpButton />
             <Footer
-              contrastType={`${this.state.contrastType}`}
-              fontSizeChange={`${this.state.fontSizeChange}`}
+              contrastType={`${contrastType}`}
+              fontSizeChange={`${fontSizeChange}`}
             />
           </Box>
         </ThemeProvider>
@@ -97,4 +107,4 @@ class AboutView extends Component {
 }
 
 
-export default AboutView;
+export default AllNewsView;

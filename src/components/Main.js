@@ -1,56 +1,55 @@
-import React, { useEffect } from 'react';
-import { Button } from '../components/Button';
+import React, { useEffect } from "react";
+import { Button } from "../components/Button";
 import { Link } from "gatsby";
-import BreakeStartSection from '../components/BreakeStartSection';
-import BreakeSection from '../components/BreakeSection';
-import WidgetWielkanoc from '../components/widget/news/WidgetWielkanoc';
-import WidgetPrzetarg1 from '../components/widget/news/WidgetPrzetarg1';
-import WidgetPrzetarg2 from '../components/widget/news/WidgetPrzetarg2';
-import styled from 'styled-components';
-import Aos from 'aos';
-import NaviAsideVertical from './NaviAsideVertical';
-import Drop from '../images/smlogo.svg';
+import { notice as noticeData } from "../data/notice";
 
-import 'aos/dist/aos.css';
-import '../components/Main.css';
-import 'bulma/css/bulma.css';
+import BreakeStartSection from "../components/BreakeStartSection";
+import BreakeSection from "../components/BreakeSection";
+import CardWidget from "./widget/CardWidget";
+import styled from "styled-components";
+import Aos from "aos";
+import NaviAsideVertical from "./NaviAsideVertical";
+import Drop from "../images/smlogo.svg";
+
+import "aos/dist/aos.css";
+import "../components/Main.css";
+import "bulma/css/bulma.css";
 
 const MainWarpper = styled.div`
   display: grid;
   max-width: 1250px;
   margin: 0 auto;
-  background-color: ${({ activeColor, theme }) => (activeColor ? theme[activeColor] : 'white')};
+  background-color: ${({ activeColor, theme }) =>
+    activeColor ? theme[activeColor] : "white"};
 `;
 
-const WrapperWidgetCard = styled.div`
-  display: grid;
-  column-gap: 10px;
-  row-gap: 10px;
-
-  @media (max-width: 350px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  @media (min-width: 351px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  @media (min-width: 560px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: 976px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (min-width: 976px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-`;
+const WrapperWidgetCard = styled.div``;
 
 const ButtonLink = styled(Link)`
   color: white;
   text-decoration: none;
    &:hover a  {
     text-decoration: none;
+  }
+`;
+
+const WrapperNotice = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  column-gap: 20px;
+  row-gap: 30px;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 `;
 
@@ -66,23 +65,75 @@ const Main = ({ contrastType, fontSizeChange }) => {
       </div>
       <div>
         <BreakeStartSection>Aktualności</BreakeStartSection>
-      </div>     
-      <WrapperWidgetCard> 
-        <div data-aos="fade-up">
-        <WidgetWielkanoc />
       </div>
-        <div data-aos="fade-up">
-          <WidgetPrzetarg2 activeColor={contrastType} activeSize={fontSizeChange} />
-        </div>
-        <div data-aos="fade-up">
-          <WidgetPrzetarg1 activeColor={contrastType} activeSize={fontSizeChange} />
-        </div>
+      <WrapperWidgetCard>
+        {noticeData.length ? (
+          <WrapperNotice activeSize={fontSizeChange} activeColor={contrastType}>
+            {noticeData
+             .sort((a, b) => b.id - a.id) 
+              .slice(0, 3)
+              .map(
+                ({
+                  id,
+                  data,
+                  imageName,
+                  avatar,
+                  title,
+                  LinkTo,
+                  LinkName,
+                  subtitle,
+                  content1,
+                  content2,
+                  content3,
+                  content4,
+                  fileName1,
+                  fileLink1,
+                  fileName2,
+                  fileLink2,
+                  fileName3,
+                  fileLink3,
+                  zipName,
+                  zipLink,
+                }) => (
+                  <div data-aos="fade-up">
+                    <CardWidget
+                      key={id}
+                      id={id}
+                      image={imageName}
+                      avatar={avatar}
+                      title={title}
+                      data={data}
+                      LinkTo={LinkTo}
+                      LinkName={LinkName}
+                      subtitle={subtitle}
+                      content1={content1}
+                      content2={content2}
+                      content3={content3}
+                      content4={content4}
+                      fileName1={fileName1}
+                      fileLink1={fileLink1}
+                      fileName2={fileName2}
+                      fileLink2={fileLink2}
+                      fileName3={fileName3}
+                      fileLink3={fileLink3}
+                      zipName={zipName}
+                      zipLink={zipLink}
+                      activeColor={contrastType}
+                      activeSize={fontSizeChange}
+                    />
+                  </div>
+                )
+              )}
+          </WrapperNotice>
+        ) : (
+          <p>Aktualnie nie ma dodanych informacji.</p>
+        )}
       </WrapperWidgetCard>
       <Button>
-        <ButtonLink to="/AllNews">więcej</ButtonLink>
+        <ButtonLink to="/AllNewsView">więcej</ButtonLink>
       </Button>
       <div>
-        <BreakeSection style={{ marginTop: '40' }}>
+        <BreakeSection style={{ marginTop: "40" }}>
           <img src={Drop} alt="Small Brand mark" style={{ height: 80 }} />
         </BreakeSection>
       </div>
