@@ -1,0 +1,88 @@
+#cardHeader{
+   padding: 5px 5px; 
+}
+
+#avatarWrapper{padding: 10px;}
+
+
+#headerCard {
+    display: flex;
+    justify-content: left;
+align-items: center;
+height: 70px;
+}
+
+
+#titleCard {font-size: 18px;
+    font-weight: 600;
+padding-left: 15px;
+color: black;
+}
+
+
+#subheaderData{
+    padding-left: 15px;
+}
+
+
+#subtitleCard{
+    color: black;
+font-weight: 600;
+padding: 10px 0 10px 16px;
+text-align: center;
+}
+
+
+#paragraphFirst{
+    font-size: 14px;
+padding: 10px 0 10px 16px;
+}
+
+
+#paragrap{
+    font-size: 14px;
+padding: 10px 0 10px 16px;}
+
+
+#linkWrapper{
+    padding-left: 15px;
+font-weight: 600;}
+
+
+
+
+#footerTitle{
+    padding-left: 15px;
+font-weight: 600;}
+
+.root2 {
+
+    background-color: yellow;
+    max-width: 100%;
+    min-height: 620px;
+    height: auto;
+    transition: 1s;   
+}
+
+.root2:hover{
+        scale: 1.01;
+    }
+
+#avatar {
+    background-color: #637201;
+}
+
+.root {
+
+    max-width: 100%;
+    min-height: 620px;
+    height: auto;
+    transition: 1s;
+    background-color: #fff;
+}
+    
+
+ 
+.root:hover {
+        scale: 1.01;
+    }

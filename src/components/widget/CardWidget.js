@@ -11,61 +11,7 @@ import IconButton from "@material-ui/core/IconButton";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import clsx from "clsx";
-import styled from "styled-components";
-
-const CardHeader = styled.div`
-  padding: 5px 5px;
-`;
-
-const AvatarWrapper = styled.div`
-  padding: 10px;
-`;
-
-const Header = styled.div`
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  height: 70px;
-`;
-
-const Title = styled.div`
-  font-size: 18px;
-  font-weight: 600;
-  padding-left: 15px;
-`;
-
-const SubheaderData = styled.div`
-  padding-left: 15px;
-`;
-
-const Subtitle = styled.div`
-  color: black;
-  font-weight: 600;
-  padding: 10px 0 10px 16px;
-  text-align: center;
-`;
-
-const ParagraphFirst = styled.div`
-  font-size: 14px;
-  padding: 10px 0 10px 16px;
-`;
-
-const Paragraph = styled.div`
-  font-size: 14px;
-  padding: 10px 0 10px 16px;
-`;
-
-const LinkWrapper = styled.div`
-  padding-left: 15px;
-  font-weight: 600;
-`;
-
-const DownloadFiles = styled.div``;
-
-const FooterTitle = styled.p`
-  padding-left: 15px;
-  font-weight: 600;
-`;
+import "./CardWidget.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -155,146 +101,166 @@ const CardWidget = ({
   };
 
   const Default = "/images/logo.svg";
-  console.log(activeColor);
+
   return (
-    <Card className={activeColor !== "yellow" ? classes.root : classes.root2}>
-      <CardHeader style={{ fontSize: `${activeSize}px` }}>
-        <Header>
-          <AvatarWrapper>
-            <Avatar aria-label="recipe" className={classes.avatar}>
-              {title.substring(0, 1)}
-            </Avatar>
-          </AvatarWrapper>
-          <div>
-            <div>
-              <Title className={classes.title}> {title}</Title>
+    <Card>
+      <div className="root" style={{ backgroundColor: `${activeColor}` }}>
+        <div id="cardHeader" style={{ fontSize: `${activeSize}px` }}>
+          <div id="headerCard">
+            <div id="avatarWrapper">
+              <Avatar aria-label="recipe" id="avatar">
+                {title.substring(0, 1)}
+              </Avatar>
             </div>
             <div>
-              <SubheaderData className={classes.subheader}>
-                {data}
-              </SubheaderData>
+              <div>
+                <div id="titleCard"> {title}</div>
+              </div>
+              <div>
+                <div id="subheaderData">{data}</div>
+              </div>
             </div>
           </div>
-        </Header>
-      </CardHeader>
-      <CardContent style={{ fontSize: `${activeSize}px` }}>
-        {image.length ? (
+        </div>
+        <CardContent style={{ fontSize: `${activeSize}px` }}>
+          {image.length ? (
+            <>
+              <img
+                component="img"
+                src={image}
+                alt={title}
+                style={{
+                  display: "block",
+                  maxHeight: "460px",
+                  width: "90%",
+                  height: "80%",
+                  margin: "0 auto",
+                }}
+              />
+            </>
+          ) : (
+            <>
+              <img
+                component="img"
+                src={Default}
+                alt={title}
+                style={{
+                  display: "block",
+                  width: "70%",
+                  padding: "20px 20px 40px 20px",
+                  margin: "0 auto",
+                  maxHeight: "340px",
+                }}
+              />
+            </>
+          )}
+
+          <div id="subtitleCard" style={{ fontSize: `${activeSize}px` }}>
+            {subtitle}
+          </div>
+          <div id="paragraphFirst" style={{ fontSize: `${activeSize}px` }}>
+            {content1}
+          </div>
+        </CardContent>
+        {content2.length ? (
           <>
-            <img
-              component="img"
-              src={image}
-              alt={title}
-              style={{
-                display: "block",
-                maxHeight: "460px",
-                width: "90%",
-                height: "80%",
-                margin: "0 auto",
-              }}
-            />
+            <CardActions disableSpacing>
+              <IconButton
+                className={clsx(classes.expand, {
+                  [classes.expandOpen]: expanded,
+                })}
+                onClick={handleExpandClick}
+                aria-expanded={expanded}
+                aria-label="Zobacz więcej">
+                <ExpandMoreIcon />
+              </IconButton>
+            </CardActions>
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+              <CardContent>
+                <div id="paragraph" style={{ fontSize: `${activeSize}px` }}>
+                  {content2}
+                </div>
+                <div id="paragraph" style={{ fontSize: `${activeSize}px` }}>
+                  {content3}
+                </div>
+                <div id="paragraph" style={{ fontSize: `${activeSize}px` }}>
+                  {content4}
+                </div>
+
+                <div id="DownloadFiles">
+                  {LinkTo && LinkName ? (
+                    <>
+                      <div
+                        id="linkWrapper"
+                        style={{ fontSize: `${activeSize}px` }}>
+                        <Link to={LinkTo} id="linkFooter">
+                          {LinkName}
+                        </Link>
+                      </div>
+                    </>
+                  ) : null}
+
+                  {fileName1.length ? (
+                    <>
+                      <div
+                        id="footerTitle"
+                        style={{ fontSize: `${activeSize}px` }}>
+                        Pliki do pobrania:
+                      </div>
+                      <ul>
+                        <li>
+                          <a
+                            href={fileLink1}
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            {fileName1}
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href={fileLink2}
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            {fileName2}
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href={fileLink3}
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            {fileName3}
+                          </a>
+                        </li>
+                      </ul>
+
+                      {zipName.length ? (
+                        <>
+                          <div
+                            id="FooterTitle"
+                            style={{ fontSize: `${activeSize}px` }}>
+                            Pobierz - całość
+                          </div>
+                          <ul>
+                            <li>
+                              <a
+                                href={zipLink}
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                {zipName}
+                              </a>
+                            </li>
+                          </ul>
+                        </>
+                      ) : null}
+                    </>
+                  ) : null}
+                </div>
+              </CardContent>
+            </Collapse>
           </>
-        ) : (
-          <>
-            <img
-              component="img"
-              src={Default}
-              alt={title}
-              style={{
-                display: "block",
-                width: "70%",
-                padding: "20px 20px 40px 20px",
-                margin: "0 auto",
-                maxHeight: "340px",
-              }}
-            />
-          </>
-        )}
-
-        <Subtitle>{subtitle}</Subtitle>
-        <ParagraphFirst>{content1}</ParagraphFirst>
-      </CardContent>
-      {content2.length ? (
-        <>
-          <CardActions disableSpacing>
-            <IconButton
-              className={clsx(classes.expand, {
-                [classes.expandOpen]: expanded,
-              })}
-              onClick={handleExpandClick}
-              aria-expanded={expanded}
-              aria-label="Zobacz więcej">
-              <ExpandMoreIcon />
-            </IconButton>
-          </CardActions>
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Paragraph>{content2}</Paragraph>
-              <Paragraph>{content3}</Paragraph>
-              <Paragraph>{content4}</Paragraph>
-
-              <DownloadFiles>
-                {LinkTo && LinkName ? (
-                  <>
-                    <LinkWrapper>
-                      <Link to={LinkTo} id="linkFooter">
-                        {LinkName}
-                      </Link>
-                    </LinkWrapper>
-                  </>
-                ) : null}
-
-                {fileName1.length ? (
-                  <>
-                    <FooterTitle>Pliki do pobrania:</FooterTitle>
-                    <ul>
-                      <li>
-                        <a
-                          href={fileLink1}
-                          target="_blank"
-                          rel="noopener noreferrer">
-                          {fileName1}
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href={fileLink2}
-                          target="_blank"
-                          rel="noopener noreferrer">
-                          {fileName2}
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href={fileLink3}
-                          target="_blank"
-                          rel="noopener noreferrer">
-                          {fileName3}
-                        </a>
-                      </li>
-                    </ul>
-
-                    {zipName.length ? (
-                      <>
-                        <FooterTitle>Pobierz - całość</FooterTitle>
-                        <ul>
-                          <li>
-                            <a
-                              href={zipLink}
-                              target="_blank"
-                              rel="noopener noreferrer">
-                              {zipName}
-                            </a>
-                          </li>
-                        </ul>
-                      </>
-                    ) : null}
-                  </>
-                ) : null}
-              </DownloadFiles>
-            </CardContent>
-          </Collapse>
-        </>
-      ) : null}
+        ) : null}
+      </div>
     </Card>
   );
 };

@@ -10,7 +10,6 @@ import Iframe from 'react-iframe';
 import GlobalStyle from '../theme/GlobalStyle';
 import './ContactView.css';
 import styled from 'styled-components';
-import ScrollUpButton from 'react-scroll-up-button';
 
 const Box = styled.div`
   padding: 0 auto;
@@ -76,10 +75,11 @@ class ContactView extends Component {
           />
           <Box
             activeColor={contrastType}
-            style={{ fontSize: fontSizeChange, backgroundColor: contrastType }}
-          >
+            style={{ fontSize: fontSizeChange, backgroundColor: contrastType }}>
             <Helmet activeColor={contrastType}>
-              {contrastType === 'yellow' ? <style>{'html{ background-color:yellow}'}</style> : null}
+              {contrastType === "yellow" ? (
+                <style>{"html{ background-color:yellow}"}</style>
+              ) : null}
             </Helmet>
             <h1 className="contactTitle">Kontakt</h1>
             <div className="wrapperContact">
@@ -88,32 +88,35 @@ class ContactView extends Component {
                 <div className="wrapperContactAddressItem">
                   <EmailOutlined
                     className="widgetIcon"
-                    style={{ fontSize: 25, marginTop: '-5px' }}
+                    style={{ fontSize: 25, marginTop: "-5px" }}
                   />
                   biuro@ekowod-lidzbark.pl
                 </div>
                 <div className="wrapperContactAddressItem">
                   <LocalPhoneOutlined
                     className="widgetIcon"
-                    style={{ fontSize: 25, marginTop: '-5px' }}
+                    style={{ fontSize: 25, marginTop: "-5px" }}
                   />
                   89-764-2026
                 </div>
                 <div className="wrapperContactAccident">
                   <h2 className="wrapperContactSubtitle">Awarie</h2>
                   <div className="wrapperContactTextenter">
-                    W przypadku zauważenia wycieku wody lub innej awarii na sieci lub przyłączu
-                    wodociągowym bądź kanalizacyjnym prosimy o pilne zgłoszenie pod następujący
-                    numer telefonu:
+                    W przypadku zauważenia wycieku wody lub innej awarii na
+                    sieci lub przyłączu wodociągowym bądź kanalizacyjnym prosimy
+                    o pilne zgłoszenie pod następujący numer telefonu:
                   </div>
                   <div className="wrapperContactAddressItem">
-                    Od poniedziałku do piątku od 7:00 do 15:00 - <strong>89-764-2026</strong>
+                    Od poniedziałku do piątku od 7:00 do 15:00 -{" "}
+                    <strong>89-764-2026</strong>
                   </div>
                   <div className="wrapperContactAddressItem">
-                    Od poniedziałku do piątku od 15:00 do 20:00 - <strong>607-302-362</strong>
+                    Od poniedziałku do piątku od 15:00 do 20:00 -{" "}
+                    <strong>607-302-362</strong>
                   </div>
                   <div className="wrapperContactAddressItem">
-                    Sobota i niedziela od 8:00 do 20:00 - <strong>607-302-362</strong>
+                    Sobota i niedziela od 8:00 do 20:00 -{" "}
+                    <strong>607-302-362</strong>
                   </div>
                 </div>
               </div>
@@ -125,13 +128,12 @@ class ContactView extends Component {
                   frameborder="0"
                   allowfullscreen=""
                   aria-hidden="false"
-                  tabindex="0"
-                ></Iframe>
+                  tabindex="0"></Iframe>
               </div>
             </div>
           </Box>
         </ThemeProvider>
-        <ScrollUpButton />
+        
         <Footer
           contrastType={`${this.state.contrastType}`}
           fontSizeChange={`${this.state.fontSizeChange}`}

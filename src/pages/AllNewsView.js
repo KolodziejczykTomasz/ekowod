@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet';
 import { theme } from '../theme/theme';
 import GlobalStyle from '../theme/GlobalStyle';
 
-import ScrollUpButton from 'react-scroll-up-button';
 import NaviTop from '../components/NaviTop';
 import Jumbotron from '../components/Jumbotron';
 import AllNews from '../components/AllNews';
@@ -94,7 +93,7 @@ class AllNewsView extends Component {
               contrastType={`${contrastType}`}
               fontSizeChange={`${fontSizeChange}`}
             />
-            <ScrollUpButton />
+        
             <Footer
               contrastType={`${contrastType}`}
               fontSizeChange={`${fontSizeChange}`}

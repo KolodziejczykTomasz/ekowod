@@ -8,7 +8,7 @@ import MainAbout from '../components/MainAbout';
 import Footer from '../components/Footer';
 import GlobalStyle from '../theme/GlobalStyle';
 import styled from 'styled-components';
-import ScrollUpButton from 'react-scroll-up-button';
+
 import './ContactView.css';
 
 const Box = styled.div`
@@ -63,10 +63,11 @@ class AboutView extends Component {
         <ThemeProvider theme={theme}>
           <Box
             activeColor={contrastType}
-            style={{ fontSize: fontSizeChange, backgroundColor: contrastType }}
-          >
+            style={{ fontSize: fontSizeChange, backgroundColor: contrastType }}>
             <Helmet activeColor={contrastType}>
-              {contrastType === 'yellow' ? <style>{'html{ background-color:yellow}'}</style> : null}
+              {contrastType === "yellow" ? (
+                <style>{"html{ background-color:yellow}"}</style>
+              ) : null}
             </Helmet>
             <NaviTop
               clickContrastFn={this.handleClick}
@@ -84,7 +85,7 @@ class AboutView extends Component {
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}
             />
-            <ScrollUpButton />
+            
             <Footer
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}

@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 
 import CookieConsent from "react-cookie-consent";
-import ScrollUpButton from "react-scroll-up-button";
+
 
 import GlobalStyle from "../theme/GlobalStyle";
 import NaviTop from "../components/NaviTop";
@@ -101,7 +101,8 @@ class HomeView extends Component {
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}
             />
-            <ScrollUpButton />
+           
+
             <CookieConsent
               location="bottom"
               buttonText="Wyrażam zgodę"

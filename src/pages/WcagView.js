@@ -8,7 +8,7 @@ import MainWCAG from '../components/MainWCAG';
 import Footer from '../components/Footer';
 import GlobalStyle from '../theme/GlobalStyle';
 import styled from 'styled-components';
-import ScrollUpButton from 'react-scroll-up-button';
+
 const Box = styled.div`
   padding: 0 auto;
   max-width: 1250px;
@@ -62,10 +62,11 @@ state = {
         <ThemeProvider theme={theme}>
           <Box
             activeColor={contrastType}
-            style={{ fontSize: fontSizeChange, backgroundColor: contrastType }}
-          >
+            style={{ fontSize: fontSizeChange, backgroundColor: contrastType }}>
             <Helmet activeColor={contrastType}>
-              {contrastType === 'yellow' ? <style>{'html{ background-color:yellow}'}</style> : null}
+              {contrastType === "yellow" ? (
+                <style>{"html{ background-color:yellow}"}</style>
+              ) : null}
             </Helmet>
             <NaviTop
               clickContrastFn={this.handleClick}
@@ -82,8 +83,7 @@ state = {
             <MainWCAG
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}
-            />
-            <ScrollUpButton />
+            />    
             <Footer
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}

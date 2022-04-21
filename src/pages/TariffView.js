@@ -8,7 +8,7 @@ import MainTariff from '../components/MainTariff';
 import Footer from '../components/Footer';
 import GlobalStyle from '../theme/GlobalStyle';
 import styled from 'styled-components';
-import ScrollUpButton from 'react-scroll-up-button';
+
 
 const Box = styled.div`
   padding: 0 auto;
@@ -63,10 +63,11 @@ class TariffView extends Component {
         <ThemeProvider theme={theme}>
           <Box
             activeColor={contrastType}
-            style={{ fontSize: fontSizeChange, backgroundColor: contrastType }}
-          >
+            style={{ fontSize: fontSizeChange, backgroundColor: contrastType }}>
             <Helmet activeColor={contrastType}>
-              {contrastType === 'yellow' ? <style>{'html{ background-color:yellow}'}</style> : null}
+              {contrastType === "yellow" ? (
+                <style>{"html{ background-color:yellow}"}</style>
+              ) : null}
             </Helmet>
             <NaviTop
               clickContrastFn={this.handleClick}
@@ -84,7 +85,7 @@ class TariffView extends Component {
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}
             />
-            <ScrollUpButton />
+        
             <Footer
               contrastType={`${this.state.contrastType}`}
               fontSizeChange={`${this.state.fontSizeChange}`}
