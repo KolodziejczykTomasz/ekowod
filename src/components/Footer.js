@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import {
   EmailOutlined,
@@ -7,16 +7,18 @@ import {
   LocalPhoneOutlined,
   HomeOutlined,
   ChevronRightSharp,
-} from '@material-ui/icons';
+} from "@material-ui/icons";
 
-import DividerLine from '../components/DividerLine';
-import BrandLogo from '../images/logo.svg';
+import DividerLine from "../components/DividerLine";
+import BrandLogo from "../images/logo.svg";
 
-import './Footer.css';
-
+import "./Footer.css";
 
 const Footer = ({ contrastType }) => (
-  <div className={contrastType !== 'yellow' ? 'wrapperFooter' : 'wrapperFooterContrast'}>
+  <div
+    className={
+      contrastType !== "yellow" ? "wrapperFooter" : "wrapperFooterContrast"
+    }>
     <DividerLine />
     <div className="wrapperWidget">
       <div className="widgetLeft">
@@ -26,23 +28,34 @@ const Footer = ({ contrastType }) => (
         <p className="widgetTitle">Dane kontaktowe</p>
         <ul>
           <li className="widgetListItem">
-            <HomeOutlined className="widgetIcon" style={{ fontSize: 30, marginTop: '-7px' }} />
+            <HomeOutlined
+              className="widgetIcon"
+              style={{ fontSize: 30, marginTop: "-7px" }}
+            />
             <span className="widgetIconSpan">EKOWOD</span>
           </li>
           <li className="widgetListItem">
             <LocalPhoneOutlined
               className="widgetIcon"
-              style={{ fontSize: 30, marginTop: '-5px' }}
+              style={{ fontSize: 30, marginTop: "-5px" }}
             />
             <span className="widgetIconSpan">89 764 20 26</span>
           </li>
           <li className="widgetListItem">
-            <PinDropOutlined className="widgetIcon" style={{ fontSize: 30, marginTop: '-5px' }} />
-            <span className="widgetIconSpan">ul. Olsztyńska 10D, 11-100 Lidzbark Warmiński</span>
+            <PinDropOutlined
+              className="widgetIcon"
+              style={{ fontSize: 30, marginTop: "-5px" }}
+            />
+            <span className="widgetIconSpan">
+              ul. Olsztyńska 10D, 11-100 Lidzbark Warmiński
+            </span>
           </li>
 
           <li className="widgetListItem">
-            <EmailOutlined className="widgetIcon" style={{ fontSize: 30, marginTop: '-5px' }} />
+            <EmailOutlined
+              className="widgetIcon"
+              style={{ fontSize: 30, marginTop: "-5px" }}
+            />
             <span className="widgetIconSpan">biuro@ekowod-lidzbark.pl</span>
           </li>
         </ul>
@@ -56,15 +69,14 @@ const Footer = ({ contrastType }) => (
             <li className="widgetListItem">
               <ChevronRightSharp
                 className="widgetIcon"
-                style={{ fontSize: 30, marginTop: '-5px' }}
+                style={{ fontSize: 30, marginTop: "-5px" }}
               />
               <span className="widgetIconSpan">
                 <a
                   href="http://lidzbarkwarminski-ekowod.bip-wm.pl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  id="linkFooter"
-                >
+                  id="linkFooter">
                   Biuletyn Informacji Publicznej
                 </a>
               </span>
@@ -72,7 +84,7 @@ const Footer = ({ contrastType }) => (
             <li className="widgetListItem">
               <ChevronRightSharp
                 className="widgetIcon"
-                style={{ fontSize: 30, marginTop: '-5px' }}
+                style={{ fontSize: 30, marginTop: "-5px" }}
               />
               <span className="widgetIconSpan">
                 <Link to="/TariffView" id="linkFooter">
@@ -83,7 +95,7 @@ const Footer = ({ contrastType }) => (
             <li className="widgetListItem">
               <ChevronRightSharp
                 className="widgetIcon"
-                style={{ fontSize: 30, marginTop: '-5px' }}
+                style={{ fontSize: 30, marginTop: "-5px" }}
               />
               <span className="widgetIconSpan">
                 <Link to="/RodoView" id="linkFooter">
@@ -94,7 +106,7 @@ const Footer = ({ contrastType }) => (
             <li className="widgetListItem">
               <ChevronRightSharp
                 className="widgetIcon"
-                style={{ fontSize: 30, marginTOp: '-5px' }}
+                style={{ fontSize: 30, marginTOp: "-5px" }}
               />
               <span className="widgetIconSpan">
                 <Link to="/WcagView" id="linkFooter">
@@ -105,15 +117,14 @@ const Footer = ({ contrastType }) => (
             <li className="widgetListItem">
               <ChevronRightSharp
                 className="widgetIcon"
-                style={{ fontSize: 30, marginTOp: '-5px' }}
+                style={{ fontSize: 30, marginTOp: "-5px" }}
               />
               <span className="widgetIconSpan">
                 <a
                   href="http://ekowod-lidzbark.pl/files/raport.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  id="linkFooter"
-                >
+                  id="linkFooter">
                   Raport dostępności
                 </a>
               </span>
@@ -121,7 +132,7 @@ const Footer = ({ contrastType }) => (
             <li className="widgetListItem">
               <ChevronRightSharp
                 className="widgetIcon"
-                style={{ fontSize: 30, marginTOp: '-5px' }}
+                style={{ fontSize: 30, marginTOp: "-5px" }}
               />
               <span className="widgetIconSpan">
                 <Link to="/ContactView" id="linkFooter">
@@ -149,7 +160,15 @@ const Footer = ({ contrastType }) => (
       </div>
       <div id="widgetBottomRight">
         <p>
-          <span id="greyText">Created by NETTOM</span>
+          <span id="greyText">
+            <a
+              href="https://nettom24.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="linkFooter">
+              NETTOM24
+            </a>
+          </span>
         </p>
       </div>
     </div>
@@ -157,10 +176,10 @@ const Footer = ({ contrastType }) => (
 );
 
 Footer.propTypes = {
-  contrastType: PropTypes.oneOf(['yellow', 'white']),
+  contrastType: PropTypes.oneOf(["yellow", "white"]),
 };
 
 Footer.defaultProps = {
-  contrastType: 'white',
+  contrastType: "white",
 };
 export default Footer;
