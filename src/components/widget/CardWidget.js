@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import { makeStyles } from "@material-ui/core/styles";
 
+import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
@@ -18,17 +18,17 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "100%",
     minHeight: 620,
     height: "auto",
-    transition: "1s",
+    transition: ".3s",
     backgroundColor: "#fff",
     "&:hover": {
-      scale: 1.01,
+      scale: 2,
     },
 
     [theme.breakpoints.down("sm")]: {
       padding: "0 15px",
       maxWidth: "100%",
       "&:hover": {
-        scale: 1.01,
+        scale: 2,
       },
     },
   },
@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     height: "auto",
     transition: "1s",
     "&:hover": {
-      scale: 1.01,
+      scale: 2,
     },
   },
 }));
@@ -125,18 +125,20 @@ const CardWidget = ({
         <CardContent style={{ fontSize: `${activeSize}px` }}>
           {image.length ? (
             <>
-              <img
-                component="img"
-                src={image}
-                alt={title}
-                style={{
-                  display: "block",
-                  maxHeight: "460px",
-                  width: "90%",
-                  height: "80%",
-                  margin: "0 auto",
-                }}
-              />
+              <a href={image} target="_blank" without rel="noreferrer">
+                <img
+                  component="img"
+                  src={image}
+                  alt={title}
+                  style={{
+                    display: "block",
+                    maxWidth: "90%",
+                    height: "auto",
+                    margin: "0 auto",
+                    cursor: "pointer",
+                  }}
+                />
+              </a>
             </>
           ) : (
             <>
