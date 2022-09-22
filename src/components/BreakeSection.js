@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../components/BreakeSection.css';
 
-const BreakeStartSection = ({ children }) => (
+const BreakeSection = ({ children }) => (
   <div id="wrapperBreakeLine">
     <div id="wrapperItemLeft">
       <hr style={{ borderTop: '1.5px solid #1680BC' }} />
@@ -15,4 +15,4 @@ const BreakeStartSection = ({ children }) => (
     </div>
   </div>
 );
-export default BreakeStartSection;
+export default BreakeSection;
